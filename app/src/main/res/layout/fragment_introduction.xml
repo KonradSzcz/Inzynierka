@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Introduction"
+    android:background="@color/dark_blue">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        android:src="@drawable/intro1" />
+
+
+    <TextView
+        android:id="@+id/rozdzial1"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Czym są kryptowaluty?"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <View
+        android:id="@+id/lineBelowText1"
+        android:layout_width="340dp"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/rozdzial1"
+        android:layout_marginTop="5dp"
+        android:background="@color/light_blue" />
+
+
+    <TextView
+        android:id="@+id/rozdzial2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineBelowText1"
+        android:layout_marginTop="5dp"
+        android:text="Krótka historia kryptowalut"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:gravity="center" />
+
+    <View
+        android:id="@+id/lineBelowText2"
+        android:layout_width="340dp"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/rozdzial2"
+        android:layout_marginTop="5dp"
+        android:background="@color/light_blue" />
+
+    <TextView
+        android:id="@+id/rozdzial3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineBelowText2"
+        android:layout_marginTop="5dp"
+        android:text="    Główne cechy i właściwości kryptowalut"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:gravity="center" />
+
+    <View
+        android:id="@+id/lineBelowText3"
+        android:layout_width="340dp"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/rozdzial3"
+        android:layout_marginTop="5dp"
+        android:background="@color/light_blue" />
+
+    <TextView
+        android:id="@+id/rozdzial4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineBelowText3"
+        android:layout_marginTop="5dp"
+        android:text="Technologia blockchain"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:gravity="center" />
+
+    <View
+        android:id="@+id/lineBelowText4"
+        android:layout_width="340dp"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/rozdzial4"
+        android:layout_marginTop="5dp"
+        android:background="@color/light_blue" />
+
+    <TextView
+        android:id="@+id/rozdzial5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineBelowText4"
+        android:layout_marginTop="5dp"
+        android:text="Zalety i wady kryptowalut"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:gravity="center" />
+
+    <View
+        android:id="@+id/lineBelowText5"
+        android:layout_width="340dp"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/rozdzial5"
+        android:layout_marginTop="5dp"
+        android:background="@color/light_blue" />
+
+
+
+</RelativeLayout>

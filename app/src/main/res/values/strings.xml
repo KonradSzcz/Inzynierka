@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Inzynierka</string>
+
+    <string name="chapter1_1_title">
+        <b>Definicja kryptowalut</b>
+    </string>
+    <string name="chapter1_1">
+        \nKryptowaluty są to cyfrowe lub wirtualne waluty, które wykorzystują technologię kryptograficzną do zabezpieczenia transakcji oraz kontrolowania tworzenia nowych jednostek walutowych.\n\nSą to środki wymiany, które nie są kontrolowane ani emitowane przez żadną centralną instytucję, taką jak bank centralny czy rząd, co oznacza, że są zdecentralizowane.
+    </string>
+    <string name="chapter1_2_title">
+        <b>Krótka historia kryptowalut</b>
+    </string>
+    <string name="chapter1_2">
+        \nPierwszą kryptowalutą, która zyskała znaczącą uwagę, był Bitcoin, wprowadzony w 2009 roku przez osobę lub grupę osób działających pod pseudonimem Satoshi Nakamoto.\n\nBitcoin stał się pionierem w tej dziedzinie, otwierając drogę dla wielu innych kryptowalut, które pojawiły się później, znane jako altcoiny.
+    </string>
+    <string name="chapter1_3_title">
+        <b>Główne cechy i właściwości kryptowalut</b>
+    </string>
+    <string name="chapter1_3">
+        \n<b>Zdecentralizowanie:</b>\nKryptowaluty działają na zasadzie zdecentralizowanej, co oznacza, że nie są kontrolowane przez jedną instytucję czy osobę.\n\n<b>Bezpośrednie transakcje:</b>\nTransakcje z wykorzystaniem kryptowalut mogą być wykonywane bezpośrednio bez pośrednictwa instytucji finansowych.\n\n<b>Anonimowość:</b>\nWiele kryptowalut oferuje pewien poziom anonimowości, co oznacza, że tożsamość uczestników transakcji może pozostać nieujawniona.\n\n<b>Ograniczona podaż:</b>\nWiększość kryptowalut ma ograniczoną podaż, co oznacza, że istnieje ściśle określona ilość jednostek waluty, która może zostać wytworzona.
+    </string>
+    <string name="chapter1_4_title">
+        <b>Technologia blockchain</b>
+    </string>
+    <string name="chapter1_4">
+        Blockchain to zdecentralizowana i rozproszona księga rachunkowa, która rejestruje wszystkie transakcje w sieci kryptowalutowej. Każdy blok zawiera zbiór transakcji, a bloki są połączone w łańcuch za pomocą kryptograficznych hashy.\n\nTechnologia blockchain została po raz pierwszy wprowadzona jako rdzeń Bitcoina przez anonimową osobę lub grupę osób znaną jako Satoshi Nakamoto w 2008 roku. Od tego czasu technologia ta została zaadaptowana i rozwinięta w różnych kierunkach.\n\nPodstawowe komponenty blockchaina to bloki, które zawierają transakcje, hash poprzedniego bloku, który łączy bloki w łańcuch i mechanizmy konsensusu, takie jak proof-of-work lub proof-of-stake, które zapewniają bezpieczeństwo i integralność sieci. Kiedy użytkownik inicjuje transakcję, jest ona transmitowana do sieci peer-to-peer.\n\nWęzły sieci weryfikują transakcję zgodnie z określonymi regułami konsensusu, a następnie dodają ją do nowego bloku. Blok jest następnie dodawany do łańcucha bloków, a transakcja staje się nieodwracalna. Poza kryptowalutami, blockchain znajduje zastosowanie w wielu dziedzinach, takich jak logistyka (śledzenie łańcucha dostaw), ochrona zdrowia (bezpieczne przechowywanie danych medycznych), zarządzanie tożsamością (cyfrowe dowody tożsamości), głosowania elektroniczne (bezpieczne i przejrzyste głosowanie) oraz w finansach (tokenizacja aktywów)
+    </string>
+    <string name="chapter1_5_title">
+        <b>Zalety kryptowalut</b>
+    </string>
+    <string name="chapter1_5">
+        \n<b>Decentralizacja:</b>\nKryptowaluty działają bez centralnego organu kontrolującego, co oznacza, że nie są one zależne od jednej instytucji czy rządu. Decentralizacja zapewnia większą niezależność i autonomię dla użytkowników.\n\n<b>Niskie koszty transakcji:</b>\nTransakcje kryptowalutowe są zazwyczaj tańsze niż tradycyjne metody płatności, co może być korzystne dla użytkowników, szczególnie w przypadku międzynarodowych przelewów.\n\n<b>Szybkość transakcji:</b>\nKryptowaluty umożliwiają szybkie przekazywanie wartości, nawet na skalę globalną, co sprawia, że są one atrakcyjne dla osób wymieniających środki w różnych częściach świata.\n\n<b>Bezpieczeństwo i prywatność:</b>\nMechanizmy kryptograficzne używane w kryptowalutach zapewniają wysoki poziom bezpieczeństwa i prywatności dla użytkowników, co może być szczególnie istotne w przypadku danych finansowych.\n\n<b>Łatwość dostępu:</b>\nKryptowaluty mogą umożliwić dostęp do usług finansowych osobom, które nie mają tradycyjnego dostępu do bankowości, co może przyczynić się do finansowej inkluzji.
+    </string>
+    <string name="chapter1_6_title">
+        <b>Wady kryptowalut</b>
+    </string>
+    <string name="chapter1_6">
+        \n<b>Wahania cen:</b>\nKryptowaluty są znane z ich dużych wahnięć cen, co może być ryzykiem dla inwestorów oraz użytkowników korzystających z nich jako formy płatności.\n\n<b>Regulacje prawne:</b>\nKryptowaluty napotykają różne wyzwania prawne i regulacyjne na różnych rynkach, co może prowadzić do niepewności co do ich statusu prawnego i zastosowania przepisów.\n\n<b>Bezpieczeństwo:</b>\nŚwiat kryptowalut narażony jest na różne zagrożenia związane z cyberatakami, kradzieżami i oszustwami, co może stanowić ryzyko dla użytkowników.\n\n<b>Wpływ na środowisko:</b>\nNiektóre procesy związane z kryptowalutami, szczególnie kopanie, mogą być bardzo energochłonne i negatywnie wpływać na środowisko naturalne.\n\n<b>Adopcja:</b>\nMimo licznych zalet, kryptowaluty napotykają trudności związane z ich adopcją w codziennym życiu i w świecie biznesu, co może być związane z brakiem świadomości, złożonością techniczną czy też niepewnością co do przyszłości rynku kryptowalut.
+    </string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
