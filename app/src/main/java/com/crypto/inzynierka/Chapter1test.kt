@@ -10,12 +10,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import android.database.Cursor
+import androidx.fragment.app.viewModels
 import com.crypto.inzynierka.databinding.FragmentChapter1testBinding
 import kotlin.random.Random
 
 class Chapter1test : Fragment() {
     private var _binding: FragmentChapter1testBinding? = null
     private val binding get() = _binding!!
+    private val Vm by viewModels<MainViewModel>()
 
     private var questions = mutableListOf<String>()
     private var options = mutableListOf<Array<String>>()
@@ -29,7 +31,7 @@ class Chapter1test : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        dbHelper = DBConnection(requireContext(), "cryptoDB", 6)
+        dbHelper = DBConnection(requireContext(), "cryptoDB", MainViewModel.DB_VERSION)
         loadQuestionsFromDB()
     }
 
@@ -46,22 +48,18 @@ class Chapter1test : Fragment() {
         }
         cursor.close()
 
-        // Debugging logs
         Log.d("Chapter1test", "Loaded ${questions.size} questions")
 
-        // Shuffle the questions and answers to randomize the order
         val indices = questions.indices.toList().shuffled()
         questions = indices.map { questions[it] }.toMutableList()
         options = indices.map { options[it] }.toMutableList()
         correctAnswers = indices.map { correctAnswers[it] }.toMutableList()
 
-        // Choose only 10 random questions
         val selectedIndices = questions.indices.shuffled().take(10)
         questions = selectedIndices.map { questions[it] }.toMutableList()
         options = selectedIndices.map { options[it] }.toMutableList()
         correctAnswers = selectedIndices.map { correctAnswers[it] }.toMutableList()
 
-        // Debugging logs
         Log.d("Chapter1test", "Selected ${questions.size} questions for the test")
     }
 
@@ -96,7 +94,6 @@ class Chapter1test : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Check if questions are loaded before attempting to display
         if (questions.isNotEmpty()) {
             displayQuestion()
         } else {
@@ -116,7 +113,7 @@ class Chapter1test : Fragment() {
             checkAnswer(3)
         }
         binding.nextChapter.setOnClickListener {
-            replaceFragment(Chapter1_2())
+            replaceFragment(Introduction())
         }
     }
 
@@ -174,16 +171,26 @@ class Chapter1test : Fragment() {
         val resultPercentage = (score.toFloat() / questions.size * 100).toInt()
         binding.score.text = "$resultPercentage%"
 
-        saveResult(resultPercentage)
+        saveTestResult("chapter1", resultPercentage)
     }
 
-    private fun saveResult(resultPercentage: Int) {
+    private fun saveTestResult(chapter: String, result: Int) {
         val db = dbHelper.writableDatabase
+
         val values = ContentValues().apply {
-            put(DBConnection.COL2_RESULTS, "chapter1")
-            put(DBConnection.COL3_RESULTS, resultPercentage)
+            put("Chapter", chapter)
+            put("Result", result)
         }
-        db.insert(DBConnection.TABLE_NAME_RESULTS, null, values)
+
+        val newRowId = db.insert("Results", null, values)
+
+        if (newRowId == -1L) {
+            Log.e("Chapter1test", "Error inserting new result")
+        } else {
+            Log.d("Chapter1test", "Result saved with row id: $newRowId")
+        }
+
+        db.close()
     }
 
     private fun displayQuestion() {

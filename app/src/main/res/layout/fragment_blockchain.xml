@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Introduction">
+
+    <!-- Główne zdjęcie na górze -->
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-20dp"
+        android:src="@drawable/git" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="-10dp"
+        android:background="@color/black">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressDrawable="@drawable/circular_progress"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-70dp" />
+
+        <RelativeLayout
+            android:id="@+id/section1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp">
+
+            <ImageView
+                android:id="@+id/readIndicator1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/baseline_beenhere_24_unread" />
+
+            <TextView
+                android:id="@+id/rozdzial1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/readIndicator1"
+                android:text="Pochodzenie blockchainu"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rozdzial1time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rozdzial1"
+                android:layout_alignStart="@id/rozdzial1"
+                android:layout_marginTop="1dp"
+                android:text="Czas czytania wynosi 1m 6s"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/arrowRight1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/baseline_arrow_forward_24" />
+
+        </RelativeLayout>
+
+        <!-- Linia pod Rozdziałem 1 -->
+        <View
+            android:id="@+id/lineBelowText1"
+            android:layout_width="400dp"
+            android:layout_height="2dp"
+            android:layout_below="@id/section1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/dark_blue" />
+
+        <!-- Layout dla Rozdziału 2 -->
+        <RelativeLayout
+            android:id="@+id/section2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lineBelowText1"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/readIndicator2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/baseline_beenhere_24_unread" />
+
+            <TextView
+                android:id="@+id/rozdzial2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/readIndicator2"
+                android:text="Czym jest Blockchain?"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rozdzial2time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rozdzial2"
+                android:layout_alignStart="@id/rozdzial2"
+                android:layout_marginTop="1dp"
+                android:text="Czas czytania wynosi 2m 7s"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/arrowRight2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/baseline_arrow_forward_24" />
+
+        </RelativeLayout>
+
+        <!-- Linia pod Rozdziałem 2 -->
+        <View
+            android:id="@+id/lineBelowText2"
+            android:layout_width="400dp"
+            android:layout_height="2dp"
+            android:layout_below="@id/section2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/dark_blue" />
+
+        <!-- Layout dla Rozdziału 3 -->
+        <RelativeLayout
+            android:id="@+id/section3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lineBelowText2"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/readIndicator3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/baseline_beenhere_24_unread" />
+
+            <TextView
+                android:id="@+id/rozdzial3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/readIndicator3"
+                android:text="Co zapewnia blockchain?"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rozdzial3time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rozdzial3"
+                android:layout_alignStart="@id/rozdzial3"
+                android:layout_marginTop="1dp"
+                android:text="Czas czytania wynosi 3m 1s"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/arrowRight3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/baseline_arrow_forward_24" />
+
+        </RelativeLayout>
+
+        <!-- Linia pod Rozdziałem 3 -->
+        <View
+            android:id="@+id/lineBelowText3"
+            android:layout_width="400dp"
+            android:layout_height="2dp"
+            android:layout_below="@id/section3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/dark_blue" />
+
+        <!-- Layout dla Rozdziału 4 -->
+        <RelativeLayout
+            android:id="@+id/section4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lineBelowText3"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/readIndicator4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/baseline_beenhere_24_unread" />
+
+            <TextView
+                android:id="@+id/rozdzial4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/readIndicator4"
+                android:text="Peer-to-peer (P2P)"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rozdzial4time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rozdzial4"
+                android:layout_alignStart="@id/rozdzial4"
+                android:layout_marginTop="1dp"
+                android:text="Czas czytania wynosi 55s"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/arrowRight4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/baseline_arrow_forward_24" />
+
+        </RelativeLayout>
+
+        <!-- Linia pod Rozdziałem 4 -->
+        <View
+            android:id="@+id/lineBelowText4"
+            android:layout_width="400dp"
+            android:layout_height="2dp"
+            android:layout_below="@id/section4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/dark_blue" />
+
+        <!-- Layout dla Rozdziału 5 -->
+        <RelativeLayout
+            android:id="@+id/section5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lineBelowText4"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/readIndicator5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/baseline_beenhere_24_unread" />
+
+            <TextView
+                android:id="@+id/rozdzial5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@id/readIndicator5"
+                android:text="Protokół konsensusu"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rozdzial5time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rozdzial5"
+                android:layout_alignStart="@id/rozdzial5"
+                android:layout_marginTop="1dp"
+                android:text="Czas czytania wynosi 1m 30s"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/arrowRight5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/baseline_arrow_forward_24" />
+
+
+        </RelativeLayout>
+
+        <!-- Linia pod Rozdziałem 5 -->
+        <View
+            android:id="@+id/lineBelowText5"
+            android:layout_width="400dp"
+            android:layout_height="2dp"
+            android:layout_below="@id/section5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/dark_blue" />
+
+        <!-- Layout dla Rozdziału 6 -->
+        <RelativeLayout
+            android:id="@+id/section6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lineBelowText5"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/readIndicator6"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/baseline_beenhere_24_unread" />
+
+            <TextView
+                android:id="@+id/rozdzial6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@id/readIndicator6"
+                android:text="Kryptograficzne mechanizmy\nw blockchainie"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rozdzial6time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rozdzial6"
+                android:layout_alignStart="@id/rozdzial6"
+                android:layout_marginTop="1dp"
+                android:text="Czas czytania wynosi 1m 30s"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/arrowRight6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/baseline_arrow_forward_24" />
+
+
+        </RelativeLayout>
+
+        <!-- Linia pod Rozdziałem 6 -->
+        <View
+            android:id="@+id/lineBelowText6"
+            android:layout_width="400dp"
+            android:layout_height="2dp"
+            android:layout_below="@id/section6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/dark_blue" />
+
+
+
+        <!-- Layout dla Rozdziału 6 -->
+        <RelativeLayout
+            android:id="@+id/section7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lineBelowText6"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/readIndicator7"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/baseline_beenhere_24_unread" />
+
+            <TextView
+                android:id="@+id/rozdzial7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@id/readIndicator7"
+                android:text="Transakcje"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rozdzial7time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rozdzial7"
+                android:layout_alignStart="@id/rozdzial7"
+                android:layout_marginTop="1dp"
+                android:text="Czas czytania wynosi 1m 30s"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/arrowRight7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/baseline_arrow_forward_24" />
+
+
+        </RelativeLayout>
+
+        <!-- Linia pod Rozdziałem 7 -->
+        <View
+            android:id="@+id/lineBelowText7"
+            android:layout_width="400dp"
+            android:layout_height="2dp"
+            android:layout_below="@id/section7"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/dark_blue" />
+
+        <!-- Layout dla Rozdziału 8 -->
+        <RelativeLayout
+            android:id="@+id/section8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lineBelowText7"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/readIndicator8"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/baseline_beenhere_24_unread" />
+
+            <TextView
+                android:id="@+id/rozdzial8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@id/readIndicator8"
+                android:text="Proof of Work i Proof of Stake"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rozdzial8time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rozdzial8"
+                android:layout_alignStart="@id/rozdzial8"
+                android:layout_marginTop="1dp"
+                android:text="Czas czytania wynosi 1m 30s"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/arrowRight8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/baseline_arrow_forward_24" />
+
+
+        </RelativeLayout>
+
+        <!-- Linia pod Rozdziałem 8 -->
+        <View
+            android:id="@+id/lineBelowText8"
+            android:layout_width="400dp"
+            android:layout_height="2dp"
+            android:layout_below="@id/section8"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/dark_blue" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-5dp">
+
+            <TextView
+                android:id="@+id/chapters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:alpha="0.8"
+                android:text="Wszystkie rozdziały: 5"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:id="@+id/endedchapters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:alpha="0.8"
+                android:text="Pozostałe rozdziały: 5"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:layout_marginStart="10dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

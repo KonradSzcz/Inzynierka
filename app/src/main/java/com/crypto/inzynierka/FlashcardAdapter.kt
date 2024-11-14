@@ -33,13 +33,13 @@ class FlashcardAdapter(private val flashcards: MutableList<Triple<String, String
             holder.binding.front.visibility = View.VISIBLE
             holder.binding.back.visibility = View.INVISIBLE
             holder.binding.cardView.setCardBackgroundColor(
-                ContextCompat.getColor(holder.binding.root.context, R.color.light_blue)
+                ContextCompat.getColor(holder.binding.root.context, R.color.dark_blue)
             )
         } else {
             holder.binding.front.visibility = View.INVISIBLE
             holder.binding.back.visibility = View.INVISIBLE
             holder.binding.cardView.setCardBackgroundColor(
-                ContextCompat.getColor(holder.binding.root.context, R.color.theme2_4)
+                ContextCompat.getColor(holder.binding.root.context, R.color.light_blue)
             )
         }
 

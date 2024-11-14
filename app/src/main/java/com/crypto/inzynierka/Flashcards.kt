@@ -7,7 +7,9 @@ import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.CheckBox
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 import com.crypto.inzynierka.databinding.FragmentFlashcardsBinding
@@ -15,6 +17,7 @@ import com.crypto.inzynierka.databinding.FragmentFlashcardsBinding
 class Flashcards : Fragment() {
     private var _binding: FragmentFlashcardsBinding? = null
     private val binding get() = _binding!!
+    private val Vm by viewModels<MainViewModel>()
 
     private var flashcards = mutableListOf<Triple<String, String, Int>>()
     private lateinit var adapter: FlashcardAdapter
@@ -25,14 +28,18 @@ class Flashcards : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        dbHelper = DBConnection(requireContext(), "cryptoDB", 6)
-        loadFlashcardsFromDatabase()
-        initialCardCount = flashcards.size
+        dbHelper = DBConnection(requireContext(), "cryptoDB", MainViewModel.DB_VERSION)
     }
 
-    private fun loadFlashcardsFromDatabase() {
+    private fun loadFlashcardsFromDatabase(chapters: List<String>) {
+        flashcards.clear()
         val db = dbHelper.readableDatabase
-        val cursor: Cursor = db.rawQuery("SELECT * FROM ${DBConnection.TABLE_NAME_FLASHCARDS}", null)
+        val query = if (chapters.isEmpty()) {
+            "SELECT * FROM ${DBConnection.TABLE_NAME_FLASHCARDS}"
+        } else {
+            "SELECT * FROM ${DBConnection.TABLE_NAME_FLASHCARDS} WHERE ${DBConnection.COL4_FLASHCARDS} IN (${chapters.joinToString { "'$it'" }})"
+        }
+        val cursor: Cursor = db.rawQuery(query, null)
         if (cursor.moveToFirst()) {
             do {
                 val concept = cursor.getString(cursor.getColumnIndexOrThrow(DBConnection.COL2_FLASHCARDS))
@@ -42,6 +49,12 @@ class Flashcards : Fragment() {
             } while (cursor.moveToNext())
         }
         cursor.close()
+
+        // Update initial card count and reset right swipe count
+        initialCardCount = flashcards.size
+        rightSwipeCount = 0
+        adapter.notifyDataSetChanged() // Refresh the adapter with new data
+        updateCardCounter() // Update the card counter
     }
 
     override fun onCreateView(
@@ -59,7 +72,29 @@ class Flashcards : Fragment() {
         binding.recyclerView.layoutManager = OverlayLayoutManager()
         binding.recyclerView.adapter = adapter
 
-        updateCardCounter()
+        val checkBoxChapter1 = view.findViewById<CheckBox>(R.id.checkbox_chapter1)
+        val checkBoxChapter2 = view.findViewById<CheckBox>(R.id.checkbox_chapter2)
+        val checkBoxChapter3 = view.findViewById<CheckBox>(R.id.checkbox_chapter3)
+        val checkBoxChapter4 = view.findViewById<CheckBox>(R.id.checkbox_chapter4)
+
+        // Initial load of all flashcards
+        loadFlashcardsFromDatabase(emptyList())
+
+        // Update flashcards when any checkbox state changes
+        val onChapterSelectionChanged = {
+            val selectedChapters = mutableListOf<String>()
+            if (checkBoxChapter1.isChecked) selectedChapters.add("chapter1")
+            if (checkBoxChapter2.isChecked) selectedChapters.add("chapter2")
+            if (checkBoxChapter3.isChecked) selectedChapters.add("chapter3")
+            if (checkBoxChapter4.isChecked) selectedChapters.add("chapter4")
+
+            loadFlashcardsFromDatabase(selectedChapters)
+        }
+
+        checkBoxChapter1.setOnCheckedChangeListener { _, _ -> onChapterSelectionChanged() }
+        checkBoxChapter2.setOnCheckedChangeListener { _, _ -> onChapterSelectionChanged() }
+        checkBoxChapter3.setOnCheckedChangeListener { _, _ -> onChapterSelectionChanged() }
+        checkBoxChapter4.setOnCheckedChangeListener { _, _ -> onChapterSelectionChanged() }
 
         val itemTouchHelper = ItemTouchHelper(object : ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT) {
             override fun onMove(
@@ -89,11 +124,10 @@ class Flashcards : Fragment() {
                 adapter.notifyDataSetChanged()
                 updateCardCounter()
 
-                // Check if all cards are swiped to the right
                 if (rightSwipeCount == initialCardCount) {
                     Handler(Looper.getMainLooper()).postDelayed({
                         if (isAdded) {
-                            replaceFragment(Introduction())
+                            replaceFragment(Home())
                         }
                     }, 5000)
                 }
@@ -101,6 +135,7 @@ class Flashcards : Fragment() {
         })
 
         itemTouchHelper.attachToRecyclerView(binding.recyclerView)
+        updateCardCounter()
     }
 
     private fun updateFlashcardLine(position: Int, newLine: Int) {
@@ -110,7 +145,7 @@ class Flashcards : Fragment() {
     }
 
     private fun updateCardCounter() {
-        binding.cardCounter.text = "$rightSwipeCount/$initialCardCount"
+        binding.cardCounter.text = "$rightSwipeCount / $initialCardCount"
     }
 
     private fun replaceFragment(fragment: Fragment) {

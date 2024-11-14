@@ -40,6 +40,10 @@ android {
 
 dependencies {
     // Kotlin
+
+
+    implementation ("com.android.volley:volley:1.2.1")
+
     val activity_version = "1.9.0"
     implementation("androidx.activity:activity-ktx:$activity_version")
 
@@ -59,6 +63,7 @@ dependencies {
     implementation ("androidx.fragment:fragment-ktx:1.3.4")
     implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.3.1")
 
+    implementation ("pl.droidsonroids.gif:android-gif-drawable:1.2.17")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)

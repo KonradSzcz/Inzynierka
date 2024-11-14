@@ -2,44 +2,134 @@
     <string name="app_name">Inzynierka</string>
 
     <string name="chapter1_1_title">
-        <b>Definicja kryptowalut</b>
+        &lt;b&gt;Definicja kryptowalut&lt;/b&gt;
     </string>
     <string name="chapter1_1">
-        \nKryptowaluty są to cyfrowe lub wirtualne waluty, które wykorzystują technologię kryptograficzną do zabezpieczenia transakcji oraz kontrolowania tworzenia nowych jednostek walutowych.\n\nSą to środki wymiany, które nie są kontrolowane ani emitowane przez żadną centralną instytucję, taką jak bank centralny czy rząd, co oznacza, że są zdecentralizowane.
+        &lt;br/&gt;&lt;br/&gt;Kryptowaluty są to cyfrowe lub wirtualne waluty, które wykorzystują technologię kryptograficzną do zabezpieczenia transakcji oraz kontrolowania tworzenia nowych jednostek walutowych.&lt;br/&gt;&lt;br/&gt;Są to środki wymiany, które nie są kontrolowane ani emitowane przez żadną centralną instytucję, taką jak bank centralny czy rząd, co oznacza, że są zdecentralizowane.
     </string>
     <string name="chapter1_2_title">
-        <b>Krótka historia kryptowalut</b>
+        &lt;b&gt;Krótka historia kryptowalut&lt;/b&gt;
     </string>
     <string name="chapter1_2">
-        \nPierwszą kryptowalutą, która zyskała znaczącą uwagę, był Bitcoin, wprowadzony w 2009 roku przez osobę lub grupę osób działających pod pseudonimem Satoshi Nakamoto.\n\nBitcoin stał się pionierem w tej dziedzinie, otwierając drogę dla wielu innych kryptowalut, które pojawiły się później, znane jako altcoiny.
+        &lt;br/&gt;&lt;br/&gt;Pierwszą kryptowalutą, która zyskała znaczącą uwagę, był Bitcoin, wprowadzony w 2009 roku przez osobę lub grupę osób działających pod pseudonimem Satoshi Nakamoto.&lt;br/&gt;&lt;br/&gt;Bitcoin stał się pionierem w tej dziedzinie, otwierając drogę dla wielu innych kryptowalut, które pojawiły się później, znane jako altcoiny.
     </string>
     <string name="chapter1_3_title">
-        <b>Główne cechy i właściwości kryptowalut</b>
+        &lt;b&gt;Główne cechy i właściwości kryptowalut&lt;/b&gt;
     </string>
     <string name="chapter1_3">
-        \n<b>Zdecentralizowanie:</b>\nKryptowaluty działają na zasadzie zdecentralizowanej, co oznacza, że nie są kontrolowane przez jedną instytucję czy osobę.\n\n<b>Bezpośrednie transakcje:</b>\nTransakcje z wykorzystaniem kryptowalut mogą być wykonywane bezpośrednio bez pośrednictwa instytucji finansowych.\n\n<b>Anonimowość:</b>\nWiele kryptowalut oferuje pewien poziom anonimowości, co oznacza, że tożsamość uczestników transakcji może pozostać nieujawniona.\n\n<b>Ograniczona podaż:</b>\nWiększość kryptowalut ma ograniczoną podaż, co oznacza, że istnieje ściśle określona ilość jednostek waluty, która może zostać wytworzona.
+        &lt;br/&gt;&lt;b&gt;Zdecentralizowanie:&lt;/b&gt;&lt;br/&gt;Kryptowaluty działają na zasadzie zdecentralizowanej, co oznacza, że nie są kontrolowane przez jedną instytucję czy osobę.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Bezpośrednie transakcje:&lt;/b&gt;&lt;br/&gt;Transakcje z wykorzystaniem kryptowalut mogą być wykonywane bezpośrednio bez pośrednictwa instytucji finansowych.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Anonimowość:&lt;/b&gt;&lt;br/&gt;Wiele kryptowalut oferuje pewien poziom anonimowości, co oznacza, że tożsamość uczestników transakcji może pozostać nieujawniona.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Ograniczona podaż:&lt;/b&gt;&lt;br/&gt;Większość kryptowalut ma ograniczoną podaż, co oznacza, że istnieje ściśle określona ilość jednostek waluty, która może zostać wytworzona.
     </string>
     <string name="chapter1_4_title">
-        <b>Technologia blockchain</b>
+        &lt;b&gt;Technologia blockchain&lt;/b&gt;
     </string>
     <string name="chapter1_4">
-        Blockchain to zdecentralizowana i rozproszona księga rachunkowa, która rejestruje wszystkie transakcje w sieci kryptowalutowej. Każdy blok zawiera zbiór transakcji, a bloki są połączone w łańcuch za pomocą kryptograficznych hashy.\n\nTechnologia blockchain została po raz pierwszy wprowadzona jako rdzeń Bitcoina przez anonimową osobę lub grupę osób znaną jako Satoshi Nakamoto w 2008 roku. Od tego czasu technologia ta została zaadaptowana i rozwinięta w różnych kierunkach.\n\nPodstawowe komponenty blockchaina to bloki, które zawierają transakcje, hash poprzedniego bloku, który łączy bloki w łańcuch i mechanizmy konsensusu, takie jak proof-of-work lub proof-of-stake, które zapewniają bezpieczeństwo i integralność sieci. Kiedy użytkownik inicjuje transakcję, jest ona transmitowana do sieci peer-to-peer.\n\nWęzły sieci weryfikują transakcję zgodnie z określonymi regułami konsensusu, a następnie dodają ją do nowego bloku. Blok jest następnie dodawany do łańcucha bloków, a transakcja staje się nieodwracalna. Poza kryptowalutami, blockchain znajduje zastosowanie w wielu dziedzinach, takich jak logistyka (śledzenie łańcucha dostaw), ochrona zdrowia (bezpieczne przechowywanie danych medycznych), zarządzanie tożsamością (cyfrowe dowody tożsamości), głosowania elektroniczne (bezpieczne i przejrzyste głosowanie) oraz w finansach (tokenizacja aktywów)
+        &lt;br/&gt;&lt;b&gt;Blockchain&lt;/b&gt; to zdecentralizowana i rozproszona księga rachunkowa, która rejestruje wszystkie transakcje w sieci kryptowalutowej. Każdy blok zawiera zbiór transakcji, a bloki są połączone w łańcuch za pomocą kryptograficznych hashy.&lt;br/&gt;&lt;br/&gt;Technologia blockchain została po raz pierwszy wprowadzona jako rdzeń Bitcoina przez anonimową osobę lub grupę osób znaną jako Satoshi Nakamoto w 2008 roku. Od tego czasu technologia ta została zaadaptowana i rozwinięta w różnych kierunkach.&lt;br/&gt;&lt;br/&gt;Podstawowe komponenty blockchaina to bloki, które zawierają transakcje, hash poprzedniego bloku, który łączy bloki w łańcuch i mechanizmy konsensusu, takie jak proof-of-work lub proof-of-stake, które zapewniają bezpieczeństwo i integralność sieci. Kiedy użytkownik inicjuje transakcję, jest ona transmitowana do sieci peer-to-peer.&lt;br/&gt;&lt;br/&gt;Węzły sieci weryfikują transakcję zgodnie z określonymi regułami konsensusu, a następnie dodają ją do nowego bloku. Blok jest następnie dodawany do łańcucha bloków, a transakcja staje się nieodwracalna. Poza kryptowalutami, blockchain znajduje zastosowanie w wielu dziedzinach, takich jak logistyka (śledzenie łańcucha dostaw), ochrona zdrowia (bezpieczne przechowywanie danych medycznych), zarządzanie tożsamością (cyfrowe dowody tożsamości), głosowania elektroniczne (bezpieczne i przejrzyste głosowanie) oraz w finansach (tokenizacja aktywów).
     </string>
     <string name="chapter1_5_title">
-        <b>Zalety kryptowalut</b>
+        &lt;b&gt;Zalety kryptowalut&lt;/b&gt;
     </string>
     <string name="chapter1_5">
-        \n<b>Decentralizacja:</b>\nKryptowaluty działają bez centralnego organu kontrolującego, co oznacza, że nie są one zależne od jednej instytucji czy rządu. Decentralizacja zapewnia większą niezależność i autonomię dla użytkowników.\n\n<b>Niskie koszty transakcji:</b>\nTransakcje kryptowalutowe są zazwyczaj tańsze niż tradycyjne metody płatności, co może być korzystne dla użytkowników, szczególnie w przypadku międzynarodowych przelewów.\n\n<b>Szybkość transakcji:</b>\nKryptowaluty umożliwiają szybkie przekazywanie wartości, nawet na skalę globalną, co sprawia, że są one atrakcyjne dla osób wymieniających środki w różnych częściach świata.\n\n<b>Bezpieczeństwo i prywatność:</b>\nMechanizmy kryptograficzne używane w kryptowalutach zapewniają wysoki poziom bezpieczeństwa i prywatności dla użytkowników, co może być szczególnie istotne w przypadku danych finansowych.\n\n<b>Łatwość dostępu:</b>\nKryptowaluty mogą umożliwić dostęp do usług finansowych osobom, które nie mają tradycyjnego dostępu do bankowości, co może przyczynić się do finansowej inkluzji.
+        &lt;br/&gt;&lt;b&gt;Decentralizacja:&lt;/b&gt;&lt;br/&gt;Kryptowaluty działają bez centralnego organu kontrolującego, co oznacza, że nie są one zależne od jednej instytucji czy rządu. Decentralizacja zapewnia większą niezależność i autonomię dla użytkowników.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Niskie koszty transakcji:&lt;/b&gt;&lt;br/&gt;Transakcje kryptowalutowe są zazwyczaj tańsze niż tradycyjne metody płatności, co może być korzystne dla użytkowników, szczególnie w przypadku międzynarodowych przelewów.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Szybkość transakcji:&lt;/b&gt;&lt;br/&gt;Kryptowaluty umożliwiają szybkie przekazywanie wartości, nawet na skalę globalną, co sprawia, że są one atrakcyjne dla osób wymieniających środki w różnych częściach świata.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Bezpieczeństwo i prywatność:&lt;/b&gt;&lt;br/&gt;Mechanizmy kryptograficzne używane w kryptowalutach zapewniają wysoki poziom bezpieczeństwa i prywatności dla użytkowników, co może być szczególnie istotne w przypadku danych finansowych.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Łatwość dostępu:&lt;/b&gt;&lt;br/&gt;Kryptowaluty mogą umożliwić dostęp do usług finansowych osobom, które nie mają tradycyjnego dostępu do bankowości, co może przyczynić się do finansowej inkluzji.
     </string>
     <string name="chapter1_6_title">
-        <b>Wady kryptowalut</b>
+        &lt;b&gt;Wady kryptowalut&lt;/b&gt;
     </string>
     <string name="chapter1_6">
-        \n<b>Wahania cen:</b>\nKryptowaluty są znane z ich dużych wahnięć cen, co może być ryzykiem dla inwestorów oraz użytkowników korzystających z nich jako formy płatności.\n\n<b>Regulacje prawne:</b>\nKryptowaluty napotykają różne wyzwania prawne i regulacyjne na różnych rynkach, co może prowadzić do niepewności co do ich statusu prawnego i zastosowania przepisów.\n\n<b>Bezpieczeństwo:</b>\nŚwiat kryptowalut narażony jest na różne zagrożenia związane z cyberatakami, kradzieżami i oszustwami, co może stanowić ryzyko dla użytkowników.\n\n<b>Wpływ na środowisko:</b>\nNiektóre procesy związane z kryptowalutami, szczególnie kopanie, mogą być bardzo energochłonne i negatywnie wpływać na środowisko naturalne.\n\n<b>Adopcja:</b>\nMimo licznych zalet, kryptowaluty napotykają trudności związane z ich adopcją w codziennym życiu i w świecie biznesu, co może być związane z brakiem świadomości, złożonością techniczną czy też niepewnością co do przyszłości rynku kryptowalut.
+        &lt;br/&gt;&lt;b&gt;Wahania cen:&lt;/b&gt;&lt;br/&gt;Kryptowaluty są znane z ich dużych wahnięć cen, co może być ryzykiem dla inwestorów oraz użytkowników korzystających z nich jako formy płatności.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Regulacje prawne:&lt;/b&gt;&lt;br/&gt;Kryptowaluty napotykają różne wyzwania prawne i regulacyjne na różnych rynkach, co może prowadzić do niepewności co do ich statusu prawnego i zastosowania przepisów.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Bezpieczeństwo:&lt;/b&gt;&lt;br/&gt;Świat kryptowalut narażony jest na różne zagrożenia związane z cyberatakami, kradzieżami i oszustwami, co może stanowić ryzyko dla użytkowników.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Wpływ na środowisko:&lt;/b&gt;&lt;br/&gt;Niektóre procesy związane z kryptowalutami, szczególnie kopanie, mogą być bardzo energochłonne i negatywnie wpływać na środowisko naturalne.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Adopcja:&lt;/b&gt;&lt;br/&gt;Mimo licznych zalet, kryptowaluty napotykają trudności związane z ich adopcją w codziennym życiu i w świecie biznesu, co może być związane z brakiem świadomości, zaufania czy znajomości technologii.
     </string>
 
 
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="chapter2_1_title">
+        &lt;b&gt;Pochodzenia blockchainu&lt;/b&gt;
+    </string>
+    <string name="chapter2_1">
+        Protokół Bitcoin, który został uruchomiony w 2009 roku, wprowadził możliwość transferu wartości w modelu peer-to-peer przez Internet, eliminując potrzebę korzystania z zaufanego pośrednika. Bitcoin stanowił pierwszą realizację technologii blockchain, gdy Satoshi Nakamoto, twórca Bitcoina działający pod pseudonimem, znalazł rozwiązanie dla problemu „podwójnego wydawania”, który dotyczy sytuacji, w której cyfrowe informacje mogą być łatwo kopiowane, co wcześniej wymagało istnienia scentralizowanego organu do monitorowania, gdzie znajdują się fundusze.&lt;br/&gt;&lt;br/&gt;
+        Mimo że Bitcoin efektywnie przenosi wartość i stanowi skuteczną formę zdecentralizowanego pieniądza, od samego początku dostrzegano, że podobna koncepcja może być wykorzystana do rejestrowania różnych rodzajów informacji na wspólnej platformie. Poza walutą, łańcuch bloków może przechowywać proste wiadomości, informacje o własności aktywów fizycznych i cyfrowych, papiery wartościowe, decyzje głosowania i inne.&lt;br/&gt;&lt;br/&gt;
+        Rewolucyjny wpływ Bitcoina oraz innych podobnych protokołów skłonił rządy, organy regulacyjne oraz branżę finansową do szybkiej analizy dotychczasowych paradygmatów. Z uwagi na fakt, że Bitcoin znajduje się poza kontrolą władz państwowych i finansowych oraz może być nadużywany jako narzędzie do oszustw, prania pieniędzy i innych nielegalnych działań, początkowe reakcje były pełne sceptycyzmu i zaniepokojenia. Jednak coraz większa liczba liderów zaczęła dostrzegać potencjał technologii blockchain oraz różnorodność zastosowań, do jakich nadaje się rozproszona księga.
+    </string>
+    <string name="chapter2_2_title">
+        &lt;b&gt;Co to jest blockchain?&lt;/b&gt;
+    </string>
+    <string name="chapter2_2">
+        &lt;b&gt;Blockchain&lt;/b&gt; to termin odnoszący się do nowoczesnej technologii rozproszonej księgi rachunkowej (DLT). Przez wiele lat tradycyjne, scentralizowane bazy danych były wykorzystywane przez różne podmioty, w tym rządy i międzynarodowe instytucje, do przechowywania informacji i rejestrowania transakcji. Te systemy są ściśle strzeżone i zamknięte, a jedynie autoryzowani użytkownicy mają prawo do wprowadzania danych oraz kontrolowania ich dokładności. Na przykład, gdy klient przekaże pieniądze z jednego konta bankowego na inne, prosi bank o dokonanie tej operacji w jego imieniu, zamiast bezpośrednio korzystać z bazy danych, która zarządza saldami. Centralizacja jest więc integralną częścią obecnego modelu.&lt;br/&gt;&lt;br/&gt;
+        W najprostszych słowach, blockchain jest cyfrową księgą, która jest przechowywana w sieci komputerów rozproszonych na całym świecie. Zamiast ograniczać dostęp do informacji, blockchain udostępnia je wszystkim użytkownikom, którzy przestrzegają ustalonych zasad. Na przykład, własność środków jest weryfikowana za pomocą kryptografii, a całkowita przejrzystość i wspólna kontrola systemu sprawiają, że wszelkie nieprawidłowe działania są szybko identyfikowane, a transakcje przesyłane przez złośliwe węzły są ignorowane.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+        &lt;b&gt;Kluczowe cechy&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+        Zdecentralizowana struktura blockchaina ma kilka istotnych cech, które odróżniają ją od tradycyjnych, scentralizowanych podejść:&lt;br/&gt;&lt;br/&gt;
+        &lt;b&gt;Przejrzystość&lt;/b&gt;: Każdy użytkownik ma możliwość śledzenia przepływu środków z jednego konta na drugie.&lt;br/&gt;&lt;br/&gt;
+        &lt;b&gt;Niezmienność&lt;/b&gt;: Po potwierdzeniu transakcji nie można jej cofnąć, a potwierdzone przelewy są nienaruszalne.&lt;br/&gt;&lt;br/&gt;
+        &lt;b&gt;Efektywność kosztowa&lt;/b&gt;: Opłaty transakcyjne są niskie i ustalane z góry przez nadawcę.&lt;br/&gt;&lt;br/&gt;
+        &lt;b&gt;Transgraniczność&lt;/b&gt;: Środki mogą być przesyłane równie łatwo do kogoś na drugim końcu świata, jak i do sąsiada w tym samym pomieszczeniu.&lt;br/&gt;&lt;br/&gt;
+        &lt;b&gt;Szybkość transakcji&lt;/b&gt;: Dzięki płaskiej i przejrzystej strukturze blockchaina, transfery są praktycznie natychmiastowe i zazwyczaj potwierdzane w ciągu kilku minut, a nie godzin czy dni.
+    </string>
+    <string name="chapter2_3_title">
+        &lt;b&gt;Co zapewnia blockchain&lt;/b&gt;
+    </string>
+    <string name="chapter2_3">
+        &lt;b&gt;Bezpieczeństwo&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+        &lt;b&gt;Blockchain&lt;/b&gt; zapewnia ochronę danych użytkowników dzięki zastosowaniu kryptografii, która koduje i dekoduje wiadomości oraz wykorzystuje podpisy cyfrowe, a także klucze prywatne i publiczne do uzyskania dostępu do tych informacji. Cechą charakterystyczną blockchaina jest jego niezmienność, co oznacza, że raz zatwierdzona transakcja nie może być cofnięta. Tylko użytkownicy posiadający odpowiednie klucze mogą inicjować transakcje z dostępnych sald, a zakończone transfery są odporne na ingerencję. Te właściwości sprzyjają audytom, dając pewność, że dane pozostały nienaruszone. Te korzyści mają zastosowanie nie tylko w kontekście finansów, ale również w przypadku wszelkich transakcji cyfrowych w Internecie.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+        &lt;b&gt;Decentralizacja&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+        &lt;b&gt;Decentralizacja&lt;/b&gt; polega na rozdzieleniu uprawnień decyzyjnych oraz odpowiedzialności pomiędzy wszystkie zaangażowane strony. Osiąga się to poprzez sieć Peer-to-Peer (P2P), składającą się z wielu komputerów rozmieszczonych geograficznie na całym świecie. System nie może funkcjonować na pojedynczym komputerze ani punkcie dostępu; zamiast tego, wymaga połączenia wielu innych maszyn do realizacji konkretnych zadań w sieci.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+        &lt;b&gt;Prywatność&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+        &lt;b&gt;Prywatność&lt;/b&gt; w Internecie odnosi się do praw oraz zasad związanych z danymi, które mogą identyfikować osoby, zwłaszcza w kontekście ich przechowywania, zmiany przeznaczenia, udostępniania stronom trzecim oraz wyświetlania. W skład danych wchodzą zarówno informacje umożliwiające identyfikację osób (PII), jak i inne dane, takie jak zachowania odwiedzających strony internetowe. Blockchain działa bez potrzeby identyfikacji użytkowników, pozwalając na stosowanie pseudonimów, które mogą różnić się od prawdziwych imion. Dzięki technologiom takim jak podpisy cyfrowe, kryptografia i haszowanie, użytkownicy mogą zachować prywatność, korzystając z adresów jako pseudonimów. W przyszłych wersjach technologii blockchain użytkownicy będą mieli pełną kontrolę nad tym, kto może widzieć i wykorzystywać ich dane osobowe, co różni się od obecnej sytuacji, w której aplikacje sprzedają informacje osobom trzecim.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+        &lt;b&gt;Przejrzystość&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+        &lt;b&gt;Blockchain&lt;/b&gt; działa jako publiczny rejestr, który pokazuje, kto jest właścicielem czego oraz jakie transakcje zostały przeprowadzone. Ta audytowalna i współdzielona księga pozwala każdemu śledzić ruchy transakcji i związane z nimi salda w całej sieci. Użytkownicy mogą przeglądać szczegóły transakcji i widzieć podział własności tokenów w danym blockchainie.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+        &lt;b&gt;Bez potrzeby zaufania&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+        &lt;b&gt;Zaufanie&lt;/b&gt; jest kluczowym elementem każdej transakcji. Tradycyjnie, aby mieć pewność, że otrzymasz to, co zamawiasz, potrzebny był pośrednik do przechowywania aktywów czy weryfikacji tożsamości. Blockchain eliminuje tę potrzebę, wprowadzając zaufanie poprzez masową współpracę oraz inteligentny kod, zamiast opierać się na instytucjach zajmujących się uwierzytelnianiem. Kryptografia i mechanizmy konsensusu pozwalają na bezpieczne transakcje, w których zaufanie przestaje być problemem.
+    </string>
+    <string name="chapter2_4_title">&lt;b&gt;Peer-to-Peer (P2P)&lt;/b&gt;</string>
+    <string name="chapter2_4">
+        &lt;b&gt;Protokół blockchain&lt;/b&gt; działa w sieci peer-to-peer (P2P), w której każdy klient łączy się z innymi uczestnikami. Głównym celem tej sieci jest rozprzestrzenianie transakcji i bloków do wszystkich uczestników korzystających z protokołu blockchain. Architektura P2P składa się z komputerów, które są częścią otwartej sieci i działają jako równorzędne węzły. Termin „peers” odnosi się do faktu, że każdy uczestnik ma równy status, co oznacza brak hierarchii i preferencji między węzłami, a wszystkie węzły dzielą się odpowiedzialnością za świadczenie usług sieciowych. W tej strukturze nie ma centralnych usług. Węzły w sieci P2P zarówno dostarczają, jak i korzystają z usług jednocześnie, co sprzyja wzajemnej współpracy i zachęca do aktywnego uczestnictwa. Sieci P2P są z natury odporne, zdecentralizowane i ogólnodostępne, co odzwierciedla kluczowe cechy technologii blockchain.&lt;br/&gt;&lt;br/&gt;
+        Każda aplikacja może przesłać nową transakcję do dowolnego innego klienta, z którym jest połączona, korzystając z różnych kanałów komunikacyjnych, zarówno przewodowych, jak i bezprzewodowych. Gdy węzeł otrzymuje nową, ważną transakcję, której wcześniej nie widział, natychmiast przesyła ją do innych węzłów, z którymi jest połączony. Dzięki temu transakcje szybko rozprzestrzeniają się w sieci P2P, docierając do wielu węzłów w ciągu kilku sekund. Taki system „siła w liczbach” zapewnia integralność protokołu i zabezpiecza sieć, eliminując ryzyko ataków na centralny punkt.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        &lt;b&gt;Węzły&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+        &lt;b&gt;Węzły&lt;/b&gt; współpracują, aby weryfikować informacje umieszczone w łańcuchu bloków, sprawdzając je z innymi połączonymi „blokami” danych. Po osiągnięciu konsensusu, aktualizują informacje i przekazują je do wszystkich pozostałych węzłów w sieci. Proces ten obejmuje nadawanie znaczników czasu informacjom, co pozwala na śledzenie zmian od ostatniej aktualizacji. Węzeł sygnalizuje zatwierdzenie aktualizacji, stosując hash, który łączy jego zatwierdzone aktualizacje z wcześniejszymi, co prowadzi do utworzenia łańcucha bloków, znanego jako blockchain.&lt;br/&gt;&lt;br/&gt;
+        Każdy pełny węzeł w sieci przechowuje kompletną kopię danych z łańcucha bloków i jest na bieżąco aktualizowany, co nazywa się rozproszoną księgą.
+    </string>
+    <string name="chapter2_5_title">&lt;b&gt;Protokół konsensusu&lt;/b&gt;</string>
+    <string name="chapter2_5">
+
+        &lt;b&gt;Łańcuchy&lt;/b&gt; bloków są budowane na podstawie wspólnego konsensusu uczestników protokołu, znanego jako zasady konsensusu, które regulują działanie blockchaina. Kluczowym pojęciem w tym kontekście jest „porozumienie”, co oznacza, że nawet jeśli strony mają różne opinie, istnieje ogólna zgoda na kontynuowanie działań w celu rozwiązania ewentualnych sporów. Protokoły konsensusu służą węzłom do uzgadniania zawartości łańcucha bloków. Wszystkie węzły muszą potwierdzić, że transakcja zweryfikowana przez sieć zostaje na stałe dodana do łańcucha bloków. Celem zasad konsensusu jest zapewnienie, że dany blockchain jest używany i przestrzegany przez wszystkich uczestników sieci bez konieczności posiadania centralnego, zaufanego organu. W przypadku poważnych nieporozumień w ramach protokołu konsensusu może dojść do hard forka, co skutkuje podziałem łańcucha bloków na dwa oddzielne łańcuchy.
+
+    </string>
+    <string name="chapter2_6_title">&lt;b&gt;Kryptograficzne mechanizmy w blockchainie&lt;/b&gt;</string>
+    <string name="chapter2_6">
+
+         &lt;b&gt;Klucze kryptograficzne&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+         W blockchainie, który działa na globalnych sieciach P2P, wykorzystuje się kryptografię do bezpiecznej transmisji danych, co zapewnia ochronę prywatności użytkowników oraz integralność przesyłanych informacji. Dzięki temu blockchain może weryfikować własność aktywów oraz chronić dane w sieci. Kryptografia jest integralną częścią protokołu, obejmującą wszystkie informacje przechowywane i przetwarzane w systemie. Użytkownicy otrzymują kryptograficzne dowody, które pomagają potwierdzić legalność roszczeń dotyczących zasobów w blockchainie.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+         &lt;b&gt;Szyfrowanie&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+         Algorytmy kryptograficzne, takie jak SHA256, gwarantują, że każda nawet drobna zmiana w transakcji prowadzi do obliczenia innego hashu, co jednoznacznie wskazuje na modyfikację w historii transakcji. Szyfrowanie jest kluczowym narzędziem w kryptografii, pozwalającym na uczynienie wiadomości nieczytelnymi dla osób nieuprawnionych, a ich odczyt jest możliwy tylko dla nadawcy i odbiorcy.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+
+         &lt;b&gt;Hashowanie&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+         Hashowanie zapewnia, że dane pozostają nienaruszone. To technika kryptograficzna, która przekształca dowolny rodzaj danych w unikalny ciąg znaków. Niezależnie od rozmiaru czy rodzaju danych, hash ma zawsze stałą długość. Proces ten działa jednokierunkowo, co oznacza, że można wygenerować hash na podstawie danych, ale nie da się odtworzyć oryginalnych danych z samego hashu. Każdy zestaw danych zawsze wygeneruje ten sam unikalny hash, co pozwala zweryfikować, czy dane nie uległy zmianie.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+         &lt;b&gt;Podpis cyfrowy&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+         W kryptografii asymetrycznej, znanej również jako kryptografia klucza publicznego, tworzy się parę kluczy: publiczny i prywatny. Klucz publiczny służy do generowania adresu do odbierania transakcji, a klucz prywatny do podpisywania tych transakcji. Podpisy cyfrowe odgrywają kluczową rolę w weryfikacji i potwierdzaniu własności zasobów w blockchainie. Dzięki nim użytkownik może podpisać transakcję, dowodząc, że jest właścicielem zasobu, a inne węzły w sieci mogą zweryfikować jego autentyczność.
+
+    </string>
+    <string name="chapter2_7_title">&lt;b&gt;Transakcje&lt;/b&gt;</string>
+    <string name="chapter2_7">
+
+          &lt;b&gt;Transakcja&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+          &lt;b&gt;Transakcja&lt;/b&gt; w blockchainie to proces przekazania informacji do sieci, że właściciel określonej liczby kryptowalut autoryzował ich transfer do innego użytkownika. Nowy właściciel może wydać te środki, tworząc kolejną transakcję, która przenosi własność dalej w łańcuchu. Zamiast tradycyjnej księgowości opartej na saldach, blockchain przechowuje pełny zapis transakcji, co pozwala na ustalenie salda w dowolnym momencie, jak i stanu całego łańcucha bloków.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+          &lt;b&gt;Niewydane transakcje wyjściowe (UTXO)&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+         Każda kryptowaluta jest reprezentowana przez niewydaną transakcję wyjściową (UTXO), co jest połączeniem identyfikatora transakcji (TxID) oraz numeru zamówienia z przypisaną wartością monety. Kiedy moneta zostaje wydana, np. wysłana do kogoś lub podzielona, staje się transakcją wyjściową (STXO). Tylko UTXO są aktywnymi monetami, natomiast STXO reprezentują środki z wcześniejszych transakcji, które nie są już ważne. Stan blockchaina opiera się na UTXO, a do wydania tych środków użytkownik musi udowodnić własność przy użyciu klucza prywatnego.
+    </string>
+    <string name="chapter2_8_title">&lt;b&gt;Proof-of-Work i Proof-of-Stake&lt;/b&gt;</string>
+    <string name="chapter2_8">
+
+        &lt;b&gt;Proof-of-Work (PoW)&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+        W centrum każdego protokołu konsensusu blockchain znajduje się algorytm obliczeń kryptograficznych, który określa dowód niezbędny do znalezienia następnego bloku, który zostanie dodany do łańcucha. Rozwiązanie zagadki kryptograficznej jest bardzo trudne do znalezienia, ale za to łatwe do weryfikacji.  &lt;b&gt;Proof-of-Work (PoW)&lt;/b&gt; był pierwszym tego rodzaju algorytmem, który został wprowadzony w protokole Bitcoina.&lt;br/&gt;&lt;br/&gt;
+        &lt;b&gt;PoW&lt;/b&gt; polega na rozwiązywaniu złożonych zagadek kryptograficznych, których rozwiązanie wymaga ogromnej mocy obliczeniowej. W  &lt;b&gt;PoW&lt;/b&gt; górnicy rywalizują o znalezienie specjalnej wartości zwanej nonce (losowa liczba używana jednorazowo, wstawiana do bloku, aby hash jego nagłówka spełniał określone wymagania). Górnicy w sieci Bitcoina ścigają się, by znaleźć numeryczne rozwiązanie tej zagadki, które spełnia aktualny poziom trudności. Ten, kto pierwszy znajdzie takie rozwiązanie, zdobywa prawo do dodania bloku do blockchaina i otrzymuje nagrodę w postaci nowo wygenerowanych monet.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        &lt;b&gt;Proof-of-Stake (PoS)&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+        &lt;b&gt;Proof-of-Stake (PoS)&lt;/b&gt; to bardziej energooszczędna alternatywa dla  &lt;b&gt;PoW&lt;/b&gt;, zaprojektowana, aby osiągnąć konsensus bez ogromnych nakładów obliczeniowych. W  &lt;b&gt;PoS&lt;/b&gt; nie ma wyścigu między górnikami o znalezienie kolejnego bloku. Zamiast tego, posiadacze monet „stawiają” (ang. stake) swoje monety, aby zyskać szansę na utworzenie następnego bloku.&lt;br/&gt;&lt;br/&gt;
+        Twórca nowego bloku jest wybierany losowo, jednak im więcej monet ktoś obstawia, tym większe ma szanse na wybranie. W  &lt;b&gt;PoS&lt;/b&gt;, zabezpieczeniem jest blokowanie środków na określony czas, co zmniejsza ryzyko oszustwa. PoS dąży również do tego, by dostosowywać poziom trudności wydobycia kolejnych bloków w zależności od mocy obliczeniowej (tzw. „moc mieszania”) dostępnej w sieci, aby utrzymać regularny czas tworzenia nowych bloków.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+    </string>
+
+
 
 
 </resources>

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark_blue"
+    android:background="@color/black"
     tools:context=".Chapter1test">
 
 
@@ -27,7 +27,6 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:fontFamily="casual"
             android:justificationMode="inter_word"
             android:text="PYTANIE"
             android:textColor="@color/white"
@@ -39,7 +38,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:fontFamily="casual"
             android:justificationMode="inter_word"
             android:text="timer"
             android:textColor="@color/white"
@@ -56,7 +54,6 @@
             android:layout_below="@id/questionNumber"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:fontFamily="casual"
             android:justificationMode="inter_word"
             android:text="Pytanie"
             android:textColor="@color/white"

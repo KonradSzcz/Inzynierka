@@ -9,42 +9,30 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.database.Cursor
+import androidx.fragment.app.viewModels
 import com.crypto.inzynierka.databinding.FragmentChapter13gameBinding
 import kotlin.random.Random
 
 class Chapter1_3game : Fragment() {
     private var _binding: FragmentChapter13gameBinding? = null
     private val binding get() = _binding!!
+    private val Vm by viewModels<MainViewModel>()
 
     private var selectedButtonLeft: Button? = null
     private var correctPairs = 0
     private var isMatching = false
 
-    private val leftOptions = listOf(
-        "Zdecentralizowanie",
-        "Anonimowość",
-        "Bezpośrednie transakcje",
-        "Ograniczona podaż"
-    )
+    // Baza danych
+    private lateinit var dbHelper: DBConnection
+    private var leftOptions = mutableListOf<String>()
+    private var rightOptions = mutableListOf<String>()
+    private val correctMatches = mutableMapOf<String, String>()
 
-    private val rightOptions = listOf(
-        "Tożsamość uczestników transakcji może pozostać nieujawniona",
-        "Istnieje ściśle określona\nilość jednostek waluty,\nktóra może zostać\nwytworzona",
-        "Brak kontroli przez jedną instytucję czy osobę",
-        "Kontrola sprawowana\nprzez rząd lub banki",
-        "Transakcje bez\npośrednictwa instytucji finansowych"
-    )
-
-    private val correctMatches = mapOf(
-        "Zdecentralizowanie" to "Brak kontroli przez jedną instytucję czy osobę",
-        "Anonimowość" to "Tożsamość uczestników transakcji może pozostać nieujawniona",
-        "Bezpośrednie transakcje" to "Transakcje bez\n" +
-                                    "pośrednictwa instytucji finansowych",
-        "Ograniczona podaż" to "Istnieje ściśle określona\n" +
-                                "ilość jednostek waluty,\n" +
-                                "która może zostać\n" +
-                                "wytworzona"
-    )
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        dbHelper = DBConnection(requireContext(), "cryptoDB",  MainViewModel.DB_VERSION)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -57,26 +45,64 @@ class Chapter1_3game : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        // Odczyt danych z bazy
+        loadFlashcardsData()
+
+        // Tasowanie i przypisywanie przycisków
         shuffleOptions()
         setLeftButtonsClickListeners()
         setRightButtonsClickListeners()
     }
 
+    private fun loadFlashcardsData() {
+        val db = dbHelper.readableDatabase
+        val cursor: Cursor = db.rawQuery(
+            "SELECT * FROM Flashcards WHERE Chapter = 'chapter1'",
+            null
+        )
+
+        if (cursor.moveToFirst()) {
+            do {
+                val concept = cursor.getString(cursor.getColumnIndexOrThrow("Concept"))
+                val definition = cursor.getString(cursor.getColumnIndexOrThrow("Definition"))
+
+                // Dodanie do list i mapy poprawnych dopasowań
+                leftOptions.add(concept)
+                rightOptions.add(definition)
+                correctMatches[concept] = definition
+            } while (cursor.moveToNext())
+        }
+        cursor.close()
+    }
+
     private fun shuffleOptions() {
-        // Shuffle left options
+        // Tasowanie przycisków po lewej
         val leftButtons = listOf(binding.option11, binding.option12, binding.option13, binding.option14)
         val shuffledLeftOptions = leftOptions.shuffled(Random(System.currentTimeMillis().toInt()))
+
+        // Sprawdź, ile elementów mamy w shuffledLeftOptions i przypisz je do przycisków
         for (i in leftButtons.indices) {
-            leftButtons[i].text = shuffledLeftOptions[i]
+            if (i < shuffledLeftOptions.size) {
+                leftButtons[i].text = shuffledLeftOptions[i]
+            } else {
+                leftButtons[i].visibility = View.GONE
+            }
         }
 
-        // Shuffle right options
-        val rightButtons = listOf(binding.option21, binding.option22, binding.option23, binding.option24, binding.option25)
+        // Tasowanie przycisków po prawej
+        val rightButtons = listOf(binding.option21, binding.option22, binding.option23, binding.option24 )
         val shuffledRightOptions = rightOptions.shuffled(Random(System.currentTimeMillis().toInt()))
+
+        // Sprawdź, ile elementów mamy w shuffledRightOptions i przypisz je do przycisków
         for (i in rightButtons.indices) {
-            rightButtons[i].text = shuffledRightOptions[i]
+            if (i < shuffledRightOptions.size) {
+                rightButtons[i].text = shuffledRightOptions[i]
+            } else {
+                rightButtons[i].visibility = View.GONE // Ukryj przycisk, jeśli nie ma więcej opcji
+            }
         }
     }
+
 
     private fun setLeftButtonsClickListeners() {
         val leftButtons = listOf(binding.option11, binding.option12, binding.option13, binding.option14)
@@ -84,7 +110,7 @@ class Chapter1_3game : Fragment() {
             button.setOnClickListener {
                 if (!isMatching) {
                     selectedButtonLeft?.setBackgroundColor(Color.parseColor("#2C74B3"))
-                    button.setBackgroundColor(Color.parseColor("#FFA500")) // Orange color
+                    button.setBackgroundColor(Color.parseColor("#FFA500")) // Kolor pomarańczowy
                     selectedButtonLeft = button
                 }
             }
@@ -92,7 +118,7 @@ class Chapter1_3game : Fragment() {
     }
 
     private fun setRightButtonsClickListeners() {
-        val rightButtons = listOf(binding.option21, binding.option22, binding.option23, binding.option24, binding.option25)
+        val rightButtons = listOf(binding.option21, binding.option22, binding.option23, binding.option24 )
         for (button in rightButtons) {
             button.setOnClickListener {
                 if (!isMatching) {
@@ -120,8 +146,8 @@ class Chapter1_3game : Fragment() {
             selectedButtonLeft = null
             isMatching = false
             correctPairs++
-            if (correctPairs == 4) {
-                replaceFragment(Chapter1_3test())
+            if (correctPairs == leftOptions.size) {
+                replaceFragment(Chapter1quiz(), 3)
             }
         }, 1000)
     }
@@ -138,7 +164,11 @@ class Chapter1_3game : Fragment() {
         }, 1000)
     }
 
-    private fun replaceFragment(fragment: Fragment) {
+    private fun replaceFragment(fragment: Fragment,chapter: Int) {
+        val args = Bundle().apply {
+            putInt("CurrentChapter", chapter)
+        }
+        fragment.arguments = args
         parentFragmentManager.beginTransaction()
             .replace(R.id.center, fragment)
             .commit()
