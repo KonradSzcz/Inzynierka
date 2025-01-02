@@ -1,0 +1,102 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/gradient">
+
+    <!-- Sekcja Kroku 1 -->
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WITAJ"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Co chciałbyś zrobić?"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginBottom="32dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/LoginButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Zaloguj się"
+                android:layout_marginEnd="20dp" />
+
+            <Button
+                android:id="@+id/RegisterButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Zarejestruj się"
+                android:layout_marginStart="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Sekcja Logowania/Rejestracji -->
+    <LinearLayout
+        android:id="@+id/authContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/tvAuthMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wiadomość akcji"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Wpisz login"
+            android:padding="8dp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btnAuthAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wykonaj akcję"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Powrót"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+</LinearLayout>

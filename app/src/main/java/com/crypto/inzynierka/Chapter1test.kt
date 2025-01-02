@@ -10,6 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import android.database.Cursor
+import android.widget.ImageView
 import androidx.fragment.app.viewModels
 import com.crypto.inzynierka.databinding.FragmentChapter1testBinding
 import kotlin.random.Random
@@ -29,15 +30,24 @@ class Chapter1test : Fragment() {
     private lateinit var dbHelper: DBConnection
     private lateinit var countDownTimer: CountDownTimer
 
+    private var CurrentChapter: Int = 1
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         dbHelper = DBConnection(requireContext(), "cryptoDB", MainViewModel.DB_VERSION)
-        loadQuestionsFromDB()
+
+        // Pobranie rozdziału przekazanego z argumentów
+        arguments?.let {
+            CurrentChapter = it.getInt("CurrentChapter", -1)
+            Log.d("Chapter1test", "Received chapter: $CurrentChapter")
+        }
+
+        loadQuestionsFromDB(CurrentChapter)
     }
 
-    private fun loadQuestionsFromDB() {
+    private fun loadQuestionsFromDB(chapter: Int) {
         val db = dbHelper.readableDatabase
-        val cursor: Cursor = db.rawQuery("SELECT * FROM ${DBConnection.TABLE_NAME_QUESTIONS} WHERE Chapter LIKE 'chapter1%'", null)
+        val cursor: Cursor = db.rawQuery("SELECT * FROM ${DBConnection.TABLE_NAME_QUESTIONS} WHERE Chapter LIKE 'chapter$chapter%'", null)
         if (cursor.moveToFirst()) {
             do {
                 val question = cursor.getString(cursor.getColumnIndexOrThrow(DBConnection.COL2_QUESTIONS))
@@ -93,6 +103,18 @@ class Chapter1test : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+
+
+        val imageResId = when (CurrentChapter) {
+            1 -> R.drawable.test1
+            2 -> R.drawable.test2
+            3 -> R.drawable.test3
+            4 -> R.drawable.test4
+            else -> R.drawable.test2
+        }
+        binding.imageView.setImageResource(imageResId)
+
 
         if (questions.isNotEmpty()) {
             displayQuestion()
@@ -160,9 +182,19 @@ class Chapter1test : Fragment() {
         binding.option2.isEnabled = enable
         binding.option3.isEnabled = enable
         binding.option4.isEnabled = enable
+
+        // Dodaj obsługę przycisków w MainActivity
+        val mainActivity = activity as? MainActivity
+        mainActivity?.let {
+            it.findViewById<ImageView>(R.id.profile)?.isEnabled = enable
+            it.findViewById<ImageView>(R.id.home)?.isEnabled = enable
+            it.findViewById<ImageView>(R.id.notifications)?.isEnabled = enable
+        }
     }
 
+
     private fun showResults() {
+        enableButtons(true)
         binding.linearLayout.visibility = View.INVISIBLE
         binding.nextChapter.visibility = View.VISIBLE
         binding.score.visibility = View.VISIBLE
@@ -171,23 +203,61 @@ class Chapter1test : Fragment() {
         val resultPercentage = (score.toFloat() / questions.size * 100).toInt()
         binding.score.text = "$resultPercentage%"
 
-        saveTestResult("chapter1", resultPercentage)
+        saveTestResult(CurrentChapter, resultPercentage)
     }
 
-    private fun saveTestResult(chapter: String, result: Int) {
+
+
+    private fun saveTestResult(chapter: Int, result: Int) {
         val db = dbHelper.writableDatabase
 
-        val values = ContentValues().apply {
-            put("Chapter", chapter)
-            put("Result", result)
-        }
+        // Sprawdzenie, czy istnieje wynik dla danego rozdziału
+        val cursor = db.rawQuery(
+            "SELECT Result FROM Results WHERE Chapter = ?",
+            arrayOf("chapter$chapter")
+        )
 
-        val newRowId = db.insert("Results", null, values)
+        if (cursor.moveToFirst()) {
+            val existingResult = cursor.getInt(cursor.getColumnIndexOrThrow("Result"))
+            cursor.close()
 
-        if (newRowId == -1L) {
-            Log.e("Chapter1test", "Error inserting new result")
+            // Sprawdzenie, czy nowy wynik jest wyższy
+            if (result > existingResult) {
+                val values = ContentValues().apply {
+                    put("Result", result)
+                }
+
+                val rowsUpdated = db.update(
+                    "Results",
+                    values,
+                    "Chapter = ?",
+                    arrayOf("chapter$chapter")
+                )
+
+                if (rowsUpdated > 0) {
+                    Log.d("Chapter1test", "Result updated for chapter$chapter: $result")
+                } else {
+                    Log.e("Chapter1test", "Error updating result for chapter$chapter")
+                }
+            } else {
+                Log.d("Chapter1test", "Existing result for chapter$chapter ($existingResult) is higher or equal. Not updating.")
+            }
         } else {
-            Log.d("Chapter1test", "Result saved with row id: $newRowId")
+            cursor.close()
+
+            // Jeśli wynik nie istnieje, wstawiamy nowy
+            val values = ContentValues().apply {
+                put("Chapter", "chapter$chapter")
+                put("Result", result)
+            }
+
+            val newRowId = db.insert("Results", null, values)
+
+            if (newRowId == -1L) {
+                Log.e("Chapter1test", "Error inserting new result for chapter$chapter")
+            } else {
+                Log.d("Chapter1test", "New result saved for chapter$chapter with row id: $newRowId")
+            }
         }
 
         db.close()

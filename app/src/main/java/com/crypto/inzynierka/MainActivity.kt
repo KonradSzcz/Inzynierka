@@ -13,6 +13,7 @@ import android.net.NetworkCapabilities
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
@@ -20,7 +21,7 @@ import androidx.fragment.app.viewModels
 import com.crypto.inzynierka.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+    lateinit var binding: ActivityMainBinding
     private lateinit var dbHelper: DBConnection
     private val Vm by viewModels<MainViewModel>()
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,15 +31,23 @@ class MainActivity : AppCompatActivity() {
 
         dbHelper = DBConnection(this, "cryptoDB", MainViewModel.DB_VERSION)
 
-        replaceFragment(Home())
-
         saveLoginDate()
+
+        displayUsernameTable()
 
         scheduleNotification()
 
-        syncAllResults()
+
+        if (isUserLoggedIn()) {
+            replaceFragment(Home())
+        } else {
+            SyncUsers(this)
+            replaceFragment(Login())
+            binding.frame.visibility = View.GONE
+        }
 
         if (isInternetAvailable(this)) {
+            syncAllResults()
             RemoteNotification(this)
         }
 
@@ -56,10 +65,20 @@ class MainActivity : AppCompatActivity() {
     private fun replaceFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction()
             .replace(R.id.center, fragment)
+            .addToBackStack(null)
             .commit()
     }
 
-    private fun saveLoginDate(){
+    override fun onBackPressed() {
+        if (supportFragmentManager.backStackEntryCount > 1) {
+            super.onBackPressed()
+        } else {
+            finish()
+        }
+    }
+
+
+    private fun saveLoginDate() {
         val currentTime = System.currentTimeMillis()
 
         val db = dbHelper.writableDatabase
@@ -107,50 +126,76 @@ class MainActivity : AppCompatActivity() {
         cursor.close()
         db.close()
 
-        // Oblicz czas, kiedy należy wysłać powiadomienie
-        val notificationTime = lastLoginDate + 60_000
+        val notificationTime = lastLoginDate + 24 * 60 * 60 * 1000 // 24 hours in milliseconds
         val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
         val intent = Intent(this, NotificationReceiver::class.java)
-        val pendingIntent = PendingIntent.getBroadcast(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT)
 
-        // Ustaw alarm
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
-            alarmManager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, notificationTime, pendingIntent)
+        val pendingIntent = PendingIntent.getBroadcast(
+            this,
+            0,
+            intent,
+            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+        )
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            alarmManager.setExactAndAllowWhileIdle(
+                AlarmManager.RTC_WAKEUP,
+                notificationTime,
+                pendingIntent
+            )
         } else {
             alarmManager.setExact(AlarmManager.RTC_WAKEUP, notificationTime, pendingIntent)
         }
     }
 
+
+
     fun syncAllResults() {
         val db = dbHelper.readableDatabase
 
-        // Synchronizacja tabeli Results
-        val cursorResults: Cursor = db.rawQuery("SELECT * FROM Results", null)
+        // Pobierz nazwę użytkownika, gdzie Flag = 1
+        val cursorUser = db.rawQuery("SELECT Username FROM Username WHERE Flag = 1 LIMIT 1", null)
+        var username: String? = null
+        if (cursorUser.moveToFirst()) {
+            username = cursorUser.getString(cursorUser.getColumnIndexOrThrow("Username"))
+        }
+        cursorUser.close()
 
-        if (cursorResults.moveToFirst()) {
-            do {
-                val chapter: String = cursorResults.getString(cursorResults.getColumnIndexOrThrow("Chapter"))
-                val result: String = cursorResults.getString(cursorResults.getColumnIndexOrThrow("Result"))
-
-                RemoteDBHelper(this, chapter, result, "", "Results")
-            } while (cursorResults.moveToNext())
+        if (username == null) {
+            Log.e("syncAllResults", "Brak aktywnego użytkownika z Flag = 1")
+            db.close()
+            return
         }
 
+        Log.d("syncAllResults", "Synchronizacja dla użytkownika: $username")
+
+        // Synchronizacja tabeli Results
+        val cursorResults: Cursor = db.rawQuery("SELECT * FROM Results", null)
+        if (cursorResults.moveToFirst()) {
+            do {
+                val chapter: String =
+                    cursorResults.getString(cursorResults.getColumnIndexOrThrow("Chapter"))
+                val result: String =
+                    cursorResults.getString(cursorResults.getColumnIndexOrThrow("Result"))
+
+                RemoteDBHelper(this, username, chapter, result, "", "Results")
+            } while (cursorResults.moveToNext())
+        }
         cursorResults.close()
 
         // Synchronizacja tabeli Tests
         val cursorTests: Cursor = db.rawQuery("SELECT * FROM Tests", null)
-
         if (cursorTests.moveToFirst()) {
             do {
-                val chapter: String = cursorTests.getString(cursorTests.getColumnIndexOrThrow("Chapter"))
+                val chapter: String =
+                    cursorTests.getString(cursorTests.getColumnIndexOrThrow("Chapter"))
                 val test: String = cursorTests.getString(cursorTests.getColumnIndexOrThrow("Test"))
-                val result: String = cursorTests.getString(cursorTests.getColumnIndexOrThrow("Result"))
+                val result: String =
+                    cursorTests.getString(cursorTests.getColumnIndexOrThrow("Result"))
 
-                RemoteDBHelper(this, chapter, result, test, "Tests")
+                RemoteDBHelper(this, username, chapter, result, test, "Tests")
             } while (cursorTests.moveToNext())
         }
-
         cursorTests.close()
 
         db.close()
@@ -177,4 +222,35 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+
+    private fun isUserLoggedIn(): Boolean {
+        val db = dbHelper.readableDatabase
+        val cursor = db.rawQuery("SELECT Flag FROM Username WHERE Flag = 1 LIMIT 1", null)
+        val isLoggedIn = cursor.moveToFirst() && cursor.getInt(0) == 1
+        cursor.close()
+        db.close()
+        return isLoggedIn
+    }
+
+    fun displayUsernameTable() {
+        val db = dbHelper.readableDatabase
+
+        val cursor = db.rawQuery("SELECT * FROM Tests", null)
+
+        if (cursor.moveToFirst()) {
+            do {
+                val id = cursor.getInt(cursor.getColumnIndexOrThrow("ID"))
+                val chapter = cursor.getString(cursor.getColumnIndexOrThrow("Chapter"))
+                val test = cursor.getString(cursor.getColumnIndexOrThrow("Test"))
+                val result = cursor.getString(cursor.getColumnIndexOrThrow("Result"))
+
+                Log.d("TestsTable", "ID: $id, Chapter: $chapter, Test: $test, Result: $result")
+            } while (cursor.moveToNext())
+        } else {
+            Log.d("TestsTable", "Tabela 'Tests' jest pusta.")
+        }
+
+        cursor.close()
+        db.close()
+    }
 }

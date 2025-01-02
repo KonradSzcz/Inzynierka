@@ -88,6 +88,14 @@ class Chapter2 : Fragment() {
                 replaceFragment(Chapter2quiz(),8)
             }
         }
+
+        binding.scrollView.setOnScrollChangeListener { v, scrollX, scrollY, oldScrollX, 	oldScrollY ->
+            val length = binding.scrollView.getChildAt(0).height - binding.scrollView.height
+            binding.progressbar.apply {
+                max = length
+                progress = scrollY
+            }
+        }
     }
     private fun replaceFragment(fragment: Fragment,chapter: Int) {
         val args = Bundle().apply {

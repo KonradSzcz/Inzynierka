@@ -6,9 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.database.Cursor
+import android.text.Html
 import android.util.Log
 import androidx.fragment.app.viewModels
 import com.crypto.inzynierka.databinding.FragmentBlockchainBinding
+import kotlin.math.floor
 
 
 class Blockchain : Fragment() {
@@ -38,6 +40,49 @@ class Blockchain : Fragment() {
 
         updateProgressBar()
 
+
+        val fullText1 = Html.fromHtml(getString(R.string.chapter2_3), Html.FROM_HTML_MODE_COMPACT).toString()
+        val lines1 = fullText1.lines()
+        val visibleText1 = if (lines1.size > 2) {
+            lines1.drop(2).joinToString("\n")
+        } else {
+            fullText1
+        }
+
+        val fullText2 = Html.fromHtml(getString(R.string.chapter2_6), Html.FROM_HTML_MODE_COMPACT).toString()
+        val lines2 = fullText2.lines()
+        val visibleText2 = if (lines2.size > 2) {
+            lines2.drop(2).joinToString("\n")
+        } else {
+            fullText2
+        }
+
+        val fullText3 = Html.fromHtml(getString(R.string.chapter2_7), Html.FROM_HTML_MODE_COMPACT).toString()
+        val lines3 = fullText3.lines()
+        val visibleText3 = if (lines3.size > 2) {
+            lines3.drop(2).joinToString("\n")
+        } else {
+            fullText3
+        }
+
+        val fullText4 = Html.fromHtml(getString(R.string.chapter2_8), Html.FROM_HTML_MODE_COMPACT).toString()
+        val lines4 = fullText4.lines()
+        val visibleText4 = if (lines4.size > 2) {
+            lines4.drop(2).joinToString("\n")
+        } else {
+            fullText4
+        }
+
+
+        binding.rozdzial1content.text = Html.fromHtml(getString(R.string.chapter2_1), Html.FROM_HTML_MODE_COMPACT)
+        binding.rozdzial2content.text = Html.fromHtml(getString(R.string.chapter2_2), Html.FROM_HTML_MODE_COMPACT)
+        binding.rozdzial3content.text = Html.fromHtml(visibleText1, Html.FROM_HTML_MODE_COMPACT)
+        binding.rozdzial4content.text = Html.fromHtml(getString(R.string.chapter2_4), Html.FROM_HTML_MODE_COMPACT)
+        binding.rozdzial5content.text = Html.fromHtml(getString(R.string.chapter2_5), Html.FROM_HTML_MODE_COMPACT)
+        binding.rozdzial6content.text = Html.fromHtml(visibleText2, Html.FROM_HTML_MODE_COMPACT)
+        binding.rozdzial7content.text = Html.fromHtml(visibleText3, Html.FROM_HTML_MODE_COMPACT)
+        binding.rozdzial8content.text = Html.fromHtml(visibleText4, Html.FROM_HTML_MODE_COMPACT)
+
         binding.section1.setOnClickListener {
             replaceFragment(Chapter2(),1)
         }
@@ -62,7 +107,12 @@ class Blockchain : Fragment() {
         binding.section8.setOnClickListener {
             replaceFragment(Chapter2(),8)
         }
-
+        binding.test.setOnClickListener {
+            replaceFragment(Tests(),0)
+        }
+        binding.game.setOnClickListener {
+            replaceFragment(Chapter1_3game(),2)
+        }
     }
 
     private fun loadDataIntoArray() {
@@ -110,44 +160,46 @@ class Blockchain : Fragment() {
     }
 
     private fun updateReadIndicators() {
-        // Sprawdzanie każdego rekordu i ustawianie odpowiedniego wskaźnika.
         var completedChapters = 0
 
         for (i in dataArray.indices) {
             val testNumber = dataArray[i][1]?.toIntOrNull()
 
             when (testNumber) {
-                1 -> binding.readIndicator1.setImageResource(R.drawable.baseline_beenhere_24)
-                2 -> binding.readIndicator2.setImageResource(R.drawable.baseline_beenhere_24)
-                3 -> binding.readIndicator3.setImageResource(R.drawable.baseline_beenhere_24)
-                4 -> binding.readIndicator4.setImageResource(R.drawable.baseline_beenhere_24)
-                5 -> binding.readIndicator5.setImageResource(R.drawable.baseline_beenhere_24)
-                6 -> binding.readIndicator6.setImageResource(R.drawable.baseline_beenhere_24)
-                7 -> binding.readIndicator7.setImageResource(R.drawable.baseline_beenhere_24)
-                8 -> binding.readIndicator8.setImageResource(R.drawable.baseline_beenhere_24)
+                1 -> binding.readIndicator1.setImageResource(R.drawable.baseline_check_circle_24)
+                2 -> binding.readIndicator2.setImageResource(R.drawable.baseline_check_circle_24)
+                3 -> binding.readIndicator3.setImageResource(R.drawable.baseline_check_circle_24)
+                4 -> binding.readIndicator4.setImageResource(R.drawable.baseline_check_circle_24)
+                5 -> binding.readIndicator5.setImageResource(R.drawable.baseline_check_circle_24)
+                6 -> binding.readIndicator6.setImageResource(R.drawable.baseline_check_circle_24)
+                7 -> binding.readIndicator7.setImageResource(R.drawable.baseline_check_circle_24)
+                8 -> binding.readIndicator8.setImageResource(R.drawable.baseline_check_circle_24)
             }
 
-            // Zliczanie zakończonych rozdziałów
             completedChapters++
         }
 
-        // Ustawienie tekstu na podstawie liczby pozostałych rozdziałów.
         binding.endedchapters.text = "Pozostałe rozdziały: ${8 - completedChapters}"
     }
 
     private fun updateProgressBar() {
         binding.progressBar.apply {
-            max = 10
+            max = 8
             progress = dataArray.size
+
+            val progressPercentage = (progress.toFloat() / max) * 100
+            val roundedPercentage = floor(progressPercentage).toInt()
+            binding.progressTextView.text = "$roundedPercentage%"
         }
     }
-    private fun replaceFragment(fragment: Fragment,chapter: Int) {
+    private fun replaceFragment(fragment: Fragment, chapter: Int) {
         val args = Bundle().apply {
             putInt("CurrentChapter", chapter)
         }
         fragment.arguments = args
         parentFragmentManager.beginTransaction()
             .replace(R.id.center, fragment)
+            .addToBackStack(null) // Dodaje operację do stosu powrotu
             .commit()
     }
 

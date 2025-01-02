@@ -10,12 +10,13 @@ import android.content.Intent
 import android.database.sqlite.SQLiteDatabase
 import androidx.core.app.NotificationCompat
 import android.util.Log
+import kotlin.random.Random
 
 class NotificationReceiver : BroadcastReceiver() {
     private lateinit var dbHelper: DBConnection
 
     override fun onReceive(context: Context, intent: Intent) {
-        dbHelper = DBConnection(context, "cryptoDB", 13)
+        dbHelper = DBConnection(context, "cryptoDB", MainViewModel.DB_VERSION)
 
         sendNotification(context)
     }
@@ -36,8 +37,18 @@ class NotificationReceiver : BroadcastReceiver() {
             context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
         )
 
-        val notificationTitle = "Powiadomienie"
-        val notificationContent = "Minęła 1 minuta od ostatniego zalogowania."
+        // Lista treści powiadomień
+        val notificationMessages = listOf(
+            "Czas na kolejną lekcję!",
+            "Nie przegap swojej szansy na naukę!",
+            "Sprawdź, co nowego możesz się nauczyć dzisiaj!"
+        )
+
+        // Losowanie treści
+        val randomIndex = Random.nextInt(notificationMessages.size)
+        val notificationContent = notificationMessages[randomIndex]
+
+        val notificationTitle = "Cześć"
 
         val notification = NotificationCompat.Builder(context, "default")
             .setSmallIcon(R.drawable.profile_icon)
@@ -55,7 +66,7 @@ class NotificationReceiver : BroadcastReceiver() {
     }
 
     fun sendRemoteNotification(context: Context, title: String, content: String) {
-        dbHelper = DBConnection(context, "cryptoDB", 13)
+        dbHelper = DBConnection(context, "cryptoDB", MainViewModel.DB_VERSION)
 
         val channelId = "remote_notifications"
 
@@ -86,7 +97,7 @@ class NotificationReceiver : BroadcastReceiver() {
         val notificationManager = context.getSystemService(NotificationManager::class.java)
         notificationManager.notify(System.currentTimeMillis().toInt(), notification)
 
-        saveNotificationToDatabase(title,content)
+        saveNotificationToDatabase(title, content)
     }
 
     fun saveNotificationToDatabase(title: String, content: String) {

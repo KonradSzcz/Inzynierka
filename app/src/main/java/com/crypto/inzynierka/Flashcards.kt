@@ -8,11 +8,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.CheckBox
+import androidx.core.os.postDelayed
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
 import com.crypto.inzynierka.databinding.FragmentFlashcardsBinding
+import nl.dionsegijn.konfetti.core.Party
+import nl.dionsegijn.konfetti.core.Position
+import nl.dionsegijn.konfetti.core.emitter.Emitter
+import java.util.concurrent.TimeUnit
 
 class Flashcards : Fragment() {
     private var _binding: FragmentFlashcardsBinding? = null
@@ -50,11 +55,10 @@ class Flashcards : Fragment() {
         }
         cursor.close()
 
-        // Update initial card count and reset right swipe count
         initialCardCount = flashcards.size
         rightSwipeCount = 0
-        adapter.notifyDataSetChanged() // Refresh the adapter with new data
-        updateCardCounter() // Update the card counter
+        adapter.notifyDataSetChanged()
+        updateCardCounter()
     }
 
     override fun onCreateView(
@@ -68,6 +72,16 @@ class Flashcards : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val konfettiParty = Party(
+            speed = 0f,
+            maxSpeed = 30f,
+            damping = 0.9f,
+            spread = 360,
+            colors = listOf(0xfce18a, 0xff726d, 0xf4306d, 0xb48def),
+            emitter = Emitter(duration = 100, TimeUnit.MILLISECONDS).max(100),
+            position = Position.Relative(0.5, 0.3)
+        )
+
         adapter = FlashcardAdapter(flashcards)
         binding.recyclerView.layoutManager = OverlayLayoutManager()
         binding.recyclerView.adapter = adapter
@@ -77,10 +91,10 @@ class Flashcards : Fragment() {
         val checkBoxChapter3 = view.findViewById<CheckBox>(R.id.checkbox_chapter3)
         val checkBoxChapter4 = view.findViewById<CheckBox>(R.id.checkbox_chapter4)
 
-        // Initial load of all flashcards
         loadFlashcardsFromDatabase(emptyList())
 
-        // Update flashcards when any checkbox state changes
+        enableCheckboxes()
+
         val onChapterSelectionChanged = {
             val selectedChapters = mutableListOf<String>()
             if (checkBoxChapter1.isChecked) selectedChapters.add("chapter1")
@@ -123,13 +137,26 @@ class Flashcards : Fragment() {
                 }
                 adapter.notifyDataSetChanged()
                 updateCardCounter()
-
                 if (rightSwipeCount == initialCardCount) {
+                    disableCheckboxes()
                     Handler(Looper.getMainLooper()).postDelayed({
-                        if (isAdded) {
-                            replaceFragment(Home())
+                        if (isAdded && !isDetached) {
+                            binding.konfettiView.start(konfettiParty)
+                            Handler(Looper.getMainLooper()).postDelayed({
+                                if (isAdded && !isDetached) {
+                                    binding.konfettiView.start(konfettiParty)
+                                }
+                            }, 700)
                         }
-                    }, 5000)
+                    }, 100)
+
+                    Handler(Looper.getMainLooper()).postDelayed({
+                        if (isAdded && !isDetached) {
+                            parentFragmentManager.beginTransaction()
+                                .replace(R.id.center, Home())
+                                .commitAllowingStateLoss()
+                        }
+                    }, 2500)
                 }
             }
         })
@@ -143,6 +170,21 @@ class Flashcards : Fragment() {
         val updatedFlashcard = flashcard.copy(third = newLine)
         flashcards[position] = updatedFlashcard
     }
+
+    private fun disableCheckboxes() {
+        binding.checkboxChapter1.isEnabled = false
+        binding.checkboxChapter2.isEnabled = false
+        binding.checkboxChapter3.isEnabled = false
+        binding.checkboxChapter4.isEnabled = false
+    }
+
+    private fun enableCheckboxes() {
+        binding.checkboxChapter1.isEnabled = true
+        binding.checkboxChapter2.isEnabled = true
+        binding.checkboxChapter3.isEnabled = true
+        binding.checkboxChapter4.isEnabled = true
+    }
+
 
     private fun updateCardCounter() {
         binding.cardCounter.text = "$rightSwipeCount / $initialCardCount"

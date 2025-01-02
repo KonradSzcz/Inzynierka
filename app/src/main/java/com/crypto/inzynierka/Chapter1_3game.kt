@@ -13,6 +13,10 @@ import android.database.Cursor
 import androidx.fragment.app.viewModels
 import com.crypto.inzynierka.databinding.FragmentChapter13gameBinding
 import kotlin.random.Random
+import nl.dionsegijn.konfetti.core.Party
+import nl.dionsegijn.konfetti.core.Position
+import nl.dionsegijn.konfetti.core.emitter.Emitter
+import java.util.concurrent.TimeUnit
 
 class Chapter1_3game : Fragment() {
     private var _binding: FragmentChapter13gameBinding? = null
@@ -22,6 +26,7 @@ class Chapter1_3game : Fragment() {
     private var selectedButtonLeft: Button? = null
     private var correctPairs = 0
     private var isMatching = false
+    private var CurrentChapter: Int = 1
 
     // Baza danych
     private lateinit var dbHelper: DBConnection
@@ -31,7 +36,7 @@ class Chapter1_3game : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        dbHelper = DBConnection(requireContext(), "cryptoDB",  MainViewModel.DB_VERSION)
+        dbHelper = DBConnection(requireContext(), "cryptoDB", MainViewModel.DB_VERSION)
     }
 
     override fun onCreateView(
@@ -40,15 +45,29 @@ class Chapter1_3game : Fragment() {
     ): View? {
         _binding = FragmentChapter13gameBinding.inflate(inflater, container, false)
         return binding.root
+
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Odczyt danych z bazy
-        loadFlashcardsData()
+        arguments?.let {
+            CurrentChapter = it.getInt("CurrentChapter", 1)
+        }
 
-        // Tasowanie i przypisywanie przycisków
+        resetButtonColors()
+
+        val imageResId = when (CurrentChapter) {
+            1 -> R.drawable.test1
+            2 -> R.drawable.test2
+            3 -> R.drawable.test3
+            4 -> R.drawable.test4
+            else -> R.drawable.test2
+        }
+        binding.imageView.setImageResource(imageResId)
+
+        loadFlashcardsData()
         shuffleOptions()
         setLeftButtonsClickListeners()
         setRightButtonsClickListeners()
@@ -57,16 +76,16 @@ class Chapter1_3game : Fragment() {
     private fun loadFlashcardsData() {
         val db = dbHelper.readableDatabase
         val cursor: Cursor = db.rawQuery(
-            "SELECT * FROM Flashcards WHERE Chapter = 'chapter1'",
-            null
+            "SELECT * FROM Flashcards WHERE Chapter = ?",
+            arrayOf("chapter$CurrentChapter")
         )
+
 
         if (cursor.moveToFirst()) {
             do {
                 val concept = cursor.getString(cursor.getColumnIndexOrThrow("Concept"))
                 val definition = cursor.getString(cursor.getColumnIndexOrThrow("Definition"))
 
-                // Dodanie do list i mapy poprawnych dopasowań
                 leftOptions.add(concept)
                 rightOptions.add(definition)
                 correctMatches[concept] = definition
@@ -76,33 +95,39 @@ class Chapter1_3game : Fragment() {
     }
 
     private fun shuffleOptions() {
-        // Tasowanie przycisków po lewej
         val leftButtons = listOf(binding.option11, binding.option12, binding.option13, binding.option14)
-        val shuffledLeftOptions = leftOptions.shuffled(Random(System.currentTimeMillis().toInt()))
+        val rightButtons = listOf(binding.option21, binding.option22, binding.option23, binding.option24)
 
-        // Sprawdź, ile elementów mamy w shuffledLeftOptions i przypisz je do przycisków
+        val allPairs = leftOptions.zip(rightOptions)
+
+        val selectedPairs = allPairs.shuffled(Random(System.currentTimeMillis().toInt())).take(4)
+
+        val selectedLeftOptions = selectedPairs.map { it.first }
+        val selectedRightOptions = selectedPairs.map { it.second }.shuffled(Random(System.currentTimeMillis().toInt()))
+
+        correctMatches.clear()
+        for ((concept, definition) in selectedPairs) {
+            correctMatches[concept] = definition
+        }
+
         for (i in leftButtons.indices) {
-            if (i < shuffledLeftOptions.size) {
-                leftButtons[i].text = shuffledLeftOptions[i]
+            if (i < selectedLeftOptions.size) {
+                leftButtons[i].text = selectedLeftOptions[i]
+                leftButtons[i].visibility = View.VISIBLE
             } else {
                 leftButtons[i].visibility = View.GONE
             }
         }
 
-        // Tasowanie przycisków po prawej
-        val rightButtons = listOf(binding.option21, binding.option22, binding.option23, binding.option24 )
-        val shuffledRightOptions = rightOptions.shuffled(Random(System.currentTimeMillis().toInt()))
-
-        // Sprawdź, ile elementów mamy w shuffledRightOptions i przypisz je do przycisków
         for (i in rightButtons.indices) {
-            if (i < shuffledRightOptions.size) {
-                rightButtons[i].text = shuffledRightOptions[i]
+            if (i < selectedRightOptions.size) {
+                rightButtons[i].text = selectedRightOptions[i]
+                rightButtons[i].visibility = View.VISIBLE
             } else {
-                rightButtons[i].visibility = View.GONE // Ukryj przycisk, jeśli nie ma więcej opcji
+                rightButtons[i].visibility = View.GONE
             }
         }
     }
-
 
     private fun setLeftButtonsClickListeners() {
         val leftButtons = listOf(binding.option11, binding.option12, binding.option13, binding.option14)
@@ -110,7 +135,7 @@ class Chapter1_3game : Fragment() {
             button.setOnClickListener {
                 if (!isMatching) {
                     selectedButtonLeft?.setBackgroundColor(Color.parseColor("#2C74B3"))
-                    button.setBackgroundColor(Color.parseColor("#FFA500")) // Kolor pomarańczowy
+                    button.setBackgroundColor(Color.parseColor("#FFA500"))
                     selectedButtonLeft = button
                 }
             }
@@ -118,7 +143,7 @@ class Chapter1_3game : Fragment() {
     }
 
     private fun setRightButtonsClickListeners() {
-        val rightButtons = listOf(binding.option21, binding.option22, binding.option23, binding.option24 )
+        val rightButtons = listOf(binding.option21, binding.option22, binding.option23, binding.option24)
         for (button in rightButtons) {
             button.setOnClickListener {
                 if (!isMatching) {
@@ -140,17 +165,71 @@ class Chapter1_3game : Fragment() {
     private fun highlightCorrectMatch(leftButton: Button, rightButton: Button) {
         leftButton.setBackgroundColor(Color.GREEN)
         rightButton.setBackgroundColor(Color.GREEN)
+
         Handler(Looper.getMainLooper()).postDelayed({
             leftButton.visibility = View.GONE
             rightButton.visibility = View.GONE
             selectedButtonLeft = null
             isMatching = false
             correctPairs++
-            if (correctPairs == leftOptions.size) {
-                replaceFragment(Chapter1quiz(), 3)
+            if (correctPairs == 4) {
+                // Pierwsze konfetti
+                val konfettiParty1 = Party(
+                    speed = 0f,
+                    maxSpeed = 30f,
+                    damping = 0.9f,
+                    spread = 360,
+                    colors = listOf(0xfce18a, 0xff726d, 0xf4306d, 0xb48def),
+                    emitter = Emitter(duration = 100, TimeUnit.MILLISECONDS).max(100),
+                    position = Position.Relative(0.5, 0.3)
+                )
+                binding.konfettiView.start(konfettiParty1)
+
+                // Drugie konfetti po krótkim opóźnieniu
+                Handler(Looper.getMainLooper()).postDelayed({
+                    if (isAdded && !isDetached) {
+                        val konfettiParty2 = Party(
+                            speed = 0f,
+                            maxSpeed = 30f,
+                            damping = 0.9f,
+                            spread = 360,
+                            colors = listOf(0xfce18a, 0xff726d, 0xf4306d, 0xb48def),
+                            emitter = Emitter(duration = 100, TimeUnit.MILLISECONDS).max(100),
+                            position = Position.Relative(0.5, 0.3)
+                        )
+                        binding.konfettiView.start(konfettiParty2)
+                        // Opóźnienie przed zmianą fragmentu
+                        Handler(Looper.getMainLooper()).postDelayed({
+                            if (isAdded && !isDetached) {
+                                when (CurrentChapter) {
+                                    1 -> replaceFragment(Introduction(), 0)
+                                    2 -> replaceFragment(Blockchain(), 0)
+                                    3 -> replaceFragment(Bitcoin(), 0)
+                                    4 -> replaceFragment(Ethereum(), 0)
+                                }
+                            }
+
+                        }, 1500)
+                    }
+                }, 700)
             }
         }, 1000)
     }
+
+    private fun resetButtonColors() {
+        binding.option11.setBackgroundColor(Color.parseColor("#2C74B3"))
+        binding.option12.setBackgroundColor(Color.parseColor("#2C74B3"))
+        binding.option13.setBackgroundColor(Color.parseColor("#2C74B3"))
+        binding.option14.setBackgroundColor(Color.parseColor("#2C74B3"))
+
+        binding.option21.setBackgroundColor(Color.parseColor("#2C74B3"))
+        binding.option22.setBackgroundColor(Color.parseColor("#2C74B3"))
+        binding.option23.setBackgroundColor(Color.parseColor("#2C74B3"))
+        binding.option24.setBackgroundColor(Color.parseColor("#2C74B3"))
+
+    }
+
+
 
     private fun highlightIncorrectMatch(leftButton: Button, rightButton: Button) {
         leftButton.setBackgroundColor(Color.RED)
@@ -164,7 +243,7 @@ class Chapter1_3game : Fragment() {
         }, 1000)
     }
 
-    private fun replaceFragment(fragment: Fragment,chapter: Int) {
+    private fun replaceFragment(fragment: Fragment, chapter: Int) {
         val args = Bundle().apply {
             putInt("CurrentChapter", chapter)
         }

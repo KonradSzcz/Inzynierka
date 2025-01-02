@@ -31,7 +31,6 @@ class Chapter1quiz : Fragment() {
         super.onCreate(savedInstanceState)
         dbHelper = DBConnection(requireContext(), "cryptoDB", MainViewModel.DB_VERSION)
 
-        // Przekazana wartośćł rozdziału
         arguments?.let {
             CurrentChapter = it.getInt("CurrentChapter", 1)
         }
@@ -123,13 +122,14 @@ class Chapter1quiz : Fragment() {
             checkAnswer(3)
         }
 
-        if (CurrentChapter < 6) {
+        if (CurrentChapter < 8) {
             binding.nextChapter.setOnClickListener {
                 replaceFragment(Chapter1(), CurrentChapter + 1)
             }
         } else {
+            binding.nextChapter.text = "Sprawdzian"
             binding.nextChapter.setOnClickListener {
-                replaceFragment(Chapter1test(), 0)
+                replaceFragment(Chapter1test(), 1)
             }
         }
     }
@@ -173,7 +173,7 @@ class Chapter1quiz : Fragment() {
         binding.pytanie.text = "Twój wynik"
         binding.score.text = "$score / ${questions.size}"
 
-        if (score >= 0.75 * questions.size) {
+        if (score >= 0.5 * questions.size) {
             saveResult()
         }
     }
@@ -214,7 +214,7 @@ class Chapter1quiz : Fragment() {
         // Sprawdź, czy rekord z danym rozdziałem już istnieje
         val cursor = db.rawQuery(
             "SELECT * FROM ${DBConnection.TABLE_NAME_TESTS} WHERE ${DBConnection.COL2_TESTS} = ? AND ${DBConnection.COL3_TESTS} = ?",
-            arrayOf("1", CurrentChapter.toString())
+            arrayOf("chapter1", CurrentChapter.toString())
         )
 
         if (!cursor.moveToFirst()) {

@@ -7,7 +7,7 @@ class MainViewModel: ViewModel() {
     var CurrentChapter: Int = 1
 
     companion object {
-        const val DB_VERSION = 13
+        const val DB_VERSION = 19
     }
 
 }

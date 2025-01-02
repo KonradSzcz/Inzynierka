@@ -65,6 +65,8 @@ dependencies {
 
     implementation ("pl.droidsonroids.gif:android-gif-drawable:1.2.17")
 
+    implementation ("nl.dionsegijn:konfetti-xml:2.0.4")
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

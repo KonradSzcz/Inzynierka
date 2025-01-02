@@ -10,7 +10,8 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/chapter1"
+        android:src="@drawable/chapter2"
+        android:layout_marginTop="-15dp"
         android:id="@+id/imageView"/>
 
 
@@ -47,7 +48,6 @@
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:layout_marginTop="10dp"
-                android:justificationMode="inter_word"
                 android:id="@+id/string"
                 android:layout_below="@id/Title"/>
 

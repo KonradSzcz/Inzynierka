@@ -5,37 +5,62 @@
         &lt;b&gt;Definicja kryptowalut&lt;/b&gt;
     </string>
     <string name="chapter1_1">
-        &lt;br/&gt;&lt;br/&gt;Kryptowaluty są to cyfrowe lub wirtualne waluty, które wykorzystują technologię kryptograficzną do zabezpieczenia transakcji oraz kontrolowania tworzenia nowych jednostek walutowych.&lt;br/&gt;&lt;br/&gt;Są to środki wymiany, które nie są kontrolowane ani emitowane przez żadną centralną instytucję, taką jak bank centralny czy rząd, co oznacza, że są zdecentralizowane.
+       Kryptowaluty są to cyfrowe lub wirtualne waluty, które wykorzystują technologię kryptograficzną do zabezpieczenia transakcji oraz kontrolowania tworzenia nowych jednostek walutowych.&lt;br/&gt;&lt;br/&gt;Są to środki wymiany, które nie są kontrolowane ani emitowane przez żadną centralną instytucję, taką jak bank centralny czy rząd, co oznacza, że są zdecentralizowane.
     </string>
     <string name="chapter1_2_title">
         &lt;b&gt;Krótka historia kryptowalut&lt;/b&gt;
     </string>
     <string name="chapter1_2">
-        &lt;br/&gt;&lt;br/&gt;Pierwszą kryptowalutą, która zyskała znaczącą uwagę, był Bitcoin, wprowadzony w 2009 roku przez osobę lub grupę osób działających pod pseudonimem Satoshi Nakamoto.&lt;br/&gt;&lt;br/&gt;Bitcoin stał się pionierem w tej dziedzinie, otwierając drogę dla wielu innych kryptowalut, które pojawiły się później, znane jako altcoiny.
+      Pierwszą kryptowalutą, która zyskała znaczącą uwagę, był  &lt;b&gt;Bitcoin&lt;/b&gt;, wprowadzony w 2009 roku przez osobę lub grupę osób działających pod pseudonimem Satoshi Nakamoto.&lt;br/&gt;&lt;br/&gt; &lt;b&gt;Bitcoin&lt;/b&gt; stał się pionierem w tej dziedzinie, otwierając drogę dla wielu innych kryptowalut, które pojawiły się później, znane jako altcoiny.
     </string>
     <string name="chapter1_3_title">
         &lt;b&gt;Główne cechy i właściwości kryptowalut&lt;/b&gt;
     </string>
     <string name="chapter1_3">
-        &lt;br/&gt;&lt;b&gt;Zdecentralizowanie:&lt;/b&gt;&lt;br/&gt;Kryptowaluty działają na zasadzie zdecentralizowanej, co oznacza, że nie są kontrolowane przez jedną instytucję czy osobę.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Bezpośrednie transakcje:&lt;/b&gt;&lt;br/&gt;Transakcje z wykorzystaniem kryptowalut mogą być wykonywane bezpośrednio bez pośrednictwa instytucji finansowych.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Anonimowość:&lt;/b&gt;&lt;br/&gt;Wiele kryptowalut oferuje pewien poziom anonimowości, co oznacza, że tożsamość uczestników transakcji może pozostać nieujawniona.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Ograniczona podaż:&lt;/b&gt;&lt;br/&gt;Większość kryptowalut ma ograniczoną podaż, co oznacza, że istnieje ściśle określona ilość jednostek waluty, która może zostać wytworzona.
+       &lt;b&gt;Zdecentralizowanie:&lt;/b&gt;&lt;br/&gt;Kryptowaluty działają na zasadzie zdecentralizowanej, co oznacza, że nie są kontrolowane przez jedną instytucję czy osobę.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Bezpośrednie transakcje:&lt;/b&gt;&lt;br/&gt;Transakcje z wykorzystaniem kryptowalut mogą być wykonywane bezpośrednio bez pośrednictwa instytucji finansowych.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Anonimowość:&lt;/b&gt;&lt;br/&gt;Wiele kryptowalut oferuje pewien poziom anonimowości, co oznacza, że tożsamość uczestników transakcji może pozostać nieujawniona.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Ograniczona podaż:&lt;/b&gt;&lt;br/&gt;Większość kryptowalut ma ograniczoną podaż, co oznacza, że istnieje ściśle określona ilość jednostek waluty, która może zostać wytworzona.
     </string>
     <string name="chapter1_4_title">
         &lt;b&gt;Technologia blockchain&lt;/b&gt;
     </string>
     <string name="chapter1_4">
-        &lt;br/&gt;&lt;b&gt;Blockchain&lt;/b&gt; to zdecentralizowana i rozproszona księga rachunkowa, która rejestruje wszystkie transakcje w sieci kryptowalutowej. Każdy blok zawiera zbiór transakcji, a bloki są połączone w łańcuch za pomocą kryptograficznych hashy.&lt;br/&gt;&lt;br/&gt;Technologia blockchain została po raz pierwszy wprowadzona jako rdzeń Bitcoina przez anonimową osobę lub grupę osób znaną jako Satoshi Nakamoto w 2008 roku. Od tego czasu technologia ta została zaadaptowana i rozwinięta w różnych kierunkach.&lt;br/&gt;&lt;br/&gt;Podstawowe komponenty blockchaina to bloki, które zawierają transakcje, hash poprzedniego bloku, który łączy bloki w łańcuch i mechanizmy konsensusu, takie jak proof-of-work lub proof-of-stake, które zapewniają bezpieczeństwo i integralność sieci. Kiedy użytkownik inicjuje transakcję, jest ona transmitowana do sieci peer-to-peer.&lt;br/&gt;&lt;br/&gt;Węzły sieci weryfikują transakcję zgodnie z określonymi regułami konsensusu, a następnie dodają ją do nowego bloku. Blok jest następnie dodawany do łańcucha bloków, a transakcja staje się nieodwracalna. Poza kryptowalutami, blockchain znajduje zastosowanie w wielu dziedzinach, takich jak logistyka (śledzenie łańcucha dostaw), ochrona zdrowia (bezpieczne przechowywanie danych medycznych), zarządzanie tożsamością (cyfrowe dowody tożsamości), głosowania elektroniczne (bezpieczne i przejrzyste głosowanie) oraz w finansach (tokenizacja aktywów).
+      &lt;b&gt;Blockchain&lt;/b&gt; to zdecentralizowana i rozproszona księga rachunkowa, która rejestruje wszystkie transakcje w sieci kryptowalutowej. Każdy blok zawiera zbiór transakcji, a bloki są połączone w łańcuch za pomocą kryptograficznych hashy.&lt;br/&gt;&lt;br/&gt;Technologia blockchain została po raz pierwszy wprowadzona jako rdzeń Bitcoina przez anonimową osobę lub grupę osób znaną jako Satoshi Nakamoto w 2008 roku. Od tego czasu technologia ta została zaadaptowana i rozwinięta w różnych kierunkach.&lt;br/&gt;&lt;br/&gt;Podstawowe komponenty blockchaina to bloki, które zawierają transakcje, hash poprzedniego bloku, który łączy bloki w łańcuch i mechanizmy konsensusu, takie jak proof-of-work lub proof-of-stake, które zapewniają bezpieczeństwo i integralność sieci. Kiedy użytkownik inicjuje transakcję, jest ona transmitowana do sieci peer-to-peer.&lt;br/&gt;&lt;br/&gt;Węzły sieci weryfikują transakcję zgodnie z określonymi regułami konsensusu, a następnie dodają ją do nowego bloku. Blok jest następnie dodawany do łańcucha bloków, a transakcja staje się nieodwracalna. Poza kryptowalutami, blockchain znajduje zastosowanie w wielu dziedzinach, takich jak logistyka (śledzenie łańcucha dostaw), ochrona zdrowia (bezpieczne przechowywanie danych medycznych), zarządzanie tożsamością (cyfrowe dowody tożsamości), głosowania elektroniczne (bezpieczne i przejrzyste głosowanie) oraz w finansach (tokenizacja aktywów).
     </string>
     <string name="chapter1_5_title">
         &lt;b&gt;Zalety kryptowalut&lt;/b&gt;
     </string>
     <string name="chapter1_5">
-        &lt;br/&gt;&lt;b&gt;Decentralizacja:&lt;/b&gt;&lt;br/&gt;Kryptowaluty działają bez centralnego organu kontrolującego, co oznacza, że nie są one zależne od jednej instytucji czy rządu. Decentralizacja zapewnia większą niezależność i autonomię dla użytkowników.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Niskie koszty transakcji:&lt;/b&gt;&lt;br/&gt;Transakcje kryptowalutowe są zazwyczaj tańsze niż tradycyjne metody płatności, co może być korzystne dla użytkowników, szczególnie w przypadku międzynarodowych przelewów.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Szybkość transakcji:&lt;/b&gt;&lt;br/&gt;Kryptowaluty umożliwiają szybkie przekazywanie wartości, nawet na skalę globalną, co sprawia, że są one atrakcyjne dla osób wymieniających środki w różnych częściach świata.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Bezpieczeństwo i prywatność:&lt;/b&gt;&lt;br/&gt;Mechanizmy kryptograficzne używane w kryptowalutach zapewniają wysoki poziom bezpieczeństwa i prywatności dla użytkowników, co może być szczególnie istotne w przypadku danych finansowych.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Łatwość dostępu:&lt;/b&gt;&lt;br/&gt;Kryptowaluty mogą umożliwić dostęp do usług finansowych osobom, które nie mają tradycyjnego dostępu do bankowości, co może przyczynić się do finansowej inkluzji.
+       &lt;b&gt;Decentralizacja:&lt;/b&gt;&lt;br/&gt;Kryptowaluty działają bez centralnego organu kontrolującego, co oznacza, że nie są one zależne od jednej instytucji czy rządu. Decentralizacja zapewnia większą niezależność i autonomię dla użytkowników.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Niskie koszty transakcji:&lt;/b&gt;&lt;br/&gt;Transakcje kryptowalutowe są zazwyczaj tańsze niż tradycyjne metody płatności, co może być korzystne dla użytkowników, szczególnie w przypadku międzynarodowych przelewów.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Szybkość transakcji:&lt;/b&gt;&lt;br/&gt;Kryptowaluty umożliwiają szybkie przekazywanie wartości, nawet na skalę globalną, co sprawia, że są one atrakcyjne dla osób wymieniających środki w różnych częściach świata.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Bezpieczeństwo i prywatność:&lt;/b&gt;&lt;br/&gt;Mechanizmy kryptograficzne używane w kryptowalutach zapewniają wysoki poziom bezpieczeństwa i prywatności dla użytkowników, co może być szczególnie istotne w przypadku danych finansowych.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Łatwość dostępu:&lt;/b&gt;&lt;br/&gt;Kryptowaluty mogą umożliwić dostęp do usług finansowych osobom, które nie mają tradycyjnego dostępu do bankowości, co może przyczynić się do finansowej inkluzji.
     </string>
     <string name="chapter1_6_title">
         &lt;b&gt;Wady kryptowalut&lt;/b&gt;
     </string>
     <string name="chapter1_6">
-        &lt;br/&gt;&lt;b&gt;Wahania cen:&lt;/b&gt;&lt;br/&gt;Kryptowaluty są znane z ich dużych wahnięć cen, co może być ryzykiem dla inwestorów oraz użytkowników korzystających z nich jako formy płatności.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Regulacje prawne:&lt;/b&gt;&lt;br/&gt;Kryptowaluty napotykają różne wyzwania prawne i regulacyjne na różnych rynkach, co może prowadzić do niepewności co do ich statusu prawnego i zastosowania przepisów.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Bezpieczeństwo:&lt;/b&gt;&lt;br/&gt;Świat kryptowalut narażony jest na różne zagrożenia związane z cyberatakami, kradzieżami i oszustwami, co może stanowić ryzyko dla użytkowników.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Wpływ na środowisko:&lt;/b&gt;&lt;br/&gt;Niektóre procesy związane z kryptowalutami, szczególnie kopanie, mogą być bardzo energochłonne i negatywnie wpływać na środowisko naturalne.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Adopcja:&lt;/b&gt;&lt;br/&gt;Mimo licznych zalet, kryptowaluty napotykają trudności związane z ich adopcją w codziennym życiu i w świecie biznesu, co może być związane z brakiem świadomości, zaufania czy znajomości technologii.
+       &lt;b&gt;Wahania cen:&lt;/b&gt;&lt;br/&gt;Kryptowaluty są znane z ich dużych wahnięć cen, co może być ryzykiem dla inwestorów oraz użytkowników korzystających z nich jako formy płatności.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;
+        Regulacje prawne:&lt;/b&gt;&lt;br/&gt;Kryptowaluty napotykają różne wyzwania prawne i regulacyjne na różnych rynkach, co może prowadzić do niepewności co do ich statusu prawnego i zastosowania przepisów.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;
+        Bezpieczeństwo:&lt;/b&gt;&lt;br/&gt;Świat kryptowalut narażony jest na różne zagrożenia związane z cyberatakami, kradzieżami i oszustwami, co może stanowić ryzyko dla użytkowników.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;
+        Wpływ na środowisko:&lt;/b&gt;&lt;br/&gt;Niektóre procesy związane z kryptowalutami, szczególnie kopanie, mogą być bardzo energochłonne i negatywnie wpływać na środowisko naturalne.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Adopcja:&lt;/b&gt;&lt;br/&gt;Mimo licznych zalet, kryptowaluty napotykają trudności związane z ich adopcją w codziennym życiu i w świecie biznesu, co może być związane z brakiem świadomości, zaufania czy znajomości technologii.
+    </string>
+    <string name="chapter1_7_title">
+        &lt;b&gt;Czym jest aplikacja zdecentralizowana?&lt;/b&gt;
+    </string>
+    <string name="chapter1_7">
+
+        &lt;b&gt;Aplikacja zdecentralizowana (DAPP)&lt;/b&gt; to program, który działa na rozproszonej sieci komputerowej, zamiast na jednym, centralnym serwerze. DAPP wykorzystuje technologię blockchain, co oznacza, że jej kod i dane są przechowywane i wykonywane na wielu węzłach w sieci. Taka struktura zapewnia, że aplikacja jest bardziej odporna na awarie i nie zależy od jednego centralnego podmiotu.&lt;br/&gt;&lt;br/&gt;
+
+        W przeciwieństwie do scentralizowanych aplikacji, takich jak te opracowane przez Microsoft czy Google, które potrzebują serwerów tych firm do prawidłowego funkcjonowania, zdecentralizowane aplikacje nie mają "centrum". Nawet jeśli jeden węzeł w sieci DAPP przestanie działać, inne węzły przejmą jego zadania, co zapewnia ciągłość działania. Dzięki temu DAPP oferują większą niezależność, ponieważ użytkownicy mogą zarządzać nimi bez potrzeby interwencji ze strony twórców czy właścicieli.&lt;br/&gt;&lt;br/&gt;
+
+    </string>
+    <string name="chapter1_8_title">
+        &lt;b&gt;Czym jest DAO?&lt;/b&gt;
+    </string>
+    <string name="chapter1_8">
+
+         &lt;b&gt;Zdecentralizowana autonomiczna organizacja (DAO)&lt;/b&gt; to koncepcja,która wykracza poza tradycyjne modele zarządzania. Wyobraźmy sobie autonomiczny samochód, który porusza się po mieście w poszukiwaniu pasażerów. Po zakończeniu kursu, pojazd samodzielnie decyduje, jak wydatkować część opłaty na paliwo, działając zgodnie z wcześniej zaprogramowanym algorytmem. Tak samo działa DAO — operuje ono na zasadzie zaprogramowanych reguł, eliminując potrzebę centralnego zarządzania.&lt;br/&gt;&lt;br/&gt;
+
+        Pomysł na &lt;b&gt;DAO&lt;/b&gt; zyskał popularność po wprowadzeniu technologii blockchain i bitcoina. Dzięki decentralizacji, DAO zapewniają wysoki poziom prywatności i bezpieczeństwa, przyciągając wielu entuzjastów innowacyjnych rozwiązań. W 2016 roku Christoph Jentzsch próbował urzeczywistnić tę koncepcję, co przyczyniło się do dalszego rozwoju technologii.&lt;br/&gt;&lt;br/&gt;
+
+        Podstawowa zasada działania &lt;b&gt;DAO&lt;/b&gt; polega na tym, że eliminuje ono pośredników w procesach finansowych i operacyjnych, co pozwala na zastosowanie tego modelu w różnych firmach i instytucjach. Choć pierwszy projekt &lt;b&gt;DAO&lt;/b&gt; z 2016 roku nie odniósł sukcesu, technologia ta znalazła swoje miejsce w &lt;b&gt;zdecentralizowanych aplikacjach (DAPP)&lt;/b&gt;, które operują w sieciach komputerowych &lt;b&gt;P2P&lt;/b&gt;, działając niezależnie od pojedynczego serwera.
+
     </string>
 
 
@@ -43,9 +68,9 @@
         &lt;b&gt;Pochodzenia blockchainu&lt;/b&gt;
     </string>
     <string name="chapter2_1">
-        Protokół Bitcoin, który został uruchomiony w 2009 roku, wprowadził możliwość transferu wartości w modelu peer-to-peer przez Internet, eliminując potrzebę korzystania z zaufanego pośrednika. Bitcoin stanowił pierwszą realizację technologii blockchain, gdy Satoshi Nakamoto, twórca Bitcoina działający pod pseudonimem, znalazł rozwiązanie dla problemu „podwójnego wydawania”, który dotyczy sytuacji, w której cyfrowe informacje mogą być łatwo kopiowane, co wcześniej wymagało istnienia scentralizowanego organu do monitorowania, gdzie znajdują się fundusze.&lt;br/&gt;&lt;br/&gt;
-        Mimo że Bitcoin efektywnie przenosi wartość i stanowi skuteczną formę zdecentralizowanego pieniądza, od samego początku dostrzegano, że podobna koncepcja może być wykorzystana do rejestrowania różnych rodzajów informacji na wspólnej platformie. Poza walutą, łańcuch bloków może przechowywać proste wiadomości, informacje o własności aktywów fizycznych i cyfrowych, papiery wartościowe, decyzje głosowania i inne.&lt;br/&gt;&lt;br/&gt;
-        Rewolucyjny wpływ Bitcoina oraz innych podobnych protokołów skłonił rządy, organy regulacyjne oraz branżę finansową do szybkiej analizy dotychczasowych paradygmatów. Z uwagi na fakt, że Bitcoin znajduje się poza kontrolą władz państwowych i finansowych oraz może być nadużywany jako narzędzie do oszustw, prania pieniędzy i innych nielegalnych działań, początkowe reakcje były pełne sceptycyzmu i zaniepokojenia. Jednak coraz większa liczba liderów zaczęła dostrzegać potencjał technologii blockchain oraz różnorodność zastosowań, do jakich nadaje się rozproszona księga.
+        &lt;b&gt;Protokół  Bitcoin&lt;/b&gt;, który został uruchomiony w 2009 roku, wprowadził możliwość transferu wartości w modelu peer-to-peer przez Internet, eliminując potrzebę korzystania z zaufanego pośrednika.  &lt;b&gt;Bitcoin&lt;/b&gt; stanowił pierwszą realizację technologii blockchain, gdy Satoshi Nakamoto, twórca Bitcoina działający pod pseudonimem, znalazł rozwiązanie dla problemu „podwójnego wydawania”, który dotyczy sytuacji, w której cyfrowe informacje mogą być łatwo kopiowane, co wcześniej wymagało istnienia scentralizowanego organu do monitorowania, gdzie znajdują się fundusze.&lt;br/&gt;&lt;br/&gt;
+        Mimo że  &lt;b&gt;Bitcoin&lt;/b&gt; efektywnie przenosi wartość i stanowi skuteczną formę zdecentralizowanego pieniądza, od samego początku dostrzegano, że podobna koncepcja może być wykorzystana do rejestrowania różnych rodzajów informacji na wspólnej platformie. Poza walutą, łańcuch bloków może przechowywać proste wiadomości, informacje o własności aktywów fizycznych i cyfrowych, papiery wartościowe, decyzje głosowania i inne.&lt;br/&gt;&lt;br/&gt;
+        Rewolucyjny wpływ Bitcoina oraz innych podobnych protokołów skłonił rządy, organy regulacyjne oraz branżę finansową do szybkiej analizy dotychczasowych paradygmatów. Z uwagi na fakt, że  &lt;b&gt;Bitcoin&lt;/b&gt; znajduje się poza kontrolą władz państwowych i finansowych oraz może być nadużywany jako narzędzie do oszustw, prania pieniędzy i innych nielegalnych działań, początkowe reakcje były pełne sceptycyzmu i zaniepokojenia. Jednak coraz większa liczba liderów zaczęła dostrzegać potencjał technologii blockchain oraz różnorodność zastosowań, do jakich nadaje się rozproszona księga.
     </string>
     <string name="chapter2_2_title">
         &lt;b&gt;Co to jest blockchain?&lt;/b&gt;
@@ -88,10 +113,11 @@
     <string name="chapter2_5_title">&lt;b&gt;Protokół konsensusu&lt;/b&gt;</string>
     <string name="chapter2_5">
 
-        &lt;b&gt;Łańcuchy&lt;/b&gt; bloków są budowane na podstawie wspólnego konsensusu uczestników protokołu, znanego jako zasady konsensusu, które regulują działanie blockchaina. Kluczowym pojęciem w tym kontekście jest „porozumienie”, co oznacza, że nawet jeśli strony mają różne opinie, istnieje ogólna zgoda na kontynuowanie działań w celu rozwiązania ewentualnych sporów. Protokoły konsensusu służą węzłom do uzgadniania zawartości łańcucha bloków. Wszystkie węzły muszą potwierdzić, że transakcja zweryfikowana przez sieć zostaje na stałe dodana do łańcucha bloków. Celem zasad konsensusu jest zapewnienie, że dany blockchain jest używany i przestrzegany przez wszystkich uczestników sieci bez konieczności posiadania centralnego, zaufanego organu. W przypadku poważnych nieporozumień w ramach protokołu konsensusu może dojść do hard forka, co skutkuje podziałem łańcucha bloków na dwa oddzielne łańcuchy.
+        &lt;b&gt;Łańcuchy&lt;/b&gt; bloków są budowane na podstawie wspólnego konsensusu uczestników protokołu, znanego jako zasady konsensusu, które regulują działanie blockchaina. Kluczowym pojęciem w tym kontekście jest „porozumienie”, co oznacza, że nawet jeśli strony mają różne opinie, istnieje ogólna zgoda na kontynuowanie działań w celu rozwiązania ewentualnych sporów. &lt;br/&gt;&lt;br/&gt;
+        Protokoły konsensusu służą węzłom do uzgadniania zawartości łańcucha bloków. Wszystkie węzły muszą potwierdzić, że transakcja zweryfikowana przez sieć zostaje na stałe dodana do łańcucha bloków. Celem zasad konsensusu jest zapewnienie, że dany blockchain jest używany i przestrzegany przez wszystkich uczestników sieci bez konieczności posiadania centralnego, zaufanego organu. W przypadku poważnych nieporozumień w ramach protokołu konsensusu może dojść do hard forka, co skutkuje podziałem łańcucha bloków na dwa oddzielne łańcuchy.
 
     </string>
-    <string name="chapter2_6_title">&lt;b&gt;Kryptograficzne mechanizmy w blockchainie&lt;/b&gt;</string>
+    <string name="chapter2_6_title">&lt;b&gt;Kryptograficzne mechanizmy &lt;br/&gt;w blockchainie&lt;/b&gt;</string>
     <string name="chapter2_6">
 
          &lt;b&gt;Klucze kryptograficzne&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
@@ -126,10 +152,357 @@
 
         &lt;b&gt;Proof-of-Stake (PoS)&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
         &lt;b&gt;Proof-of-Stake (PoS)&lt;/b&gt; to bardziej energooszczędna alternatywa dla  &lt;b&gt;PoW&lt;/b&gt;, zaprojektowana, aby osiągnąć konsensus bez ogromnych nakładów obliczeniowych. W  &lt;b&gt;PoS&lt;/b&gt; nie ma wyścigu między górnikami o znalezienie kolejnego bloku. Zamiast tego, posiadacze monet „stawiają” (ang. stake) swoje monety, aby zyskać szansę na utworzenie następnego bloku.&lt;br/&gt;&lt;br/&gt;
-        Twórca nowego bloku jest wybierany losowo, jednak im więcej monet ktoś obstawia, tym większe ma szanse na wybranie. W  &lt;b&gt;PoS&lt;/b&gt;, zabezpieczeniem jest blokowanie środków na określony czas, co zmniejsza ryzyko oszustwa. PoS dąży również do tego, by dostosowywać poziom trudności wydobycia kolejnych bloków w zależności od mocy obliczeniowej (tzw. „moc mieszania”) dostępnej w sieci, aby utrzymać regularny czas tworzenia nowych bloków.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+        Twórca nowego bloku jest wybierany losowo, jednak im więcej monet ktoś obstawia, tym większe ma szanse na wybranie. W  &lt;b&gt;PoS&lt;/b&gt;, zabezpieczeniem jest blokowanie środków na określony czas, co zmniejsza ryzyko oszustwa. &lt;b&gt;PoS&lt;/b&gt; dąży również do tego, by dostosowywać poziom trudności wydobycia kolejnych bloków w zależności od mocy obliczeniowej (tzw. „moc mieszania”) dostępnej w sieci, aby utrzymać regularny czas tworzenia nowych bloków.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
     </string>
 
 
+    <string name="chapter3_1_title">&lt;b&gt;Czym jest Bitcoin?&lt;/b&gt;</string>
+    <string name="chapter3_1">
+
+        &lt;b&gt;Bitcoin&lt;/b&gt; to pierwsza i najbardziej znana kryptowaluta, która zrewolucjonizowała sposób, w jaki postrzegamy pieniądze oraz technologie finansowe. Wprowadzony w 2009 roku przez anonimowego twórcę (lub grupę twórców) znanego jako &lt;b&gt;Satoshi Nakamoto&lt;/b&gt;, &lt;b&gt;Bitcoin&lt;/b&gt; działa na zasadzie zdecentralizowanej sieci peer-to-peer. Jego głównym celem było stworzenie cyfrowej waluty, która nie wymaga pośredników takich jak banki, jednocześnie zapewniając przejrzystość i bezpieczeństwo &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        &lt;b&gt;Bitcoin&lt;/b&gt; jest często określany mianem cyfrowego złota ze względu na ograniczoną podaż wynoszącą 21 milionów monet, co czyni go odpornym na inflację i manipulacje walutowe. Transakcje realizowane w tej sieci są rejestrowane w publicznej księdze rozproszonej, znanej jako blockchain, co gwarantuje pełną przejrzystość i odporność na fałszerstwa.
+
+    </string>
+    <string name="chapter3_2_title">&lt;b&gt;Historia Bitcoina&lt;/b&gt;</string>
+    <string name="chapter3_2">
+
+        Historia Bitcoina zaczęła się od ideii zdecentralizowanej waluty pojawiła się w latach 90., kiedy kryptografowie, tacy jak Wei Dai z jego projektem „b-money” czy Hal Finney, eksperymentowali z cyfrowymi systemami płatności. Przełom nastąpił w 2008 roku, gdy anonimowy twórca lub grupa osób, pod pseudonimem Satoshi Nakamoto, opublikował manifest Bitcoin: A Peer-to-Peer Electronic Cash System. Dokument ten przedstawiał koncepcję kryptowaluty opartej na technologii blockchain i mechanizmie konsensusu Proof of Work, umożliwiającej bezpośrednie transakcje bez pośredników.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        Sieć Bitcoin została uruchomiona 3 stycznia 2009 roku wraz z wydobyciem pierwszego bloku, tzw. bloku genesis, zawierającego symboliczną wiadomość nawiązującą do kryzysu finansowego. Początkowo Bitcoin był eksperymentem w środowisku programistów, a pierwsza transakcja miała miejsce w maju 2010 roku, gdy Laszlo Hanyecz kupił dwie pizze za 10 000 bitcoinów. Było to symboliczne wydarzenie, które nadało walucie rzeczywistą wartość.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        Wraz z rosnącym zainteresowaniem Bitcoinem zaczęły powstawać giełdy kryptowalut, a jego cena zaczęła rosnąć, przyciągając inwestorów i entuzjastów technologii. Mimo wyzwań, takich jak ataki hakerskie czy regulacje prawne, Bitcoin stał się symbolem wolności finansowej i początkiem ery kryptowalut. Dziś jest nie tylko pionierem, ale również najpopularniejszą i najbardziej rozpoznawalną kryptowalutą na świecie.
+    </string>
+    <string name="chapter3_3_title">&lt;b&gt;Twórca Bitcoina&lt;/b&gt;</string>
+    <string name="chapter3_3">
+
+        Cyfrowe pieniądze oraz &lt;b&gt;Bitcoin&lt;/b&gt; nie mogły powstać bez twórcy, a &lt;b&gt;Satoshi Nakamoto&lt;/b&gt; jest uznawany za ojca Bitcoina. To postać otoczona tajemnicą, ponieważ nie ma pewności, czy &lt;bNakamoto&lt;/b&gt; to pojedynczy programista, czy może zespół ludzi, który stworzył protokół Bitcoina. Co więcej, imię Satoshi Nakamoto to pseudonim użyty do podpisania białej księgi, która opisuje teoretyczne podstawy tej cyfrowej waluty.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        Na przestrzeni lat podejmowano liczne próby odkrycia prawdziwej tożsamości osoby lub osób kryjących się za tym pseudonimem. Mimo to, uczestnicy rynku znają jedynie jeden fakt dotyczący założyciela Bitcoina: Satoshi Nakamoto pochodzi z Japonii. W chwili tworzenia Bitcoina miał około 40 lat. Bez wątpienia był osobą niezwykle inteligentną i wykształconą, która dokonała znaczącego przełomu, tworząc cyfrową walutę, której popularność rośnie z dnia na dzień.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        &lt;b&gt;Satoshi Nakamoto&lt;/b&gt; rozpoczął prace nad Bitcoinem w 2007 roku, a projekt opuścił w 2010 roku.
+    </string>
+    <string name="chapter3_4_title">&lt;b&gt;Znaczenie Bitcoina w gospodarce&lt;/b&gt;</string>
+    <string name="chapter3_4">
+
+        &lt;b&gt;Bitcoin&lt;/b&gt; odgrywa istotną rolę w gospodarce, wprowadzając koncepcję zdecentralizowanego systemu finansowego, który działa bez pośredników, takich jak banki czy rządy. Dzięki temu umożliwia szybkie i bezpieczne transakcje na całym świecie, często z niższymi kosztami niż w tradycyjnych systemach płatności.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        W krajach dotkniętych wysoką inflacją czy restrykcyjnymi kontrolami walutowymi Bitcoin jest postrzegany jako sposób na ochronę majątku i dostęp do globalnego rynku finansowego. Jego ograniczona podaż sprawia, że bywa porównywany do „cyfrowego złota”, które może chronić przed utratą wartości pieniądza.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+         &lt;b&gt;Bitcoin&lt;/b&gt; stał się także istotnym aktywem inwestycyjnym, przyciągając uwagę funduszy inwestycyjnych i korporacji. Wielu inwestorów traktuje go jako element dywersyfikacji portfela, a firmy, takie jak Tesla, zaczęły dodawać go do swoich bilansów.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        W gospodarce  &lt;b&gt;Bitcoin&lt;/b&gt; napędza rozwój innowacyjnych usług finansowych, takich jak aplikacje kryptowalutowe i platformy płatnicze. Jest coraz częściej akceptowany w e-commerce, umożliwiając płatności w sposób szybki i globalny.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        Jednak  &lt;b&gt;Bitcoin&lt;/b&gt; zmaga się z wyzwaniami, takimi jak duża zmienność cen, która utrudnia jego codzienne użycie, oraz wysoka energochłonność procesu kopania, co budzi obawy ekologiczne. Mimo to jego wpływ na globalną gospodarkę stale rośnie.
+
+    </string>
+    <string name="chapter3_5_title">&lt;b&gt;Jak kupić Bitcoina?&lt;/b&gt;</string>
+    <string name="chapter3_5">
+
+        Kupno Bitcoina jest prostym procesem, który można przejść w kilku krokach. Pierwszym etapem jest wybór platformy kryptowalutowej. Istnieje wiele giełd, które oferują zakup Bitcoina, takich jak Binance, Coinbase czy Kraken. Po wybraniu platformy, należy założyć konto, podając dane osobowe i przechodząc przez weryfikację tożsamości (KYC). Następnie trzeba zasilić konto, co można zrobić za pomocą przelewu bankowego, karty kredytowej lub kryptowalut.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        Po zasileniu konta, przechodzimy do zakupu Bitcoina. Można to zrobić poprzez złożenie zlecenia rynkowego, które realizuje transakcję po aktualnej cenie, lub zlecenia limitowanego, gdzie określamy cenę zakupu. Gdy transakcja jest zakończona, Bitcoiny trafiają na nasze konto giełdowe. Zdecydowanie bezpieczniejszą opcją jest przeniesienie zakupionych Bitcoinów do prywatnego portfela, który zapewnia lepszą ochronę środków.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        Pamiętaj, aby przestrzegać zasad bezpieczeństwa, takich jak używanie silnych haseł, włączenie dwuetapowej weryfikacji i przechowywanie kluczy prywatnych w bezpiecznym miejscu. Monitorowanie rynku i bieżących cen pomoże Ci śledzić wartość swojej inwestycji.
+
+    </string>
+    <string name="chapter3_6_title">&lt;b&gt;Jak działa wydobywanie bitcoinów?&lt;/b&gt;</string>
+    <string name="chapter3_6">
+
+        Aby rozpocząć wydobywanie bitcoinów na komputerze osobistym, należy przyjrzeć się kilku kluczowym elementom. Górnicy, którzy planują długoterminowe wydobywanie kryptowalut na dużą skalę, zwykle wybierają tę metodę.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        Sprzęt górniczy: Wymagany jest zakup potężnego sprzętu wydobywczego lub oddzielnej pamięci serwera. Choć może to wiązać się z pewnymi inwestycjami, lepsza wydajność wydobycia jest warta tych kosztów.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        Koszty: Należy pamiętać, że sprzęt górniczy zużywa znaczną ilość energii elektrycznej, co również generuje koszty. Powinieneś upewnić się, że proces wydobywania jest opłacalny; koszt wydobytych monet musi być wyższy niż koszty związane z zakupem sprzętu, zużyciem energii itp. Specjalne kalkulatory opłacalności wydobycia pomogą oszacować potencjalny zysk.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        Oprogramowanie: Przed rozpoczęciem wydobywania należy skonfigurować odpowiednie oprogramowanie. Odwiedź oficjalną stronę Bitcoina, gdzie można pobrać i zainstalować oficjalne oprogramowanie kryptowalutowe. Programy wydobywcze działają automatycznie, co oznacza, że po ich zainstalowaniu wystarczy mieć komputer z nieprzerwanym zasilaniem. Ważne jest, aby nie uruchamiać innych programów, które mogą wymagać zbyt wielu zasobów.
+
+    </string>
+    <string name="chapter3_7_title">&lt;b&gt;Wydobywanie w chmurze&lt;/b&gt;</string>
+    <string name="chapter3_7">
+
+        Wydobywanie w chmurze odnosi się do procesu wydobywania kryptowalut przy użyciu specjalnych usług, które umożliwiają handel cyfrowymi pieniędzmi bez potrzeby instalowania dedykowanego sprzętu i oprogramowania. Wymaga to jedynie uiszczenia podstawowych opłat za usługę, co jest znacznie tańszą alternatywą niż zakup specjalistycznego, drogiego sprzętu górniczego.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        &lt;b&gt;Zalety wydobywania w chmurze:&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+        &lt;b&gt;Brak kosztów sprzętowych:&lt;/b&gt; Nie trzeba inwestować dużych sum w drogi, potężny sprzęt.&lt;br/&gt;&lt;br/&gt;
+        &lt;b&gt;Szybkość procesu:&lt;/b&gt; Moc obliczeniowa serwerów używanych do kopania w chmurze przewyższa możliwości komputerów domowych, co przyspiesza proces wydobywania bloków.&lt;br/&gt;&lt;br/&gt;
+        &lt;b&gt;Niskie koszty energii:&lt;/b&gt; Nie ponosisz dodatkowych kosztów za energię, które zwykle są wysokie w przypadku użycia sprzętu górniczego.&lt;br/&gt;&lt;br/&gt;
+        &lt;b&gt;Brak ryzyka sprzętowego:&lt;/b&gt; Jeśli wydobycie okaże się nieopłacalne, nie musisz sprzedawać swojego sprzętu.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        &lt;b&gt;Pula wydobywcza&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+        Alternatywą dla samodzielnego wydobywania w chmurze jest dołączenie do puli wydobywczej. Pula ta polega na wspólnym łączeniu zasobów przez wielu górników, co pozwala na większą moc obliczeniową, a tym samym szybsze wydobycie tokenów. Nagroda za wydobycie jest następnie dzielona między uczestników proporcjonalnie do ich wkładu w proces wydobywania. Większa liczba górników w puli oznacza szybsze odkrywanie bitcoinów, ale jednocześnie dzielenie zysków na więcej osób.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+    </string>
+    <string name="chapter3_8_title">&lt;b&gt;Jak przechowywać BTC?&lt;/b&gt;</string>
+    <string name="chapter3_8">
+
+        Posiadacze Bitcoinów nie przechowują ich bezpośrednio, lecz klucze cyfrowe, które pozwalają im podpisywać transakcje. Klucze te są zazwyczaj przechowywane w portfelach cyfrowych. Istnieje kilka rodzajów portfeli, każdy z różnymi cechami i poziomami bezpieczeństwa:&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        &lt;b&gt;Portfele programowe (desktopowe)&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+        To najłatwiejszy sposób przechowywania kryptowalut. Użytkownicy instalują portfel na swoim komputerze osobistym, co daje im pełną kontrolę nad swoimi kluczami i bitcoinami. Ten typ portfela jest szczególnie odpowiedni dla zaawansowanych użytkowników lub górników posiadających większe ilości BTC.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        &lt;b&gt;Portfele mobilne&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+        To aplikacje przeznaczone na smartfony, które umożliwiają dokonywanie płatności w BTC z dowolnego miejsca. Są bardziej wygodne niż portfele stacjonarne, ale użytkownicy muszą być ostrożni, aby nie stracić dostępu do portfela, szczególnie w przypadku zgubienia lub uszkodzenia telefonu.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        &lt;b&gt;Portfele online (webowe)&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+        To najprostszy sposób przechowywania BTC. Użytkownik znajduje dostawcę usług portfela online, co nie wymaga instalacji oprogramowania. Wady tego rozwiązania to ryzyko ataków hakerskich oraz problemy z dostępnością usług, które mogą prowadzić do utraty środków.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        &lt;b&gt;Portfele sprzętowe&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+        To fizyczne urządzenia, które przechowują klucze cyfrowe w formacie elektronicznym. Główną zaletą portfeli sprzętowych jest to, że nie wymagają one dostępu do Internetu, co czyni je bardzo bezpiecznymi.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        &lt;b&gt;Portfele papierowe&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+        Umożliwiają przechowywanie kluczy cyfrowych w trybie offline. Użytkownik drukuje klucz na papierze i przechowuje go w bezpiecznym miejscu. To jedna z najbezpieczniejszych metod przechowywania BTC, ponieważ tylko właściciel ma pełną kontrolę nad portfelem.
+
+    </string>
+    <string name="chapter3_9_title">&lt;b&gt;Jak działają transakcje bitcoinowe?&lt;/b&gt;</string>
+    <string name="chapter3_9">
+
+        Transakcje bitcoinowe polegają na wysyłaniu cyfrowych pieniędzy z jednego portfela do drugiego. Kiedy użytkownik inicjuje transakcję, zostaje ona przekazana do sieci, gdzie komputery (zwane węzłami) przetwarzają ją, szyfrując i potwierdzając dane. Po zatwierdzeniu, kryptowaluta zostaje przeniesiona do nowego portfela.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        Wszystkie transakcje są potwierdzane przez publiczną księgę (blockchain), a cały proces trwa zazwyczaj około 10 minut, co jest znacznie szybsze niż tradycyjne przelewy bankowe. W niektórych przypadkach transakcje mogą być realizowane z tzw. „zerowym potwierdzeniem”, co oznacza, że odbiorca akceptuje płatność przed oficjalnym zatwierdzeniem na blockchainie, na własne ryzyko.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        &lt;b&gt;Bitcoin vs. przelew bankowy&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+        W przypadku banków, przelewy zwykle trwają dłużej, ponieważ banki muszą zweryfikować tożsamość nadawcy oraz sprawdzić dostępność środków na koncie. Przelewy bankowe mogą trwać od kilku godzin do kilku dni, w zależności od procedur bankowych i kraju.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        Dla porównania, transakcje bitcoinowe są zazwyczaj szybsze i tańsze. Opłaty transakcyjne w sieci bitcoin są zazwyczaj znacznie niższe lub wręcz zerowe, w zależności od aktualnego obciążenia sieci, podczas gdy banki często pobierają znaczne opłaty za przelewy międzynarodowe lub ekspresowe.
+    </string>
+
+
+    <string name="chapter4_1_title">&lt;b&gt;Czym jest Ethereum?&lt;/b&gt;</string>
+    <string name="chapter4_1">
+
+        &lt;b&gt;Ethereum&lt;/b&gt; to jedna z najpopularniejszych kryptowalut, oparta na innowacyjnej technologii blockchain. Umożliwia szybkie przesyłanie środków pomiędzy użytkownikami, a także zawieranie umów dzięki tzw. inteligentnym kontraktom. Inteligentny kontrakt to rodzaj cyfrowej umowy, która automatycznie realizuje się, gdy spełnione zostaną określone warunki. Jeśli warunki nie są spełnione, środki zostają zwrócone właścicielowi.&lt;br/&gt;&lt;br/&gt;
+
+        Główną jednostką tej sieci blockchain jest ether, a jej wyjątkowość polega na częstych zmianach cen, co sprawia, że jest atrakcyjna na giełdach kryptowalut. Inteligentne kontrakty w Ethereum pozwalają na szerokie zastosowanie, od ubezpieczeń po płatności i umowy handlowe.&lt;br/&gt;&lt;br/&gt;
+
+        &lt;b&gt;Ethereum&lt;/b&gt;, stworzone przez programistę Vitalika Buterina, jest często uważane za głównego konkurenta bitcoina. Oferuje więcej możliwości użytkownikom i ma duży potencjał wzrostu, co czyni je łatwiejszym do kupienia oraz bardziej wszechstronnym w zastosowaniu.
+
+    </string>
+    <string name="chapter4_2_title">&lt;b&gt;Jak działa Ethereum?&lt;/b&gt;</string>
+    <string name="chapter4_2">
+
+        &lt;b&gt;Ethereum&lt;/b&gt; to zdecentralizowana platforma, która umożliwia programistom tworzenie aplikacji opartych na tzw. inteligentnych kontraktach. Inteligentne kontrakty to fragmenty kodu, które automatycznie realizują określone działania, np. przesyłanie środków, gdy spełnione zostaną określone warunki. Na tej podstawie powstają zdecentralizowane aplikacje (DAPP) i organizacje (DAO), działające niezależnie od centralnych instytucji.&lt;br/&gt;&lt;br/&gt;
+
+        Każda aplikacja w Ethereum wymaga obsługi sieci, aby przechowywać dane takie jak saldo użytkowników, kod kontraktów i historię transakcji. Gdy użytkownik wysyła Ether, inteligentne kontrakty dbają o to, aby odpowiednie tokeny zostały zapisane na koncie odbiorcy. Tokeny to jednostki rozliczeniowe w blockchainie, które pełnią rolę wirtualnych aktywów, podobnie jak papiery wartościowe w świecie rzeczywistym.&lt;br/&gt;&lt;br/&gt;
+
+         &lt;b&gt;Ethereum&lt;/b&gt; działa na zasadach zbliżonych do Bitcoina. Na przykład w sieci działają górnicy, którzy za pomocą sprzętu obliczeniowego rozwiązują skomplikowane problemy matematyczne. Górnicy ci odpowiadają za tworzenie nowych bloków w łańcuchu blockchain, a za swoje wysiłki otrzymują nagrody w postaci Etheru.
+    </string>
+    <string name="chapter4_3_title">&lt;b&gt;Jak wydobywać Ethereum?&lt;/b&gt;</string>
+    <string name="chapter4_3">
+
+        &lt;b&gt;Ethereum&lt;/b&gt;, podobnie jak inne kryptowaluty, można zarabiać poprzez proces zwany wydobywaniem. Istnieje kilka sposobów na wydobywanie Ethereum:&lt;br/&gt;&lt;br/&gt;
+
+        &lt;b&gt;Wydobywanie z pomocą karty graficznej:&lt;/b&gt; Jednym z popularnych sposobów jest użycie wyspecjalizowanych kart graficznych (GPU) o wysokiej wydajności. Aby wydobywać w ten sposób, komputer musi być wyposażony w odpowiednie zasoby, takie jak duża pamięć, wydajny system chłodzenia i solidna magistrala. Sprzęt górniczy, zwłaszcza karty graficzne, mogą być kosztowne, dlatego przed rozpoczęciem wydobycia warto obliczyć, kiedy zwrócą się koszty inwestycji w sprzęt.&lt;br/&gt;&lt;br/&gt;
+
+        &lt;b&gt;Korzystanie z puli wydobywczej:&lt;/b&gt; Pula wydobywcza to grupa górników, którzy łączą swoją moc obliczeniową, aby szybciej wydobywać bloki i dzielić nagrody proporcjonalnie do wkładu. Pule wydobywcze przyspieszają proces wydobywania, co prowadzi do częstszych nagród. Warto jednak pamiętać, że każda pula ma swoje zasady, w tym prowizje i szczegóły dotyczące wypłat, które warto uwzględnić przed dołączeniem.&lt;br/&gt;&lt;br/&gt;
+
+        &lt;b&gt;Kopanie w chmurze:&lt;/b&gt; Jest to bardziej dostępna opcja, w której użytkownicy wynajmują moc obliczeniową od dostawców usług w chmurze. Umożliwia to wydobywanie bez potrzeby posiadania własnego sprzętu, co eliminuje konieczność zakupu, konfiguracji i utrzymania drogiego wyposażenia. Wystarczy wybrać odpowiednią usługę i regularnie opłacać abonament.&lt;br/&gt;&lt;br/&gt;
+
+        &lt;b&gt;Korzystanie z "kranów":&lt;/b&gt; Jest to darmowa metoda wydobywania, polegająca na wykonywaniu prostych zadań na specjalnych stronach internetowych. Użytkownicy wykonują określone zadania w zamian za małe ilości Ethereum.
+
+    </string>
+    <string name="chapter4_4_title">&lt;b&gt;Jak Ethereum będzie się skalować?&lt;/b&gt;</string>
+    <string name="chapter4_4">
+
+        Deweloperzy Ethereum pracują nad rozwiązaniami, które mają na celu zwiększenie liczby użytkowników oraz poprawę efektywności działania blockchaina. Obecnie Ethereum obsługuje około 15 transakcji na sekundę, co stanowi dużą różnicę w porównaniu do systemów takich jak Visa, które mogą przetwarzać nawet 45 000 transakcji na sekundę. To ograniczenie skalowalności jest jednym z głównych wyzwań dla Ethereum.&lt;br/&gt;&lt;br/&gt;
+
+        Vitalik Buterin, jeden z twórców Ethereum, podkreśla, że trwają prace nad rozwiązaniami, które zwiększą przepustowość sieci. Jednym z głównych projektów jest aktualizacja Ethereum 2.0, która wprowadzi mechanizm proof-of-stake zamiast proof-of-work, co pozwoli na wydajniejsze przetwarzanie transakcji. Dodatkowo planowane jest wdrożenie technologii sharding, która dzieli blockchain na mniejsze części, zwane shardami, umożliwiając jednoczesne przetwarzanie większej liczby transakcji.&lt;br/&gt;&lt;br/&gt;
+
+        Technologia inteligentnych kontraktów również odgrywa kluczową rolę w skalowalności sieci, a rozwój nowych rozwiązań ma zapewnić bezpieczniejsze i szybsze transakcje. Inne pomysły obejmują wykorzystanie dodatkowych blockchainów, takich jak  &lt;b&gt;Bitcoin&lt;/b&gt; Cash i Ethereum Classic, aby odciążyć główną sieć Ethereum i poprawić jej wydajność.&lt;br/&gt;&lt;br/&gt;
+
+        Wszystkie te działania mają na celu utrzymanie wysokiej przepustowości, szybkości transakcji oraz zwiększenie bezpieczeństwa użytkowników w sieci Ethereum.
+
+    </string>
+
+
+    <string name="chapter5_1_title">&lt;b&gt;Portfele online&lt;/b&gt;</string>
+    <string name="chapter5_1">
+
+        &lt;b&gt;Portfele online&lt;/b&gt; są jednymi z najwygodniejszych i najbardziej dostępnych sposobów przechowywania Bitcoina. Działają one na zasadzie aplikacji internetowych lub mobilnych, co oznacza, że dostęp do środków mamy zawsze, kiedy mamy dostęp do internetu. Zwykle użytkownicy muszą założyć konto na platformie, która oferuje portfel online, aby przechowywać swoje BTC.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        &lt;b&gt;Zalety:&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+        Łatwy dostęp do funduszy z dowolnego urządzenia podłączonego do internetu.&lt;br/&gt;&lt;br/&gt;
+        Szybkość transakcji.&lt;br/&gt;&lt;br/&gt;
+        Zwykle dostępne na platformach takich jak Coinbase, Blockchain Wallet czy Binance Wallet.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        &lt;b&gt;Wady:&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+        Mniej bezpieczne niż inne rodzaje portfeli, ponieważ prywatne klucze przechowywane są na serwerach firm trzecich. To oznacza większe ryzyko kradzieży, zwłaszcza w przypadku ataków hakerskich.&lt;br/&gt;&lt;br/&gt;
+        Uzależnione od platformy – jeśli dostawca portfela zbankrutuje lub zostanie zhakowany, użytkownicy mogą stracić dostęp do swoich środków.
+
+    </string>
+    <string name="chapter5_2_title">&lt;b&gt;Portfele desktopowe&lt;/b&gt;</string>
+    <string name="chapter5_2">
+
+        &lt;b&gt;Portfele desktopowe&lt;/b&gt; Portfele desktopowe to aplikacje, które instalujesz na swoim komputerze. Po zainstalowaniu program zapewnia pełną kontrolę nad Twoimi środkami, przechowując klucze prywatne bezpośrednio na urządzeniu. Przykłady to Electrum, Exodus czy Bitcoin Core.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        &lt;b&gt;Zalety:&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+        Zwiększone bezpieczeństwo w porównaniu do portfeli online, ponieważ klucze prywatne przechowywane są lokalnie na komputerze.&lt;br/&gt;&lt;br/&gt;
+        Możliwość korzystania z funkcji takich jak synchronizacja z blockchainem, zaawansowane opcje zarządzania transakcjami oraz kontrolowanie pełnej historii operacji.&lt;br/&gt;&lt;br/&gt;
+        Wiele z tych portfeli oferuje dodatkowe funkcje, takie jak obsługa wielu kryptowalut.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        &lt;b&gt;Wady:&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+        Dostęp do funduszy jest możliwy tylko na urządzeniu, na którym zainstalowany jest portfel. Jeśli komputer ulegnie awarii, a kopie zapasowe nie zostały wykonane, użytkownik może utracić dostęp do swoich BTC.&lt;br/&gt;&lt;br/&gt;
+        Wymaga dobrej ochrony przed wirusami i innymi zagrożeniami cyfrowymi, ponieważ portfele desktopowe mogą być celem ataków.
+
+    </string>
+    <string name="chapter5_3_title">&lt;b&gt;Portfele mobilne&lt;/b&gt;</string>
+    <string name="chapter5_3">
+
+        &lt;b&gt;Portfele mobilne&lt;/b&gt; są dedykowane urządzeniom mobilnym, takim jak smartfony i tablety. Dzięki nim użytkownicy mogą łatwo przechowywać i zarządzać swoimi Bitcoinami w podróży. Popularne portfele mobilne to Trust Wallet, Mycelium oraz Samourai Wallet.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        &lt;b&gt;Zalety:&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+        Dostępność na urządzeniach mobilnych umożliwia szybkie i wygodne przeprowadzanie transakcji, niezależnie od lokalizacji.&lt;br/&gt;&lt;br/&gt;
+        Portfele mobilne są często wyposażone w funkcje takie jak integracja z kodami QR czy obsługa transakcji NFC, co umożliwia szybkie płatności.&lt;br/&gt;&lt;br/&gt;
+        Wiele z nich pozwala na łatwe zarządzanie wieloma kryptowalutami, nie tylko Bitcoinem.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        &lt;b&gt;Wady:&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+        Podobnie jak w przypadku portfeli online, portfele mobilne są narażone na ryzyko ataków, jeśli urządzenie jest skompromitowane przez wirusy lub złośliwe oprogramowanie.&lt;br/&gt;&lt;br/&gt;
+        W przypadku zgubienia lub uszkodzenia telefonu, dostęp do portfela może zostać utracony, jeśli nie zrobiono odpowiedniej kopii zapasowej.
+
+    </string>
+    <string name="chapter5_4_title">&lt;b&gt;Portfele sprzętowe&lt;/b&gt;</string>
+    <string name="chapter5_4">
+
+        &lt;b&gt;Portfele sprzętowe&lt;/b&gt;, takie jak Ledger Nano S, Trezor czy KeepKey, są fizycznymi urządzeniami, które przechowują klucze prywatne offline. Używanie portfeli sprzętowych zapewnia wysoki poziom bezpieczeństwa, ponieważ klucze prywatne nie są narażone na ataki z sieci.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        &lt;b&gt;Zalety:&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+        Uważane za najbezpieczniejsze rozwiązanie do przechowywania kryptowalut, ponieważ przechowują klucze prywatne offline.&lt;br/&gt;&lt;br/&gt;
+        Używanie portfela sprzętowego jest bezpieczne, nawet jeśli komputer lub telefon, do którego jest podłączony, zostaną zainfekowane.&lt;br/&gt;&lt;br/&gt;
+        Wiele modeli portfeli sprzętowych obsługuje różne kryptowaluty i oferuje funkcje takie jak PIN czy hasło do dodatkowej ochrony.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        &lt;b&gt;Wady:&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+         &lt;b&gt;Portfele sprzętowe&lt;/b&gt; wiążą się z dodatkowym kosztem zakupu urządzenia.&lt;br/&gt;&lt;br/&gt;
+        Wymagają przechowywania fizycznego, co może stanowić problem w przypadku zgubienia lub uszkodzenia urządzenia.&lt;br/&gt;&lt;br/&gt;
+        Proces konfiguracji i używania portfela sprzętowego może być mniej intuicyjny dla nowych użytkowników.
+
+    </string>
+    <string name="chapter5_5_title">&lt;b&gt;Portfele papierowe&lt;/b&gt;</string>
+    <string name="chapter5_5">
+
+        &lt;b&gt;Portfele papierowe&lt;/b&gt; to fizyczne wydruki kluczy prywatnych i publicznych na kartce papieru. Są to najbezpieczniejsze, ale także najmniej wygodne rozwiązanie, ponieważ klucze przechowywane są offline, co czyni je odporne na ataki z sieci.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        &lt;b&gt;Zalety:&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+        Bardzo wysoki poziom bezpieczeństwa, ponieważ portfel papierowy jest całkowicie offline.&lt;br/&gt;&lt;br/&gt;
+        Niezależność od urządzeń elektronicznych – klucze przechowywane są na papierze, co minimalizuje ryzyko ataków hakerskich.&lt;br/&gt;&lt;br/&gt;
+        Możliwość łatwego przekazania kryptowaluty innym osobom.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        &lt;b&gt;Wady:&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;
+        Jeśli &lt;b&gt;portfel papierowy&lt;/b&gt; zostanie zgubiony, zniszczony lub usunięty, dostęp do przechowywanych BTC zostanie utracony na zawsze.&lt;br/&gt;&lt;br/&gt;
+        Trudność w realizacji transakcji – aby przesłać BTC, trzeba ponownie wprowadzić klucz prywatny w cyfrowym portfelu.&lt;br/&gt;&lt;br/&gt;
+        Wymaga odpowiedniego przechowywania (np. w sejfie), aby uniknąć uszkodzenia papieru.
+
+    </string>
+
+    <string name="chapter6_1_title">&lt;b&gt;Ekstremalna zmienność rynku&lt;/b&gt;</string>
+    <string name="chapter6_1">
+
+        Kryptowaluty charakteryzują się niezwykle dynamicznymi wahaniami cen. Wartość konkretnej kryptowaluty może wzrosnąć o setki procent w ciągu kilku dni, tylko po to, by w kolejnych dniach spaść do poziomu niemal zerowego. Zmienność ta przyciąga zarówno inwestorów poszukujących szybkich zysków, jak i spekulantów. Jednakże takie gwałtowne zmiany cen stanowią poważne zagrożenie, zwłaszcza dla mniej doświadczonych użytkowników, którzy często podejmują decyzje inwestycyjne pod wpływem emocji, strachu przed utratą okazji (FOMO – Fear of Missing Out) lub paniki wywołanej nagłym spadkiem wartości.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        Przykład: Upadek LUNA&lt;br/&gt;&lt;br/&gt;
+        Jednym z najbardziej dramatycznych przykładów ryzyka zmienności była katastrofa związana z kryptowalutą Terra (LUNA). Projekt Terra miał na celu zbudowanie stabilnego ekosystemu opartego na stablecoinie UST, którego wartość miała być równa 1 dolarowi amerykańskiemu dzięki algorytmicznej stabilizacji przy pomocy tokena LUNA.&lt;br/&gt;&lt;br/&gt;
+
+        W maju 2022 roku mechanizm ten zawiódł. UST stracił swój peg (powiązanie wartości) z dolarem, a próby ratowania sytuacji przez emisję dodatkowych tokenów LUNA doprowadziły do hiperinflacji tego tokena. W rezultacie wartość LUNA, która wcześniej osiągała około 119 USD za token, spadła do ułamków centa w ciągu kilku dni.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        Katastrofa miała dramatyczne skutki:&lt;br/&gt;&lt;br/&gt;
+
+        Straty inwestorów indywidualnych: Miliony osób straciły swoje oszczędności, często zainwestowane w LUNA w oparciu o obietnice wysokich zwrotów i stabilności UST.&lt;br/&gt;&lt;br/&gt;
+        Wpływ na rynek kryptowalut: Upadek LUNA spowodował efekt domina na całym rynku, obniżając wartości innych kryptowalut i osłabiając zaufanie do algorytmicznych stablecoinów.&lt;br/&gt;&lt;br/&gt;
+        Reputacja branży: Zdarzenie to było szeroko omawiane w mediach, podkreślając ryzyko związane z inwestowaniem w projekty o nieprzetestowanych mechanizmach stabilizacji.&lt;br/&gt;&lt;br/&gt;
+        Upadek LUNA stał się również ostrzeżeniem dla inwestorów, aby dokładnie analizowali projekty, w które inwestują, zwracając uwagę na ich fundamenty, mechanizmy działania i ryzyka technologiczne. Pokazuje to, jak wrażliwy może być rynek kryptowalut na nieoczekiwane wydarzenia i jak szybko straty mogą się skumulować w środowisku pozbawionym odpowiednich zabezpieczeń regulacyjnych.
+
+    </string>
+
+    <string name="chapter6_2_title">&lt;b&gt;Oszustwa i piramidy finansowe&lt;/b&gt;</string>
+    <string name="chapter6_2">
+
+        Świat kryptowalut przyciąga zarówno innowatorów, jak i inwestorów, ale niestety jest również magnesem dla oszustów. Brak globalnych regulacji sprawia, że wiele krajów nie posiada skutecznych mechanizmów identyfikowania i ścigania nieuczciwych działań. Dodatkowo anonimowość transakcji na blockchainie, choć technicznie jawne, pozwala oszustom ukrywać swoją tożsamość.&lt;br/&gt;&lt;br/&gt;
+
+        Na oszustwa szczególnie podatni są inwestorzy z niewielką wiedzą o technologii i ryzyku, którzy kuszeni wizją szybkich zysków często nie zdają sobie sprawy z niebezpieczeństw. Łatwość tworzenia nowych projektów kryptowalutowych dodatkowo sprzyja nadużyciom. Każdy może stworzyć token lub kryptowalutę i promować ją jako „rewolucyjną” inwestycję, nawet jeśli projekt nie ma realnej wartości. Popularne schematy to piramidy finansowe, fałszywe ICO (Initial Coin Offering) oraz tzw. „rug pulls”, gdzie twórcy nagle wycofują zgromadzone środki, pozostawiając inwestorów z ogromnymi stratami. Wszystkie te czynniki sprawiają, że rynek kryptowalut staje się przestrzenią o dużym ryzyku dla nieświadomych użytkowników.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        Przykład: BitConnect&lt;br/&gt;&lt;br/&gt;
+        BitConnect był jedną z najbardziej znanych piramid finansowych w świecie kryptowalut. Projekt rozpoczął działalność w 2016 roku i szybko zyskał popularność dzięki agresywnemu marketingowi i obietnicom niesamowitych zwrotów z inwestycji. BitConnect promował swój „zaawansowany algorytm handlowy”, który miał automatycznie generować ogromne zyski na rynku kryptowalut. Użytkownicy byli zachęcani do kupowania tokenów BitConnect (BCC) i „inwestowania” ich w program pożyczkowy.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        Główne obietnice BitConnect to:&lt;br/&gt;&lt;br/&gt;
+
+        Gwarantowane dzienne zyski na poziomie nawet 1% (co dawało teoretycznie 3650% rocznie).&lt;br/&gt;&lt;br/&gt;
+        Brak ryzyka dzięki rzekomo inteligentnemu algorytmowi handlowemu.&lt;br/&gt;&lt;br/&gt;
+        Program poleceń, który nagradzał użytkowników za zapraszanie innych do inwestowania.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+        Jednak w rzeczywistości był to klasyczny schemat Ponziego. Wypłaty dla wcześniejszych inwestorów pochodziły z wpłat nowych uczestników. W styczniu 2018 roku projekt załamał się, gdy zaczęto poddawać w wątpliwość jego legalność. Amerykańska Komisja Papierów Wartościowych i Giełd (SEC) oraz inne organy regulacyjne rozpoczęły śledztwa, a wartość tokena BitConnect spadła z ponad 400 USD do niemal zera.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        Konsekwencje upadku BitConnect&lt;br/&gt;&lt;br/&gt;
+        Ogromne straty inwestorów: Miliony użytkowników straciły swoje środki, a straty szacowano na miliardy dolarów. Wiele osób inwestowało swoje oszczędności życia, nie zdając sobie sprawy, że uczestniczą w oszustwie.&lt;br/&gt;&lt;br/&gt;
+        Negatywny wpływ na reputację kryptowalut: Wydarzenie to zwiększyło sceptycyzm wobec całego rynku kryptowalut, szczególnie wśród nowych użytkowników.&lt;br/&gt;&lt;br/&gt;
+        Działania prawne: Twórcy BitConnect zostali pozwani, a niektóre osoby odpowiedzialne za projekt stanęły przed sądem. Jednak odzyskanie środków dla poszkodowanych okazało się trudne, gdyż wiele z nich zostało wytransferowanych anonimowo za granicę.
+
+    </string>
+
+    <string name="chapter6_3_title">&lt;b&gt;Ataki hakerskie i brak bezpieczeństwa&lt;/b&gt;</string>
+    <string name="chapter6_3">
+
+        Kryptowaluty, przechowywane w cyfrowych portfelach i na giełdach, są jednym z głównych celów hakerów. Choć technologia blockchain jest uznawana za bezpieczną i odporną na manipulacje, to infrastruktura wokół kryptowalut, taka jak giełdy, portfele czy aplikacje, często nie jest wystarczająco zabezpieczona. Nawet niewielkie luki w zabezpieczeniach mogą prowadzić do ogromnych strat dla użytkowników.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        Przykład: atak na giełdę Mt. Gox&lt;br/&gt;&lt;br/&gt;
+        Mt. Gox, jedna z największych giełd kryptowalutowych, która w 2014 roku ogłosiła bankructwo. W wyniku serii ataków hakerskich skradziono 850 tysięcy Bitcoinów, co w tamtym czasie stanowiło równowartość około 450 milionów dolarów. Giełda utraciła prawie 7% wszystkich istniejących Bitcoinów, a wielu użytkowników nigdy nie odzyskało swoich środków. Sprawa ta zwróciła uwagę na brak standardów bezpieczeństwa w branży kryptowalutowej.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+
+        Problemem jest również brak świadomości użytkowników na temat zabezpieczania własnych środków. Wiele osób trzyma kryptowaluty na giełdach zamiast w prywatnych portfelach, które oferują większe bezpieczeństwo. Ponadto użytkownicy często korzystają z prostych haseł lub nie aktywują dwuskładnikowego uwierzytelniania, co zwiększa ryzyko utraty środków w przypadku ataku. Ataki hakerskie to także zagrożenie dla projektów DeFi ( zdecentralizowanych finansów), gdzie złożone smart kontrakty mogą zawierać błędy umożliwiające kradzież środków. W takich przypadkach ofiarami stają się zarówno giełdy, które tracą reputację i środki, jak i użytkownicy, którzy ponoszą często nieodwracalne straty.
+
+    </string>
+
+    <string name="chapter6_4_title">&lt;b&gt;Regulacje prawne i zakazy&lt;/b&gt;</string>
+    <string name="chapter6_4">
+
+        Świat kryptowalut funkcjonuje na styku innowacji technologicznych i luk w prawie, co powoduje, że rządy różnych krajów przyjmują odmienne podejścia do ich regulacji. W zależności od regionu, kryptowaluty mogą być traktowane jako legalny środek płatniczy, aktywo inwestycyjne lub obszar wymagający ścisłych restrykcji. Niektóre kraje decydują się nawet na całkowity zakaz korzystania z kryptowalut, co ma istotny wpływ na ich wartość oraz dostępność dla inwestorów.&lt;/b&gt;&lt;/b&gt;
+
+        Wpływ regulacji na rynek&lt;/b&gt;&lt;/b&gt;
+        Regulacje wprowadzane przez rządy mogą znacząco zmieniać dynamikę rynku kryptowalut. Restrykcje często powodują spadki cen, zniechęcając inwestorów do dalszego zaangażowania. W dłuższej perspektywie mogą one również spowalniać rozwój innowacyjnych projektów blockchainowych, które potrzebują globalnej adopcji i stabilności prawnej. Z drugiej strony, brak regulacji może prowadzić do chaosu, zwiększonego ryzyka oszustw i większej podatności na cyberataki.&lt;/b&gt;&lt;/b&gt;&lt;/b&gt;
+
+        Przykład: Zakaz kryptowalut w Chinach&lt;/b&gt;&lt;/b&gt;
+        Jednym z najbardziej znaczących przykładów wpływu regulacji na kryptowaluty był zakaz wprowadzony przez Chiny w 2021 roku. Rząd tego kraju ogłosił całkowity zakaz wydobycia i handlu kryptowalutami, argumentując to potrzebą ochrony stabilności finansowej oraz walką z praniem pieniędzy. Zakaz ten miał ogromne konsekwencje, ponieważ Chiny były wówczas globalnym liderem w wydobyciu Bitcoina, odpowiadając za ponad 50% całkowitej mocy obliczeniowej sieci (hashrate).&lt;/b&gt;&lt;/b&gt;
+
+        Decyzja Chin spowodowała gwałtowny spadek wartości większości kryptowalut, a górnicy i firmy związane z blockchainem zostali zmuszeni do przeniesienia działalności za granicę, głównie do krajów takich jak Stany Zjednoczone czy Kazachstan. Chociaż rynek stopniowo odbudował swoją pozycję, decyzja Chin pokazała, jak duży wpływ na rynek kryptowalut mogą mieć regulacje prawne.&lt;/b&gt;&lt;/b&gt;&lt;/b&gt;
+
+        Kraje podążające inną ścieżką&lt;/b&gt;&lt;/b&gt;
+        Podczas gdy Chiny wprowadziły zakaz, inne kraje, takie jak Salwador, postanowiły pójść w zupełnie innym kierunku, przyjmując Bitcoina jako legalny środek płatniczy. Takie działania pokazują różnorodność podejść do kryptowalut na świecie i wskazują, że globalne regulacje są trudne do wprowadzenia.
+
+    </string>
+
+    <string name="chapter6_5_title">&lt;b&gt;Ryzyko technologiczne i błędy w kodzie&lt;/b&gt;</string>
+    <string name="chapter6_5">
+
+        Kryptowaluty opierają się na technologii blockchain, która choć rewolucyjna, nie jest wolna od ryzyka technologicznego. Jak każdy system informatyczny, blockchainy, smart kontrakty oraz aplikacje oparte na tej technologii mogą zawierać błędy w kodzie lub luki bezpieczeństwa, które stanowią potencjalne zagrożenie dla użytkowników. Wystarczy jeden krytyczny błąd, by narazić projekty na ogromne straty finansowe, a użytkowników na utratę zaufania do całego systemu.&lt;/b&gt;&lt;/b&gt;&lt;/b&gt;
+
+        Problemy związane z ryzykiem technologicznym&lt;/b&gt;&lt;/b&gt;
+
+        Luki w smart kontraktach: Smart kontrakty to programowalne umowy działające w sieci blockchain. Jeśli kod smart kontraktu zawiera błędy, hakerzy mogą je wykorzystać do kradzieży środków lub manipulacji działaniem kontraktu.&lt;/b&gt;&lt;/b&gt;
+        Skomplikowane aktualizacje: Blockchainy, jako systemy zdecentralizowane, wymagają konsensusu społeczności przy wprowadzaniu poprawek lub aktualizacji. Oznacza to, że nawet jeśli luka w kodzie zostanie wykryta, jej naprawa może być powolna i trudna do przeprowadzenia.&lt;/b&gt;&lt;/b&gt;
+        Brak audytów kodu: Wiele projektów blockchainowych jest tworzonych szybko, często bez przeprowadzania pełnych audytów bezpieczeństwa, co zwiększa ryzyko wprowadzenia błędów do systemu.&lt;/b&gt;&lt;/b&gt;&lt;/b&gt;
+
+        Przykład: Eksploatacja DAO&lt;/b&gt;&lt;/b&gt;
+        Jednym z najbardziej znanych przypadków ryzyka technologicznego w świecie kryptowalut była eksploatacja zdecentralizowanej organizacji autonomicznej (DAO) w 2016 roku. DAO, oparta na blockchainie Ethereum, była jednym z pierwszych projektów, które miały na celu zarządzanie środkami inwestorów poprzez zdecentralizowany mechanizm głosowania. Niestety, luka w kodzie pozwoliła hakerom wykorzystać exploit, który umożliwił im przejęcie około 60 milionów USD w Etherze.&lt;/b&gt;&lt;/b&gt;
+
+        Skutki tego wydarzenia były dramatyczne. Społeczność Ethereum stanęła przed trudnym wyborem: zaakceptować stratę środków lub wprowadzić zmianę w blockchainie, by odzyskać utracone fundusze. Ostatecznie podjęto decyzję o przeprowadzeniu tzw. hard forka, co doprowadziło do podziału łańcucha na dwie osobne sieci: Ethereum (ETH), które odzyskało skradzione środki, oraz Ethereum Classic (ETC), które zachowało oryginalny łańcuch bez zmian. Wydarzenie to pokazało, jak ogromne konsekwencje mogą wynikać z pojedynczych błędów technologicznych.
+
+    </string>
+
+    <string name="chapter6_6_title">&lt;b&gt;Brak edukacji i impulsywne inwestycje&lt;/b&gt;</string>
+    <string name="chapter6_6">
+
+        Kryptowaluty przyciągają inwestorów z różnych środowisk, jednak wiele osób decyduje się na inwestycje w tę technologię bez pełnego zrozumienia jej specyfiki, potencjalnych ryzyk i długoterminowych konsekwencji. Brak odpowiedniej edukacji i zrozumienia tematu prowadzi do impulsywnych decyzji, które często kończą się dużymi stratami finansowymi.&lt;/b&gt;&lt;/b&gt;&lt;/b&gt;
+
+        Czynniki sprzyjające impulsywnym inwestycjom&lt;/b&gt;&lt;/b&gt;
+
+        Spekulacja i szybkie zyski: Wiele osób wkracza na rynek kryptowalut z nadzieją na szybki zysk, napędzane obietnicą szybkiego wzrostu wartości. Takie podejście skutkuje często impulsywnym kupowaniem aktywów w chwilach euforii rynkowej, bez odpowiedniej analizy.&lt;/b&gt;&lt;/b&gt;
+        Niedostateczna wiedza o technologii: Inwestorzy nie zawsze rozumieją, jak działają kryptowaluty, jakie są fundamenty technologiczne blockchainów i jakie zagrożenia wiążą się z przechowywaniem aktywów w portfelach cyfrowych. To powoduje, że podejmują decyzje, kierując się jedynie chwilowymi trendami.&lt;/b&gt;&lt;/b&gt;
+        Wpływ mediów społecznościowych: Social media i platformy takie jak Twitter, Reddit czy YouTube są pełne informacji o kryptowalutach, ale także fałszywych obietnicach szybkich zysków. Celebryci, influencerzy czy anonimowi użytkownicy mogą wywołać "hype", czyli euforyczny wzrost zainteresowania, który skłania inwestorów do kupna aktywów bez zastanowienia się nad ich długoterminową wartością.&lt;/b&gt;&lt;/b&gt;&lt;/b&gt;
+
+        Przykład: "Hype" wokół Dogecoina&lt;/b&gt;&lt;/b&gt;
+        Dogecoin, kryptowaluta, która początkowo została stworzona jako żart, stała się obiektem ogromnego "hype'u" w 2021 roku. Początkowo Dogecoin nie miał większego zastosowania ani celu poza byciem zabawnym tokenem opartym na popularnym memie. Jednak dzięki poparciu takich postaci jak Elon Musk, Dogecoin zyskał ogromną popularność i znalazł się w centrum uwagi inwestorów. W ciągu kilku miesięcy cena tej kryptowaluty wzrosła o kilka tysięcy procent, co przyciągnęło miliony nowych inwestorów, którzy liczyli na szybkie zyski.&lt;/b&gt;&lt;/b&gt;
+
+        Niestety, jak to często bywa w przypadku rynków spekulacyjnych, cena Dogecoina osiągnęła swój szczyt wkrótce po tym, jak zaczęło się o nim głośno mówić. Po kilku tygodniach euforii nastąpił dramatyczny spadek wartości, co spowodowało ogromne straty dla inwestorów, którzy kupili na szczycie. Wielu nowych inwestorów nie zdążyło sprzedać swoich aktywów na czas, co spotęgowało ich straty. Ten przypadek ukazuje, jak brak edukacji na temat technologii i impulsowe decyzje inwestycyjne mogą prowadzić do poważnych konsekwencji finansowych.
+
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

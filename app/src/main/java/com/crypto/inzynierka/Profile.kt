@@ -29,36 +29,56 @@ class Profile : Fragment() {
 
         dbHelper = DBConnection(requireContext(), "cryptoDB", MainViewModel.DB_VERSION)
 
+        loadUsername()
         loadResultFromDatabase()
         countTests()
         updateProgressBar()
     }
 
-    private fun loadResultFromDatabase() {
+    private fun loadUsername() {
         val db = dbHelper.readableDatabase
+        val cursor: Cursor = db.rawQuery(
+            "SELECT Username FROM Username WHERE flag = 1",
+            null
+        )
 
-        val cursor: Cursor = db.rawQuery("SELECT Result FROM Results WHERE ID = '1'", null)
         if (cursor.moveToFirst()) {
-            val result = cursor.getString(0)
-
-            binding.percent1.text = "$result%"
-
-            if (result > "60") {
-                binding.percent1.setTextColor(resources.getColor(R.color.green, null))
-            }
-
-        } else {
-            binding.percent1.text = "Brak podejścia"
+            val username = cursor.getString(0)
+            binding.nick.text = username
         }
-
         cursor.close()
         db.close()
     }
 
+    private fun loadResultFromDatabase() {
+        val db = dbHelper.readableDatabase
+        val resultIds = arrayOf("1", "2", "3", "4") // ID sprawdzianów w bazie
+        val resultViews = arrayOf(binding.percent1, binding.percent2, binding.percent3, binding.percent4)
+        val iconViews = arrayOf(binding.introicon, binding.blockchainicon, binding.bitcoinicon, binding.ethereumicon)
+
+        for ((index, id) in resultIds.withIndex()) {
+            val cursor: Cursor = db.rawQuery("SELECT Result FROM Results WHERE ID = ?", arrayOf(id))
+            if (cursor.moveToFirst()) {
+                val result = cursor.getString(0)
+                resultViews[index].text = "$result%"
+
+                if (result.toInt() >= 70) {
+                    resultViews[index].setTextColor(resources.getColor(R.color.green, null))
+                    iconViews[index].setImageResource(R.drawable.testicon_done)
+                }
+            } else {
+                resultViews[index].text = "Brak"
+            }
+            cursor.close()
+        }
+        db.close()
+    }
+
+
     private fun countTests() {
         val db = dbHelper.readableDatabase
 
-        val cursor: Cursor = db.rawQuery("SELECT COUNT(DISTINCT Chapter) FROM Results", null)
+        val cursor: Cursor = db.rawQuery("SELECT COUNT(DISTINCT Chapter) FROM Results WHERE Result >= 70", null)
 
         if (cursor.moveToFirst()) {
             testNumber = cursor.getInt(0)
@@ -70,7 +90,7 @@ class Profile : Fragment() {
 
     private fun updateProgressBar() {
         binding.progressBar.apply {
-            max = 5
+            max = 4
             progress = testNumber
             scaleX = -1f
             scaleY = -1f

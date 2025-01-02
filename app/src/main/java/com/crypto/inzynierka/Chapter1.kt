@@ -51,7 +51,7 @@ class Chapter1 : Fragment() {
             binding.string.text = Html.fromHtml(getString(R.string.chapter1_3), Html.FROM_HTML_MODE_COMPACT)
 
             binding.Quiz.setOnClickListener {
-                replaceFragment(Chapter1_3game(), 0)
+                replaceFragment(Chapter1quiz(), 3)
             }
         } else if (CurrentChapter == 4) {
             binding.Title.text = Html.fromHtml(getString(R.string.chapter1_4_title), Html.FROM_HTML_MODE_COMPACT)
@@ -65,16 +65,37 @@ class Chapter1 : Fragment() {
             binding.string.text = Html.fromHtml(getString(R.string.chapter1_5), Html.FROM_HTML_MODE_COMPACT)
 
             binding.Quiz.setOnClickListener {
-                replaceFragment(Chapter1(),6)
+                replaceFragment(Chapter1quiz(),5)
             }
 
-            binding.Quiz.text = "Wady"
         } else if (CurrentChapter == 6) {
             binding.Title.text = Html.fromHtml(getString(R.string.chapter1_6_title), Html.FROM_HTML_MODE_COMPACT)
             binding.string.text = Html.fromHtml(getString(R.string.chapter1_6), Html.FROM_HTML_MODE_COMPACT)
 
             binding.Quiz.setOnClickListener {
-                replaceFragment(Chapter1quiz(),5)
+                replaceFragment(Chapter1quiz(),6)
+            }
+        } else if (CurrentChapter == 7) {
+            binding.Title.text = Html.fromHtml(getString(R.string.chapter1_7_title), Html.FROM_HTML_MODE_COMPACT)
+            binding.string.text = Html.fromHtml(getString(R.string.chapter1_7), Html.FROM_HTML_MODE_COMPACT)
+
+            binding.Quiz.setOnClickListener {
+                replaceFragment(Chapter1quiz(),7)
+            }
+        } else if (CurrentChapter == 8) {
+            binding.Title.text = Html.fromHtml(getString(R.string.chapter1_8_title), Html.FROM_HTML_MODE_COMPACT)
+            binding.string.text = Html.fromHtml(getString(R.string.chapter1_8), Html.FROM_HTML_MODE_COMPACT)
+
+            binding.Quiz.setOnClickListener {
+                replaceFragment(Chapter1quiz(),8)
+            }
+        }
+
+        binding.scrollView.setOnScrollChangeListener { v, scrollX, scrollY, oldScrollX, 	oldScrollY ->
+            val length = binding.scrollView.getChildAt(0).height - binding.scrollView.height
+            binding.progressbar.apply {
+                max = length
+                progress = scrollY
             }
         }
     }

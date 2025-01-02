@@ -25,13 +25,13 @@
             android:textStyle="bold"/>
 
         <ImageView
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:src="@drawable/profile_icon"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/baseline_account_circle_24"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/title"
-            android:layout_marginTop="30dp"
-            android:alpha="0.4"/>
+            android:layout_marginTop="20dp"
+            android:alpha="0.5"/>
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -43,6 +43,18 @@
             android:layout_marginTop="20dp"
             android:layout_below="@id/title"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="321"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/nick"
+            android:textStyle="bold"
+            android:layout_below="@id/progressBar"
+            android:layout_marginTop="10dp"/>
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -53,7 +65,7 @@
             android:layout_centerHorizontal="true"
             android:id="@+id/tests"
             android:textStyle="bold"
-            android:layout_below="@id/progressBar"
+            android:layout_below="@id/nick"
             android:layout_marginTop="30dp"/>
 
 
@@ -79,15 +91,21 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/lineAboveText1">
 
-
+                <ImageView
+                    android:id="@+id/introicon"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/testicon" />
 
                 <TextView
                     android:id="@+id/test1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="26dp"
                     android:text="Wstęp"
                     android:textColor="@color/white"
                     android:textSize="22dp" />
@@ -97,8 +115,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="26dp"
                     android:layout_alignParentRight="true"
                     android:text="%"
                     android:textColor="@color/white"
@@ -124,14 +141,22 @@
                 android:layout_below="@id/lineBelowText1">
 
 
+                <ImageView
+                    android:id="@+id/blockchainicon"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/testicon" />
+
 
                 <TextView
                     android:id="@+id/test2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="26dp"
                     android:text="Blockchain"
                     android:textColor="@color/white"
                     android:textSize="22dp" />
@@ -141,13 +166,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="26dp"
                     android:layout_alignParentRight="true"
                     android:text="%"
                     android:textColor="@color/white"
                     android:textSize="22dp" />
-
 
             </RelativeLayout>
 
@@ -160,7 +183,106 @@
                 android:layout_centerHorizontal="true"
                 android:background="@color/dark_blue" />
 
-    </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/section3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lineBelowText2">
 
-</RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/bitcoinicon"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/testicon" />
+
+
+                <TextView
+                    android:id="@+id/test3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="26dp"
+                    android:text="Bitcoin"
+                    android:textColor="@color/white"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/percent3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="26dp"
+                    android:layout_alignParentRight="true"
+                    android:text="%"
+                    android:textColor="@color/white"
+                    android:textSize="22dp" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:id="@+id/lineBelowText3"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@id/section3"
+                android:layout_centerHorizontal="true"
+                android:background="@color/dark_blue" />
+
+            <RelativeLayout
+                android:id="@+id/section4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lineBelowText3">
+
+
+                <ImageView
+                    android:id="@+id/ethereumicon"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/testicon" />
+
+
+                <TextView
+                    android:id="@+id/test4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="26dp"
+                    android:text="Ethereum"
+                    android:textColor="@color/white"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/percent4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="26dp"
+                    android:layout_alignParentRight="true"
+                    android:text="%"
+                    android:textColor="@color/white"
+                    android:textSize="22dp" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:id="@+id/lineBelowText4"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@id/section4"
+                android:layout_centerHorizontal="true"
+                android:background="@color/dark_blue" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
 </RelativeLayout>

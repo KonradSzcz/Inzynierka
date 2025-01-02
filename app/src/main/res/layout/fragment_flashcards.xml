@@ -7,6 +7,11 @@
     tools:context=".Flashcards"
     android:background="@color/black">
 
+    <nl.dionsegijn.konfetti.xml.KonfettiView
+        android:id="@+id/konfettiView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
     <LinearLayout
         android:id="@+id/chapterSelection"
         android:layout_width="match_parent"
@@ -81,14 +86,13 @@
     </LinearLayout>
 
 
-
-
     <!-- RecyclerView for flashcards -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/chapterSelection" />
+        android:layout_below="@id/chapterSelection"
+        android:layout_above="@id/card_counter"/>
 
     <!-- Card counter TextView -->
     <TextView
@@ -97,7 +101,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="20dp"
         android:text="0 / 0"
         android:textColor="@color/white"
         android:textSize="26sp"

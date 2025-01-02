@@ -11,7 +11,8 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/chapter1" />
+        android:layout_marginTop="-20dp"
+        android:src="@drawable/test2" />
 
 
     <RelativeLayout
@@ -27,7 +28,6 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:justificationMode="inter_word"
             android:text="PYTANIE"
             android:textColor="@color/white"
             android:textSize="30dp"

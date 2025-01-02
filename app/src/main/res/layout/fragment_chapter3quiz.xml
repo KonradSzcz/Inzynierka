@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Chapter3quiz">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:src="@drawable/chapter3" />
+
+
+
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imageView"
+        android:layout_centerInParent="true"
+        android:id="@+id/text">
+
+        <TextView
+            android:id="@+id/quiz1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:justificationMode="inter_word"
+            android:text="QUIZ"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/pytanie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quiz1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="casual"
+            android:justificationMode="inter_word"
+            android:text="Pytanie"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <View
+            android:id="@+id/lineBelowText1"
+            android:layout_width="340dp"
+            android:layout_height="1dp"
+            android:layout_below="@id/pytanie"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@color/light_blue" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/pytanie"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:justificationMode="inter_word"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quiz1"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="130dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <Button
+                android:id="@+id/option1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="a"
+                android:layout_marginBottom="5dp"/>
+
+            <Button
+                android:id="@+id/option2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="a"
+                android:layout_marginBottom="5dp"/>
+
+            <Button
+                android:id="@+id/option3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="a"
+                android:layout_marginBottom="5dp"/>
+
+            <Button
+                android:id="@+id/option4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="a"
+                android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/nextChapter"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="70dp"
+            android:text="Dalej"
+            android:drawableRight="@drawable/baseline_arrow_forward_24"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+</RelativeLayout>

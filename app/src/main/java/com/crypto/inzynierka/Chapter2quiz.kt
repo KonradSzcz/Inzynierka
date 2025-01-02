@@ -114,13 +114,14 @@ class Chapter2quiz : Fragment() {
             checkAnswer(3)
         }
 
-        if (CurrentChapter < 4) {
+        if (CurrentChapter < 8) {
             binding.nextChapter.setOnClickListener {
                 replaceFragment(Chapter2(), CurrentChapter+1)
             }
         } else {
+            binding.nextChapter.text = "Sprawdzian"
             binding.nextChapter.setOnClickListener {
-                replaceFragment(Chapter1test(),0)
+                replaceFragment(Chapter1test(),2)
             }
         }
     }
@@ -164,7 +165,7 @@ class Chapter2quiz : Fragment() {
         binding.pytanie.text = "Twój wynik"
         binding.score.text = "$score / ${questions.size}"
 
-        if (score >= 0.75 * questions.size) {
+        if (score >= 0.5 * questions.size) {
             saveResult()
         }
     }

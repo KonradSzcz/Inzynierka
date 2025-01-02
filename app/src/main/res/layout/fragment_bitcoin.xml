@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Bitcoin">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <RelativeLayout
+            android:id="@+id/topPanel"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/titlebitcoin">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:progressDrawable="@drawable/circular_progress2"
+                android:rotation="180" />
+
+            <TextView
+                android:id="@+id/progressTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="100%"
+                android:textSize="20dp"
+                android:textColor="@android:color/white" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/progressBar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/chapters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="10dp"
+                    android:alpha="0.8"
+                    android:text="Wszystkie rozdziały: 9"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/endedchapters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="10dp"
+                    android:alpha="0.8"
+                    android:text="Pozostałe rozdziały: 0"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/topPanel">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/section1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="15dp">
+
+                    <ImageView
+                        android:id="@+id/readIndicator1"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="30dp"
+                        android:src="@drawable/baseline_check_circle_24_unread" />
+
+                    <TextView
+                        android:id="@+id/rozdzial1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_toEndOf="@id/readIndicator1"
+                        android:text="Czym jest Bitcoin?"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/rozdzial1time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/readIndicator1"
+                        android:layout_alignStart="@id/readIndicator1"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="1dp"
+                        android:text="37s"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/rozdzial1content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rozdzial1"
+                        android:layout_alignStart="@id/rozdzial1"
+                        android:layout_marginEnd="30dp"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxLines="2"
+                        android:scrollHorizontally="false"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/lineBelowText1"
+                    android:layout_width="360dp"
+                    android:layout_height="4dp"
+                    android:layout_below="@id/section1"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/dark_blue" />
+
+                <!-- Layout dla Rozdziału 2 -->
+                <RelativeLayout
+                    android:id="@+id/section2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lineBelowText1"
+                    android:layout_marginVertical="15dp">
+
+                    <ImageView
+                        android:id="@+id/readIndicator2"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="30dp"
+                        android:src="@drawable/baseline_check_circle_24_unread" />
+
+                    <TextView
+                        android:id="@+id/rozdzial2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_toStartOf="@id/readIndicator2"
+                        android:text="Historia Bitcoina"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/rozdzial2time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/readIndicator2"
+                        android:layout_alignStart="@id/readIndicator2"
+                        android:layout_marginTop="1dp"
+                        android:text="1m 4s"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/rozdzial2content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rozdzial2"
+                        android:layout_alignStart="@id/rozdzial2"
+                        android:layout_alignEnd="@id/rozdzial2"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxLines="2"
+                        android:scrollHorizontally="false"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <!-- Linia pod Rozdziałem 2 -->
+                <View
+                    android:id="@+id/lineBelowText2"
+                    android:layout_width="360dp"
+                    android:layout_height="4dp"
+                    android:layout_below="@id/section2"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/dark_blue" />
+
+                <!-- Layout dla Rozdziału 3 -->
+                <RelativeLayout
+                    android:id="@+id/section3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lineBelowText2"
+                    android:layout_marginVertical="15dp">
+
+                    <ImageView
+                        android:id="@+id/readIndicator3"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="30dp"
+                        android:src="@drawable/baseline_check_circle_24_unread" />
+
+                    <TextView
+                        android:id="@+id/rozdzial3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_toEndOf="@id/readIndicator3"
+                        android:text="Twórca Bitcoina"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/rozdzial3time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/readIndicator3"
+                        android:layout_alignStart="@id/readIndicator3"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="1dp"
+                        android:text="48s"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/rozdzial3content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rozdzial3"
+                        android:layout_alignStart="@id/rozdzial3"
+                        android:layout_marginEnd="30dp"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxLines="2"
+                        android:scrollHorizontally="false"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <!-- Linia pod Rozdziałem 3 -->
+                <View
+                    android:id="@+id/lineBelowText3"
+                    android:layout_width="360dp"
+                    android:layout_height="4dp"
+                    android:layout_below="@id/section3"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/dark_blue" />
+
+                <!-- Layout dla Rozdziału 4 -->
+                <RelativeLayout
+                    android:id="@+id/section4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lineBelowText3"
+                    android:layout_marginVertical="15dp">
+
+                    <ImageView
+                        android:id="@+id/readIndicator4"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="30dp"
+                        android:src="@drawable/baseline_check_circle_24_unread" />
+
+                    <TextView
+                        android:id="@+id/rozdzial4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_toStartOf="@id/readIndicator4"
+                        android:text="Znaczenie Bitcoina \nw gospodarce"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/rozdzial4time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/readIndicator4"
+                        android:layout_alignStart="@id/readIndicator4"
+                        android:layout_marginTop="1dp"
+                        android:text="1m 1s"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/rozdzial4content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rozdzial4"
+                        android:layout_alignStart="@id/rozdzial4"
+                        android:layout_alignEnd="@id/rozdzial4"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:scrollHorizontally="false"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <!-- Linia pod Rozdziałem 4 -->
+                <View
+                    android:id="@+id/lineBelowText4"
+                    android:layout_width="360dp"
+                    android:layout_height="4dp"
+                    android:layout_below="@id/section4"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/dark_blue" />
+
+                <!-- Layout dla Rozdziału 5 -->
+                <RelativeLayout
+                    android:id="@+id/section5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lineBelowText4"
+                    android:layout_marginVertical="15dp">
+
+                    <ImageView
+                        android:id="@+id/readIndicator5"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="30dp"
+                        android:src="@drawable/baseline_check_circle_24_unread" />
+
+                    <TextView
+                        android:id="@+id/rozdzial5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_toEndOf="@id/readIndicator5"
+                        android:text="Jak kupić Bitcoina?"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/rozdzial5time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/readIndicator5"
+                        android:layout_alignStart="@id/readIndicator5"
+                        android:layout_marginTop="1dp"
+                        android:text="50s"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/rozdzial5content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rozdzial5"
+                        android:layout_alignStart="@id/rozdzial5"
+                        android:layout_marginEnd="30dp"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxLines="2"
+                        android:scrollHorizontally="false"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+
+                <!-- Linia pod Rozdziałem 5 -->
+                <View
+                    android:id="@+id/lineBelowText5"
+                    android:layout_width="360dp"
+                    android:layout_height="4dp"
+                    android:layout_below="@id/section5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/dark_blue" />
+
+                <!-- Layout dla Rozdziału 6 -->
+                <RelativeLayout
+                    android:id="@+id/section6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lineBelowText5"
+                    android:layout_marginVertical="15dp">
+
+                    <ImageView
+                        android:id="@+id/readIndicator6"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="30dp"
+                        android:src="@drawable/baseline_check_circle_24_unread" />
+
+                    <TextView
+                        android:id="@+id/rozdzial6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_toStartOf="@id/readIndicator6"
+                        android:text="Jak działa wydobywanie Bitcoinów?"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/rozdzial6time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/readIndicator6"
+                        android:layout_alignStart="@id/readIndicator6"
+                        android:layout_marginTop="1dp"
+                        android:text="1m 33s"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/rozdzial6content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rozdzial6"
+                        android:layout_alignStart="@id/rozdzial6"
+                        android:layout_alignEnd="@id/rozdzial6"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:scrollHorizontally="false"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+
+                <!-- Linia pod Rozdziałem 6 -->
+                <View
+                    android:id="@+id/lineBelowText6"
+                    android:layout_width="360dp"
+                    android:layout_height="4dp"
+                    android:layout_below="@id/section6"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/dark_blue" />
+
+
+                <!-- Layout dla Rozdziału 7 -->
+                <RelativeLayout
+                    android:id="@+id/section7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lineBelowText6"
+                    android:layout_marginVertical="15dp">
+
+                    <ImageView
+                        android:id="@+id/readIndicator7"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="30dp"
+                        android:src="@drawable/baseline_check_circle_24_unread" />
+
+                    <TextView
+                        android:id="@+id/rozdzial7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_toEndOf="@id/readIndicator7"
+                        android:text="Wydobywanie w chmurze"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/rozdzial7time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/readIndicator7"
+                        android:layout_marginTop="1dp"
+                        android:text="1m 2s"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/rozdzial7content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rozdzial7"
+                        android:layout_alignStart="@id/rozdzial7"
+                        android:layout_marginEnd="30dp"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxLines="2"
+                        android:scrollHorizontally="false"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <!-- Linia pod Rozdziałem 7 -->
+                <View
+                    android:id="@+id/lineBelowText7"
+                    android:layout_width="360dp"
+                    android:layout_height="4dp"
+                    android:layout_below="@id/section7"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/dark_blue" />
+
+                <!-- Layout dla Rozdziału 8 -->
+                <RelativeLayout
+                    android:id="@+id/section8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lineBelowText7"
+                    android:layout_marginVertical="15dp">
+
+                    <ImageView
+                        android:id="@+id/readIndicator8"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="30dp"
+                        android:src="@drawable/baseline_check_circle_24_unread" />
+
+                    <TextView
+                        android:id="@+id/rozdzial8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_toStartOf="@id/readIndicator8"
+                        android:text="Jak przechowywać BTC?"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/rozdzial8time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/readIndicator8"
+                        android:layout_alignStart="@id/readIndicator8"
+                        android:layout_marginTop="1dp"
+                        android:text="1m 16s"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/rozdzial8content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rozdzial8"
+                        android:layout_alignStart="@id/rozdzial8"
+                        android:layout_alignEnd="@id/rozdzial8"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxLines="2"
+                        android:scrollHorizontally="false"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+
+                <!-- Linia pod Rozdziałem 8 -->
+                <View
+                    android:id="@+id/lineBelowText8"
+                    android:layout_width="360dp"
+                    android:layout_height="4dp"
+                    android:layout_below="@id/section8"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/dark_blue" />
+
+
+                <!-- Layout dla Rozdziału 7 -->
+                <RelativeLayout
+                    android:id="@+id/section9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lineBelowText8"
+                    android:layout_marginVertical="15dp">
+
+                    <ImageView
+                        android:id="@+id/readIndicator9"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="30dp"
+                        android:src="@drawable/baseline_check_circle_24_unread" />
+
+                    <TextView
+                        android:id="@+id/rozdzial9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_toEndOf="@id/readIndicator9"
+                        android:text="Transakcje Bitcoinowe"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/rozdzial9time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/readIndicator9"
+                        android:layout_alignStart="@id/readIndicator9"
+                        android:layout_marginTop="1dp"
+                        android:text="1m 4s"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/rozdzial9content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rozdzial9"
+                        android:layout_alignStart="@id/rozdzial9"
+                        android:layout_marginEnd="30dp"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:maxLines="2"
+                        android:scrollHorizontally="false"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+
+                <!-- Linia pod Rozdziałem 9 -->
+                <View
+                    android:id="@+id/lineBelowText9"
+                    android:layout_width="360dp"
+                    android:layout_height="4dp"
+                    android:layout_below="@id/section9"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/dark_blue" />
+
+
+                <!-- Layout pod Rozdziałem 9 -->
+                <RelativeLayout
+                    android:id="@+id/game"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lineBelowText9"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/gametext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="15dp"
+                        android:layout_marginRight="20dp"
+                        android:text="POŁĄCZ DEFINICJE"
+                        android:textColor="@color/white"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginVertical="5dp"
+                        android:layout_toEndOf="@id/gametext"
+                        android:src="@drawable/controller" />
+
+                </RelativeLayout>
+
+
+                <View
+                    android:id="@+id/lineBelowText10"
+                    android:layout_width="360dp"
+                    android:layout_height="4dp"
+                    android:layout_below="@id/game"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/dark_blue" />
+
+
+                <!-- Layout pod Rozdziałem 9 -->
+                <RelativeLayout
+                    android:id="@+id/test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lineBelowText10"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/testtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="15dp"
+                        android:layout_marginRight="20dp"
+                        android:text="SPRAWDZNIAN"
+                        android:textColor="@color/white"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginVertical="10dp"
+                        android:layout_toEndOf="@id/testtext"
+                        android:src="@drawable/testicon" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

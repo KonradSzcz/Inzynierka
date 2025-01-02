@@ -11,6 +11,7 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
         android:src="@drawable/chapter1" />
 
 
@@ -126,7 +127,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="40dp"
             android:layout_marginTop="70dp"
-            android:text="Główne cechy i własności kryptowalut"
+            android:text="Dalej"
             android:drawableRight="@drawable/baseline_arrow_forward_24"
             android:visibility="invisible" />
 
