@@ -109,7 +109,7 @@
                         android:layout_below="@id/readIndicator1"
                         android:layout_alignStart="@id/readIndicator1"
                         android:layout_marginTop="1dp"
-                        android:text="44s"
+                        android:text="45s"
                         android:layout_marginStart="10dp"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
@@ -173,7 +173,7 @@
                         android:layout_below="@id/readIndicator2"
                         android:layout_alignStart="@id/readIndicator2"
                         android:layout_marginTop="1dp"
-                        android:text="47s"
+                        android:text="45s"
                         android:layout_marginStart="10dp"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
@@ -237,7 +237,7 @@
                         android:layout_below="@id/readIndicator3"
                         android:layout_alignStart="@id/readIndicator3"
                         android:layout_marginTop="1dp"
-                        android:text="46s"
+                        android:text="45s"
                         android:layout_marginStart="10dp"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
@@ -366,7 +366,7 @@
                         android:layout_below="@id/readIndicator5"
                         android:layout_alignStart="@id/readIndicator5"
                         android:layout_marginTop="1dp"
-                        android:text="41s"
+                        android:text="45s"
                         android:layout_marginStart="10dp"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
@@ -398,34 +398,6 @@
                     android:layout_marginTop="5dp"
                     android:background="@color/dark_blue" />
 
-
-                <RelativeLayout
-                    android:id="@+id/test"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/lineBelowText5"
-                    android:layout_marginTop="5dp"
-                    android:layout_centerHorizontal="true">
-
-                    <TextView
-                        android:id="@+id/testtext"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginVertical="15dp"
-                        android:layout_marginRight="20dp"
-                        android:text="SPRAWDZNIAN"
-                        android:textColor="@color/white"
-                        android:textSize="24dp"
-                        android:textStyle="bold" />
-
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_toEndOf="@id/testtext"
-                        android:layout_marginVertical="10dp"
-                        android:src="@drawable/testicon"/>
-
-                </RelativeLayout>
             </RelativeLayout>
         </ScrollView>
     </RelativeLayout>

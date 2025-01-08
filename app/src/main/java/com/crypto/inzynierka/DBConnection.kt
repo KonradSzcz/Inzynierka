@@ -715,31 +715,31 @@ class DBConnection(context: Context, dbname: String, dbversion: Int) : SQLiteOpe
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Do szacowania ilości wydobywanych bloków', 81, 0)")
 
             // Chapter3_7
-            db?.execSQL("INSERT INTO $TABLE_NAME_QUESTIONS ($COL2_QUESTIONS, $COL3_QUESTIONS) VALUES ('Czym jest wydobywanie w chmurze?', 'chapter3_7')")
+            db?.execSQL("INSERT INTO $TABLE_NAME_QUESTIONS ($COL2_QUESTIONS, $COL3_QUESTIONS) VALUES ('Czym jest wydobywanie w chmurze?', 'chapter37')")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Procesem wydobywania kryptowalut przy użyciu wynajmowanej mocy obliczeniowej', 82, 1)")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Instalowaniem oprogramowania górniczego na komputerze domowym', 82, 0)")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Metodą przechowywania Bitcoinów w portfelu online', 82, 0)")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Technologią umożliwiającą wydobywanie wyłącznie na komputerach stacjonarnych', 82, 0)")
 
-            db?.execSQL("INSERT INTO $TABLE_NAME_QUESTIONS ($COL2_QUESTIONS, $COL3_QUESTIONS) VALUES ('Jakie są zalety wydobywania w chmurze?', 'chapter3_7')")
+            db?.execSQL("INSERT INTO $TABLE_NAME_QUESTIONS ($COL2_QUESTIONS, $COL3_QUESTIONS) VALUES ('Jakie są zalety wydobywania w chmurze?', 'chapter37')")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Brak konieczności inwestowania w sprzęt i niskie koszty energii', 83, 1)")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Stałe zarobki niezależnie od opłacalności wydobycia', 83, 0)")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Gwarantowana wygrana w sieci Bitcoin', 83, 0)")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Niezależność od kursu kryptowalut', 83, 0)")
 
-            db?.execSQL("INSERT INTO $TABLE_NAME_QUESTIONS ($COL2_QUESTIONS, $COL3_QUESTIONS) VALUES ('Czym jest pula wydobywcza?', 'chapter3_7')")
+            db?.execSQL("INSERT INTO $TABLE_NAME_QUESTIONS ($COL2_QUESTIONS, $COL3_QUESTIONS) VALUES ('Czym jest pula wydobywcza?', 'chapter37')")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Wspólnym łączeniem zasobów przez górników dla zwiększenia mocy obliczeniowej', 84, 1)")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Metodą przechowywania Bitcoinów w jednej lokalizacji', 84, 0)")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Siecią serwerów służących do obsługi kryptowalut', 84, 0)")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Algorytmem służącym do szyfrowania transakcji', 84, 0)")
 
-            db?.execSQL("INSERT INTO $TABLE_NAME_QUESTIONS ($COL2_QUESTIONS, $COL3_QUESTIONS) VALUES ('Jak dzielone są nagrody w puli wydobywczej?', 'chapter3_7')")
+            db?.execSQL("INSERT INTO $TABLE_NAME_QUESTIONS ($COL2_QUESTIONS, $COL3_QUESTIONS) VALUES ('Jak dzielone są nagrody w puli wydobywczej?', 'chapter37')")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Proporcjonalnie do wkładu górników w proces wydobycia', 85, 1)")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Równo między wszystkich uczestników, niezależnie od ich wkładu', 85, 0)")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Zależnie od kursu Bitcoina w danym momencie', 85, 0)")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('W zależności od lokalizacji użytkowników', 85, 0)")
 
-            db?.execSQL("INSERT INTO $TABLE_NAME_QUESTIONS ($COL2_QUESTIONS, $COL3_QUESTIONS) VALUES ('Jakie jest główne ograniczenie puli wydobywczej?', 'chapter3_7')")
+            db?.execSQL("INSERT INTO $TABLE_NAME_QUESTIONS ($COL2_QUESTIONS, $COL3_QUESTIONS) VALUES ('Jakie jest główne ograniczenie puli wydobywczej?', 'chapter37')")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Nagrody są dzielone między większą liczbę uczestników', 86, 1)")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Wymaga wysokich kosztów początkowych na sprzęt', 86, 0)")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Brak gwarancji bezpieczeństwa blockchaina', 86, 0)")
@@ -873,31 +873,31 @@ class DBConnection(context: Context, dbname: String, dbversion: Int) : SQLiteOpe
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Wydobywanie Ethereum za pomocą kart graficznych w specjalnych ośrodkach', 106, 0)")
 
             // Chapter4_4
-            db?.execSQL("INSERT INTO $TABLE_NAME_QUESTIONS ($COL2_QUESTIONS, $COL3_QUESTIONS) VALUES ('Jakie jest główne wyzwanie dotyczące skalowalności Ethereum?', 'chapter4_4')")
+            db?.execSQL("INSERT INTO $TABLE_NAME_QUESTIONS ($COL2_QUESTIONS, $COL3_QUESTIONS) VALUES ('Jakie jest główne wyzwanie dotyczące skalowalności Ethereum?', 'chapter44')")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Zbyt mała liczba użytkowników', 107, 0)")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Zbyt wysokie opłaty transakcyjne', 107, 0)")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Ograniczona liczba transakcji na sekundę (około 15)', 107, 1)")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Brak wsparcia dla inteligentnych kontraktów', 107, 0)")
 
-            db?.execSQL("INSERT INTO $TABLE_NAME_QUESTIONS ($COL2_QUESTIONS, $COL3_QUESTIONS) VALUES ('Co ma na celu aktualizacja Ethereum 2.0?', 'chapter4_4')")
+            db?.execSQL("INSERT INTO $TABLE_NAME_QUESTIONS ($COL2_QUESTIONS, $COL3_QUESTIONS) VALUES ('Co ma na celu aktualizacja Ethereum 2.0?', 'chapter44')")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Zmniejszenie liczby użytkowników', 108, 0)")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Wprowadzenie mechanizmu proof-of-stake zamiast proof-of-work', 108, 1)")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Zwiększenie kosztów transakcji', 108, 0)")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Ograniczenie użycia inteligentnych kontraktów', 108, 0)")
 
-            db?.execSQL("INSERT INTO $TABLE_NAME_QUESTIONS ($COL2_QUESTIONS, $COL3_QUESTIONS) VALUES ('Czym jest sharding w kontekście Ethereum?', 'chapter4_4')")
+            db?.execSQL("INSERT INTO $TABLE_NAME_QUESTIONS ($COL2_QUESTIONS, $COL3_QUESTIONS) VALUES ('Czym jest sharding w kontekście Ethereum?', 'chapter44')")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Zmiana algorytmu konsensusu', 109, 0)")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Dzielnie blockchaina na mniejsze części w celu', 109, 1)")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Zmiana technologii inteligentnych kontraktów', 109, 0)")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Wprowadzenie nowych kryptowalut w ekosystemie Ethereum', 109, 0)")
 
-            db?.execSQL("INSERT INTO $TABLE_NAME_QUESTIONS ($COL2_QUESTIONS, $COL3_QUESTIONS) VALUES ('Jakie inne rozwiązanie może poprawić skalowalność Ethereum?', 'chapter4_4')")
+            db?.execSQL("INSERT INTO $TABLE_NAME_QUESTIONS ($COL2_QUESTIONS, $COL3_QUESTIONS) VALUES ('Jakie inne rozwiązanie może poprawić skalowalność Ethereum?', 'chapter44')")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Zmniejszenie liczby transakcji w sieci', 110, 0)")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Wykorzystanie dodatkowych blockchainów, aby odciążyć główną sieć', 110, 1)")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Ograniczenie liczby inteligentnych kontraktów', 110, 0)")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Przekształcenie Ethereum w system zamknięty', 110, 0)")
 
-            db?.execSQL("INSERT INTO $TABLE_NAME_QUESTIONS ($COL2_QUESTIONS, $COL3_QUESTIONS) VALUES ('Jakie rozwiązania mają na celu poprawę szybkości transakcji i bezpieczeństwa w Ethereum?', 'chapter4_4')")
+            db?.execSQL("INSERT INTO $TABLE_NAME_QUESTIONS ($COL2_QUESTIONS, $COL3_QUESTIONS) VALUES ('Jakie rozwiązania mają na celu poprawę szybkości transakcji i bezpieczeństwa w Ethereum?', 'chapter44')")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Zmniejszenie liczby użytkowników', 111, 0)")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Rozwój nowych rozwiązań w zakresie inteligentnych kontraktów', 111, 1)")
             db?.execSQL("INSERT INTO $TABLE_NAME_ANSWERS ($COL2_ANSWERS, $COL3_ANSWERS, $COL4_ANSWERS) VALUES ('Ograniczenie liczby aktywów w sieci', 111, 0)")

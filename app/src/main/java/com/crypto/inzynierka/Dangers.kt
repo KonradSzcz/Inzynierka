@@ -128,7 +128,7 @@ class Dangers : Fragment() {
         fragment.arguments = args
         parentFragmentManager.beginTransaction()
             .replace(R.id.center, fragment)
-            .addToBackStack(null) // Dodaje operację do stosu powrotu
+            .addToBackStack(null)
             .commit()
     }
 

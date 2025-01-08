@@ -126,7 +126,7 @@ class MainActivity : AppCompatActivity() {
         cursor.close()
         db.close()
 
-        val notificationTime = lastLoginDate + 24 * 60 * 60 * 1000 // 24 hours in milliseconds
+        val notificationTime = lastLoginDate + 24 * 60 * 60 * 1000
         val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
         val intent = Intent(this, NotificationReceiver::class.java)
 

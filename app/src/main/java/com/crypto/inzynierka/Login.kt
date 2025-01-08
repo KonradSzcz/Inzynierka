@@ -2,6 +2,8 @@ package com.crypto.inzynierka
 
 import android.content.ContentValues
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -74,14 +76,20 @@ class Login : Fragment() {
             updateFlag(username)
 
             Toast.makeText(requireContext(), "Zalogowano pomyślnie", Toast.LENGTH_SHORT).show()
-            replaceFragment(Home())
 
-            // Odwołanie do elementu w MainActivity
-            val mainActivity = activity as MainActivity
-            mainActivity.findViewById<FrameLayout>(R.id.frame).visibility = View.VISIBLE
 
-            SyncTests(requireContext(), username)
             SyncResults(requireContext(), username)
+            SyncTests(requireContext(), username)
+
+            Handler(Looper.getMainLooper()).postDelayed({
+
+                val mainActivity = activity as MainActivity
+                mainActivity.findViewById<FrameLayout>(R.id.frame).visibility = View.VISIBLE
+
+                replaceFragment(Home())
+
+            }, 2000)
+
         } else {
             Toast.makeText(requireContext(), "Login nie istnieje", Toast.LENGTH_SHORT).show()
         }
@@ -93,13 +101,20 @@ class Login : Fragment() {
             Toast.makeText(requireContext(), "Login już istnieje", Toast.LENGTH_SHORT).show()
         } else {
 
-            val mainActivity = activity as MainActivity
-            mainActivity.findViewById<FrameLayout>(R.id.frame).visibility = View.VISIBLE
-
             addUser(username)
             sendUserToRemoteDatabase(requireContext(), username)
             Toast.makeText(requireContext(), "Zarejestrowano pomyślnie", Toast.LENGTH_SHORT).show()
-            replaceFragment(Home())
+
+            Handler(Looper.getMainLooper()).postDelayed({
+
+                val mainActivity = activity as MainActivity
+                mainActivity.findViewById<FrameLayout>(R.id.frame).visibility = View.VISIBLE
+
+                replaceFragment(Home())
+
+            }, 2000)
+
+
         }
     }
 

@@ -52,12 +52,12 @@ class Profile : Fragment() {
 
     private fun loadResultFromDatabase() {
         val db = dbHelper.readableDatabase
-        val resultIds = arrayOf("1", "2", "3", "4") // ID sprawdzianów w bazie
+        val resultIds = arrayOf("chapter1", "chapter2", "chapter3", "chapter4") // ID sprawdzianów w bazie
         val resultViews = arrayOf(binding.percent1, binding.percent2, binding.percent3, binding.percent4)
         val iconViews = arrayOf(binding.introicon, binding.blockchainicon, binding.bitcoinicon, binding.ethereumicon)
 
         for ((index, id) in resultIds.withIndex()) {
-            val cursor: Cursor = db.rawQuery("SELECT Result FROM Results WHERE ID = ?", arrayOf(id))
+            val cursor: Cursor = db.rawQuery("SELECT Result FROM Results WHERE Chapter = ?", arrayOf(id))
             if (cursor.moveToFirst()) {
                 val result = cursor.getString(0)
                 resultViews[index].text = "$result%"

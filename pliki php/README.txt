@@ -1,0 +1,1 @@
+Pliki php znajdowały się na zdalnym serwerze

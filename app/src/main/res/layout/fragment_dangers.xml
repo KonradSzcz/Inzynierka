@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:id="@+id/topPanel"
-            android:background="@drawable/titlewallets">
+            android:background="@drawable/titledangers">
 
             <ProgressBar
                 android:id="@+id/progressBar"
@@ -109,8 +109,7 @@
                         android:layout_below="@id/readIndicator1"
                         android:layout_alignStart="@id/readIndicator1"
                         android:layout_marginTop="1dp"
-                        android:text="44s"
-                        android:layout_marginStart="10dp"
+                        android:text="1m 30s"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
@@ -173,7 +172,7 @@
                         android:layout_below="@id/readIndicator2"
                         android:layout_alignStart="@id/readIndicator2"
                         android:layout_marginTop="1dp"
-                        android:text="47s"
+                        android:text="2m"
                         android:layout_marginStart="10dp"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
@@ -237,8 +236,7 @@
                         android:layout_below="@id/readIndicator3"
                         android:layout_alignStart="@id/readIndicator3"
                         android:layout_marginTop="1dp"
-                        android:text="46s"
-                        android:layout_marginStart="10dp"
+                        android:text="1m 15s"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
@@ -302,8 +300,7 @@
                         android:layout_below="@id/readIndicator4"
                         android:layout_alignStart="@id/readIndicator4"
                         android:layout_marginTop="1dp"
-                        android:layout_marginStart="10dp"
-                        android:text="45s"
+                        android:text="1m 30s"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
@@ -366,8 +363,7 @@
                         android:layout_below="@id/readIndicator5"
                         android:layout_alignStart="@id/readIndicator5"
                         android:layout_marginTop="1dp"
-                        android:text="41s"
-                        android:layout_marginStart="10dp"
+                        android:text="1m 30s"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
@@ -432,8 +428,7 @@
                         android:layout_below="@id/readIndicator6"
                         android:layout_alignStart="@id/readIndicator6"
                         android:layout_marginTop="1dp"
-                        android:layout_marginStart="10dp"
-                        android:text="45s"
+                        android:text="1m 45s"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 

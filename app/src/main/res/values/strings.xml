@@ -451,17 +451,17 @@
     <string name="chapter6_4_title">&lt;b&gt;Regulacje prawne i zakazy&lt;/b&gt;</string>
     <string name="chapter6_4">
 
-        Świat kryptowalut funkcjonuje na styku innowacji technologicznych i luk w prawie, co powoduje, że rządy różnych krajów przyjmują odmienne podejścia do ich regulacji. W zależności od regionu, kryptowaluty mogą być traktowane jako legalny środek płatniczy, aktywo inwestycyjne lub obszar wymagający ścisłych restrykcji. Niektóre kraje decydują się nawet na całkowity zakaz korzystania z kryptowalut, co ma istotny wpływ na ich wartość oraz dostępność dla inwestorów.&lt;/b&gt;&lt;/b&gt;
+        Świat kryptowalut funkcjonuje na styku innowacji technologicznych i luk w prawie, co powoduje, że rządy różnych krajów przyjmują odmienne podejścia do ich regulacji. W zależności od regionu, kryptowaluty mogą być traktowane jako legalny środek płatniczy, aktywo inwestycyjne lub obszar wymagający ścisłych restrykcji. Niektóre kraje decydują się nawet na całkowity zakaz korzystania z kryptowalut, co ma istotny wpływ na ich wartość oraz dostępność dla inwestorów.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
 
-        Wpływ regulacji na rynek&lt;/b&gt;&lt;/b&gt;
-        Regulacje wprowadzane przez rządy mogą znacząco zmieniać dynamikę rynku kryptowalut. Restrykcje często powodują spadki cen, zniechęcając inwestorów do dalszego zaangażowania. W dłuższej perspektywie mogą one również spowalniać rozwój innowacyjnych projektów blockchainowych, które potrzebują globalnej adopcji i stabilności prawnej. Z drugiej strony, brak regulacji może prowadzić do chaosu, zwiększonego ryzyka oszustw i większej podatności na cyberataki.&lt;/b&gt;&lt;/b&gt;&lt;/b&gt;
+        Wpływ regulacji na rynek&lt;br/&gt;&lt;br/&gt;
+        Regulacje wprowadzane przez rządy mogą znacząco zmieniać dynamikę rynku kryptowalut. Restrykcje często powodują spadki cen, zniechęcając inwestorów do dalszego zaangażowania. W dłuższej perspektywie mogą one również spowalniać rozwój innowacyjnych projektów blockchainowych, które potrzebują globalnej adopcji i stabilności prawnej. Z drugiej strony, brak regulacji może prowadzić do chaosu, zwiększonego ryzyka oszustw i większej podatności na cyberataki.&lt;br/&gt;&lt;br/&gt;
 
-        Przykład: Zakaz kryptowalut w Chinach&lt;/b&gt;&lt;/b&gt;
-        Jednym z najbardziej znaczących przykładów wpływu regulacji na kryptowaluty był zakaz wprowadzony przez Chiny w 2021 roku. Rząd tego kraju ogłosił całkowity zakaz wydobycia i handlu kryptowalutami, argumentując to potrzebą ochrony stabilności finansowej oraz walką z praniem pieniędzy. Zakaz ten miał ogromne konsekwencje, ponieważ Chiny były wówczas globalnym liderem w wydobyciu Bitcoina, odpowiadając za ponad 50% całkowitej mocy obliczeniowej sieci (hashrate).&lt;/b&gt;&lt;/b&gt;
+        Przykład: Zakaz kryptowalut w Chinach&lt;br/&gt;&lt;br/&gt;
+        Jednym z najbardziej znaczących przykładów wpływu regulacji na kryptowaluty był zakaz wprowadzony przez Chiny w 2021 roku. Rząd tego kraju ogłosił całkowity zakaz wydobycia i handlu kryptowalutami, argumentując to potrzebą ochrony stabilności finansowej oraz walką z praniem pieniędzy. Zakaz ten miał ogromne konsekwencje, ponieważ Chiny były wówczas globalnym liderem w wydobyciu Bitcoina, odpowiadając za ponad 50% całkowitej mocy obliczeniowej sieci (hashrate).&lt;br/&gt;&lt;br/&gt;
 
-        Decyzja Chin spowodowała gwałtowny spadek wartości większości kryptowalut, a górnicy i firmy związane z blockchainem zostali zmuszeni do przeniesienia działalności za granicę, głównie do krajów takich jak Stany Zjednoczone czy Kazachstan. Chociaż rynek stopniowo odbudował swoją pozycję, decyzja Chin pokazała, jak duży wpływ na rynek kryptowalut mogą mieć regulacje prawne.&lt;/b&gt;&lt;/b&gt;&lt;/b&gt;
+        Decyzja Chin spowodowała gwałtowny spadek wartości większości kryptowalut, a górnicy i firmy związane z blockchainem zostali zmuszeni do przeniesienia działalności za granicę, głównie do krajów takich jak Stany Zjednoczone czy Kazachstan. Chociaż rynek stopniowo odbudował swoją pozycję, decyzja Chin pokazała, jak duży wpływ na rynek kryptowalut mogą mieć regulacje prawne.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
 
-        Kraje podążające inną ścieżką&lt;/b&gt;&lt;/b&gt;
+        Kraje podążające inną ścieżką&lt;br/&gt;&lt;br/&gt;
         Podczas gdy Chiny wprowadziły zakaz, inne kraje, takie jak Salwador, postanowiły pójść w zupełnie innym kierunku, przyjmując Bitcoina jako legalny środek płatniczy. Takie działania pokazują różnorodność podejść do kryptowalut na świecie i wskazują, że globalne regulacje są trudne do wprowadzenia.
 
     </string>
@@ -469,16 +469,16 @@
     <string name="chapter6_5_title">&lt;b&gt;Ryzyko technologiczne i błędy w kodzie&lt;/b&gt;</string>
     <string name="chapter6_5">
 
-        Kryptowaluty opierają się na technologii blockchain, która choć rewolucyjna, nie jest wolna od ryzyka technologicznego. Jak każdy system informatyczny, blockchainy, smart kontrakty oraz aplikacje oparte na tej technologii mogą zawierać błędy w kodzie lub luki bezpieczeństwa, które stanowią potencjalne zagrożenie dla użytkowników. Wystarczy jeden krytyczny błąd, by narazić projekty na ogromne straty finansowe, a użytkowników na utratę zaufania do całego systemu.&lt;/b&gt;&lt;/b&gt;&lt;/b&gt;
+        Kryptowaluty opierają się na technologii blockchain, która choć rewolucyjna, nie jest wolna od ryzyka technologicznego. Jak każdy system informatyczny, blockchainy, smart kontrakty oraz aplikacje oparte na tej technologii mogą zawierać błędy w kodzie lub luki bezpieczeństwa, które stanowią potencjalne zagrożenie dla użytkowników. Wystarczy jeden krytyczny błąd, by narazić projekty na ogromne straty finansowe, a użytkowników na utratę zaufania do całego systemu.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
 
-        Problemy związane z ryzykiem technologicznym&lt;/b&gt;&lt;/b&gt;
+        Problemy związane z ryzykiem technologicznym&lt;br/&gt;&lt;br/&gt;
 
-        Luki w smart kontraktach: Smart kontrakty to programowalne umowy działające w sieci blockchain. Jeśli kod smart kontraktu zawiera błędy, hakerzy mogą je wykorzystać do kradzieży środków lub manipulacji działaniem kontraktu.&lt;/b&gt;&lt;/b&gt;
-        Skomplikowane aktualizacje: Blockchainy, jako systemy zdecentralizowane, wymagają konsensusu społeczności przy wprowadzaniu poprawek lub aktualizacji. Oznacza to, że nawet jeśli luka w kodzie zostanie wykryta, jej naprawa może być powolna i trudna do przeprowadzenia.&lt;/b&gt;&lt;/b&gt;
-        Brak audytów kodu: Wiele projektów blockchainowych jest tworzonych szybko, często bez przeprowadzania pełnych audytów bezpieczeństwa, co zwiększa ryzyko wprowadzenia błędów do systemu.&lt;/b&gt;&lt;/b&gt;&lt;/b&gt;
+        Luki w smart kontraktach: Smart kontrakty to programowalne umowy działające w sieci blockchain. Jeśli kod smart kontraktu zawiera błędy, hakerzy mogą je wykorzystać do kradzieży środków lub manipulacji działaniem kontraktu.&lt;br/&gt;&lt;br/&gt;
+        Skomplikowane aktualizacje: Blockchainy, jako systemy zdecentralizowane, wymagają konsensusu społeczności przy wprowadzaniu poprawek lub aktualizacji. Oznacza to, że nawet jeśli luka w kodzie zostanie wykryta, jej naprawa może być powolna i trudna do przeprowadzenia.&lt;br/&gt;&lt;br/&gt;
+        Brak audytów kodu: Wiele projektów blockchainowych jest tworzonych szybko, często bez przeprowadzania pełnych audytów bezpieczeństwa, co zwiększa ryzyko wprowadzenia błędów do systemu.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
 
-        Przykład: Eksploatacja DAO&lt;/b&gt;&lt;/b&gt;
-        Jednym z najbardziej znanych przypadków ryzyka technologicznego w świecie kryptowalut była eksploatacja zdecentralizowanej organizacji autonomicznej (DAO) w 2016 roku. DAO, oparta na blockchainie Ethereum, była jednym z pierwszych projektów, które miały na celu zarządzanie środkami inwestorów poprzez zdecentralizowany mechanizm głosowania. Niestety, luka w kodzie pozwoliła hakerom wykorzystać exploit, który umożliwił im przejęcie około 60 milionów USD w Etherze.&lt;/b&gt;&lt;/b&gt;
+        Przykład: Eksploatacja DAO&lt;br/&gt;&lt;br/&gt;
+        Jednym z najbardziej znanych przypadków ryzyka technologicznego w świecie kryptowalut była eksploatacja zdecentralizowanej organizacji autonomicznej (DAO) w 2016 roku. DAO, oparta na blockchainie Ethereum, była jednym z pierwszych projektów, które miały na celu zarządzanie środkami inwestorów poprzez zdecentralizowany mechanizm głosowania. Niestety, luka w kodzie pozwoliła hakerom wykorzystać exploit, który umożliwił im przejęcie około 60 milionów USD w Etherze.&lt;br/&gt;&lt;br/&gt;
 
         Skutki tego wydarzenia były dramatyczne. Społeczność Ethereum stanęła przed trudnym wyborem: zaakceptować stratę środków lub wprowadzić zmianę w blockchainie, by odzyskać utracone fundusze. Ostatecznie podjęto decyzję o przeprowadzeniu tzw. hard forka, co doprowadziło do podziału łańcucha na dwie osobne sieci: Ethereum (ETH), które odzyskało skradzione środki, oraz Ethereum Classic (ETC), które zachowało oryginalny łańcuch bez zmian. Wydarzenie to pokazało, jak ogromne konsekwencje mogą wynikać z pojedynczych błędów technologicznych.
 
@@ -487,16 +487,16 @@
     <string name="chapter6_6_title">&lt;b&gt;Brak edukacji i impulsywne inwestycje&lt;/b&gt;</string>
     <string name="chapter6_6">
 
-        Kryptowaluty przyciągają inwestorów z różnych środowisk, jednak wiele osób decyduje się na inwestycje w tę technologię bez pełnego zrozumienia jej specyfiki, potencjalnych ryzyk i długoterminowych konsekwencji. Brak odpowiedniej edukacji i zrozumienia tematu prowadzi do impulsywnych decyzji, które często kończą się dużymi stratami finansowymi.&lt;/b&gt;&lt;/b&gt;&lt;/b&gt;
+        Kryptowaluty przyciągają inwestorów z różnych środowisk, jednak wiele osób decyduje się na inwestycje w tę technologię bez pełnego zrozumienia jej specyfiki, potencjalnych ryzyk i długoterminowych konsekwencji. Brak odpowiedniej edukacji i zrozumienia tematu prowadzi do impulsywnych decyzji, które często kończą się dużymi stratami finansowymi.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
 
-        Czynniki sprzyjające impulsywnym inwestycjom&lt;/b&gt;&lt;/b&gt;
+        Czynniki sprzyjające impulsywnym inwestycjom&lt;br/&gt;&lt;br/&gt;
 
         Spekulacja i szybkie zyski: Wiele osób wkracza na rynek kryptowalut z nadzieją na szybki zysk, napędzane obietnicą szybkiego wzrostu wartości. Takie podejście skutkuje często impulsywnym kupowaniem aktywów w chwilach euforii rynkowej, bez odpowiedniej analizy.&lt;/b&gt;&lt;/b&gt;
         Niedostateczna wiedza o technologii: Inwestorzy nie zawsze rozumieją, jak działają kryptowaluty, jakie są fundamenty technologiczne blockchainów i jakie zagrożenia wiążą się z przechowywaniem aktywów w portfelach cyfrowych. To powoduje, że podejmują decyzje, kierując się jedynie chwilowymi trendami.&lt;/b&gt;&lt;/b&gt;
-        Wpływ mediów społecznościowych: Social media i platformy takie jak Twitter, Reddit czy YouTube są pełne informacji o kryptowalutach, ale także fałszywych obietnicach szybkich zysków. Celebryci, influencerzy czy anonimowi użytkownicy mogą wywołać "hype", czyli euforyczny wzrost zainteresowania, który skłania inwestorów do kupna aktywów bez zastanowienia się nad ich długoterminową wartością.&lt;/b&gt;&lt;/b&gt;&lt;/b&gt;
+        Wpływ mediów społecznościowych: Social media i platformy takie jak Twitter, Reddit czy YouTube są pełne informacji o kryptowalutach, ale także fałszywych obietnicach szybkich zysków. Celebryci, influencerzy czy anonimowi użytkownicy mogą wywołać "hype", czyli euforyczny wzrost zainteresowania, który skłania inwestorów do kupna aktywów bez zastanowienia się nad ich długoterminową wartością.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
 
-        Przykład: "Hype" wokół Dogecoina&lt;/b&gt;&lt;/b&gt;
-        Dogecoin, kryptowaluta, która początkowo została stworzona jako żart, stała się obiektem ogromnego "hype'u" w 2021 roku. Początkowo Dogecoin nie miał większego zastosowania ani celu poza byciem zabawnym tokenem opartym na popularnym memie. Jednak dzięki poparciu takich postaci jak Elon Musk, Dogecoin zyskał ogromną popularność i znalazł się w centrum uwagi inwestorów. W ciągu kilku miesięcy cena tej kryptowaluty wzrosła o kilka tysięcy procent, co przyciągnęło miliony nowych inwestorów, którzy liczyli na szybkie zyski.&lt;/b&gt;&lt;/b&gt;
+        Przykład: "Hype" wokół Dogecoina&lt;br/&gt;&lt;br/&gt;
+        Dogecoin, kryptowaluta, która początkowo została stworzona jako żart, stała się obiektem ogromnego "hype'u" w 2021 roku. Początkowo Dogecoin nie miał większego zastosowania ani celu poza byciem zabawnym tokenem opartym na popularnym memie. Jednak dzięki poparciu takich postaci jak Elon Musk, Dogecoin zyskał ogromną popularność i znalazł się w centrum uwagi inwestorów. W ciągu kilku miesięcy cena tej kryptowaluty wzrosła o kilka tysięcy procent, co przyciągnęło miliony nowych inwestorów, którzy liczyli na szybkie zyski.&lt;br/&gt;&lt;br/&gt;
 
         Niestety, jak to często bywa w przypadku rynków spekulacyjnych, cena Dogecoina osiągnęła swój szczyt wkrótce po tym, jak zaczęło się o nim głośno mówić. Po kilku tygodniach euforii nastąpił dramatyczny spadek wartości, co spowodowało ogromne straty dla inwestorów, którzy kupili na szczycie. Wielu nowych inwestorów nie zdążyło sprzedać swoich aktywów na czas, co spotęgowało ich straty. Ten przypadek ukazuje, jak brak edukacji na temat technologii i impulsowe decyzje inwestycyjne mogą prowadzić do poważnych konsekwencji finansowych.
 

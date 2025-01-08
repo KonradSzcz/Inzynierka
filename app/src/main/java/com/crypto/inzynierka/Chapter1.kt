@@ -99,6 +99,7 @@ class Chapter1 : Fragment() {
             }
         }
     }
+
     private fun replaceFragment(fragment: Fragment,chapter: Int) {
         val args = Bundle().apply {
             putInt("CurrentChapter", chapter)

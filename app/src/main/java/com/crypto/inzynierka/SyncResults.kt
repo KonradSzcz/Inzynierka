@@ -10,83 +10,52 @@ import org.json.JSONException
 import android.util.Log
 
 fun SyncResults(context: Context, username: String) {
-    val url = "http://192.168.8.106/get_results.php?username=$username" // Adres URL do pobierania wyników
-    val dbHelper = DBConnection(context, "cryptoDB", MainViewModel.DB_VERSION) // Inicjalizacja bazy lokalnej
+    val url = "http://192.168.8.106/get_results.php?username=$username"
+    val dbHelper = DBConnection(context, "cryptoDB", MainViewModel.DB_VERSION)
 
     val request = StringRequest(
         Request.Method.GET,
         url,
         { response ->
-            Log.d("SyncData", "Odpowiedź serwera: $response")
-
+            Log.d("SyncResults", "Otrzymana odpowiedź serwera: $response")
+            val db = dbHelper.writableDatabase
             try {
-                // Sprawdzanie, czy odpowiedź nie jest pusta lub zawiera HTML
-                if (response.isEmpty() || response.contains("<br")) {
-                    Log.e("SyncData", "Błąd: Odpowiedź serwera jest pusta lub zawiera HTML.")
-                    return@StringRequest
-                }
-
-                // Parsowanie odpowiedzi JSON
                 val resultsArray = JSONArray(response)
+                db.beginTransaction()
 
-                // Sprawdzanie, czy są jakiekolwiek wyniki
-                if (resultsArray.length() == 0) {
-                    Log.d("SyncData", "Brak wyników do synchronizacji.")
-                    return@StringRequest // Brak wyników, kończymy synchronizację
-                }
+                for (i in 0 until resultsArray.length()) {
+                    val resultObject = resultsArray.getJSONObject(i)
+                    val chapter = resultObject.optString("Chapter")
+                    val result = resultObject.optString("Result")
 
-                // Otwarcie bazy danych
-                val db = dbHelper.writableDatabase
-
-                // Flaga do śledzenia, czy transakcja została rozpoczęta
-                var transactionStarted = false
-
-                try {
-                    db.beginTransaction() // Rozpoczęcie transakcji
-                    transactionStarted = true
-
-                    // Iteracja przez otrzymane wyniki
-                    for (i in 0 until resultsArray.length()) {
-                        val resultObject = resultsArray.getJSONObject(i)
-                        val chapter = resultObject.optString("Chapter")  // Rozdział
-                        val test = resultObject.optString("Test")  // Test
-                        val result = resultObject.optString("Result")  // Wynik
-
-                        // Walidacja danych przed zapisaniem
-                        if (chapter.isNotEmpty() && test.isNotEmpty() && result.isNotEmpty()) {
-                            val values = ContentValues().apply {
-                                put("Chapter", chapter)  // Rozdział
-                                put("Test", test)  // Test
-                                put("Result", result)  // Wynik
-                            }
-                            // Wstawianie danych do lokalnej tabeli
-                            db.insert("Results", null, values)
+                    if (chapter.isNotEmpty() && result.isNotEmpty()) {
+                        val values = ContentValues().apply {
+                            put("Chapter", chapter)
+                            put("Result", result)
+                        }
+                        val rowId = db.insert("Results", null, values)
+                        if (rowId == -1L) {
+                            Log.e("SyncResults", "Błąd wstawiania danych: $values")
+                        } else {
+                            Log.d("SyncResults", "Dodano dane: ID=$rowId, Chapter=$chapter, Result=$result")
                         }
                     }
-
-                    // Zatwierdzenie transakcji, aby dane zostały zapisane
-                    db.setTransactionSuccessful()
-                    Log.d("SyncData", "Synchronizacja wyników zakończona sukcesem.")
-                } catch (e: Exception) {
-                    Log.e("SyncData", "Błąd podczas przetwarzania danych: ${e.message}")
-                } finally {
-                    // Tylko jeśli transakcja została rozpoczęta, zakończ ją
-                    if (transactionStarted) {
-                        db.endTransaction()
-                    }
-                    db.close() // Zamknięcie bazy danych
                 }
+
+                db.setTransactionSuccessful()
+                Log.d("SyncResults", "Synchronizacja wyników zakończona sukcesem.")
             } catch (e: JSONException) {
-                Log.e("SyncData", "Błąd parsowania JSON: ${e.message}")
+                Log.e("SyncResults", "Błąd parsowania JSON: ${e.message}")
+            } finally {
+                db.endTransaction()
+                db.close()
             }
         },
         { error ->
-            // Obsługa błędu w przypadku problemów z pobraniem danych
-            Log.e("SyncData", "Błąd podczas pobierania danych wyników: ${error.message}")
+            Log.e("SyncResults", "Błąd podczas pobierania danych wyników: ${error.message}")
         }
     )
 
-    // Dodawanie zapytania do kolejki Volley
     val requestQueue = Volley.newRequestQueue(context)
     requestQueue.add(request)
 }

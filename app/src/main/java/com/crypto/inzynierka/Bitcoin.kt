@@ -144,6 +144,7 @@ class Bitcoin : Fragment() {
                 6 -> binding.readIndicator6.setImageResource(R.drawable.baseline_check_circle_24)
                 7 -> binding.readIndicator7.setImageResource(R.drawable.baseline_check_circle_24)
                 8 -> binding.readIndicator8.setImageResource(R.drawable.baseline_check_circle_24)
+                9 -> binding.readIndicator9.setImageResource(R.drawable.baseline_check_circle_24)
             }
 
             completedChapters++

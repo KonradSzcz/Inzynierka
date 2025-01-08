@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.database.Cursor
+import android.graphics.Color
 import android.opengl.Visibility
 import android.text.Html
 import android.util.Log
@@ -96,6 +97,7 @@ class Tests : Fragment() {
                     binding.intropercent.text = "$percentage%"
                     if (percentage >= 70) {
                         binding.introicon.setImageResource(R.drawable.testicon_done)
+                        binding.intropercent.setTextColor(resources.getColor(R.color.green, null))
                         binding.blockchainlock.visibility = View.GONE
                         binding.blockchainpercent.visibility = View.VISIBLE
                     }
@@ -104,6 +106,7 @@ class Tests : Fragment() {
                     binding.blockchainpercent.text = "$percentage%"
                     if (percentage >= 70) {
                         binding.blockchainicon.setImageResource(R.drawable.testicon_done)
+                        binding.blockchainpercent.setTextColor(resources.getColor(R.color.green, null))
                         binding.bitcoinlock.visibility = View.GONE
                         binding.etherumlock.visibility = View.GONE
 
@@ -115,12 +118,14 @@ class Tests : Fragment() {
                     binding.bitcoinpercent.text = "$percentage%"
                     if (percentage >= 70) {
                         binding.bitcoinicon.setImageResource(R.drawable.testicon_done)
+                        binding.bitcoinpercent.setTextColor(resources.getColor(R.color.green, null))
                     }
                 }
                 "chapter4" -> {
                     binding.ethereumpercent.text = "$percentage%"
                     if (percentage >= 70) {
                         binding.ethereumicon.setImageResource(R.drawable.testicon_done)
+                        binding.ethereumpercent.setTextColor(resources.getColor(R.color.green, null))
                     }
                 }
             }

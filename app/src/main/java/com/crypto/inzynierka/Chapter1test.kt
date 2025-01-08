@@ -135,7 +135,7 @@ class Chapter1test : Fragment() {
             checkAnswer(3)
         }
         binding.nextChapter.setOnClickListener {
-            replaceFragment(Introduction())
+            replaceFragment(Tests())
         }
     }
 

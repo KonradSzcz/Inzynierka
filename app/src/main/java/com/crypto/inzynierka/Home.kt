@@ -81,6 +81,7 @@ class Home : Fragment() {
                 resultsArray[rowIndex][0] = chapter
                 resultsArray[rowIndex][1] = result
                 rowIndex++
+                Log.d("Results TABLE", "Chapter $chapter, Result $result.")
             } while (cursor.moveToNext())
         } else {
             Log.d("Results - HOME", "No data found in the Results table.")
@@ -140,6 +141,12 @@ class Home : Fragment() {
                         binding.ethereumlock.visibility = View.GONE
                         binding.bitcoinpercent.visibility = View.VISIBLE
                         binding.ethereumpercent.visibility = View.VISIBLE
+                    }
+                }
+                "chapter3" -> {
+                    if (result >= 70) {
+                        binding.walletslock.visibility = View.GONE
+                        binding.dangerslock.visibility = View.GONE
                     }
                 }
             }

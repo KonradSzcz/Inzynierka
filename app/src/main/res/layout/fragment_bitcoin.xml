@@ -110,7 +110,7 @@
                         android:layout_alignStart="@id/readIndicator1"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="1dp"
-                        android:text="37s"
+                        android:text="45s"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
@@ -173,7 +173,8 @@
                         android:layout_below="@id/readIndicator2"
                         android:layout_alignStart="@id/readIndicator2"
                         android:layout_marginTop="1dp"
-                        android:text="1m 4s"
+                        android:layout_marginStart="10dp"
+                        android:text="1m"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
@@ -233,11 +234,10 @@
                         android:id="@+id/rozdzial3time"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/readIndicator3"
+                        android:layout_below="@+id/readIndicator3"
                         android:layout_alignStart="@id/readIndicator3"
                         android:layout_marginStart="10dp"
-                        android:layout_marginTop="1dp"
-                        android:text="48s"
+                        android:text="45s"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
@@ -301,7 +301,8 @@
                         android:layout_below="@id/readIndicator4"
                         android:layout_alignStart="@id/readIndicator4"
                         android:layout_marginTop="1dp"
-                        android:text="1m 1s"
+                        android:text="1m"
+                        android:layout_marginStart="10dp"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
@@ -364,7 +365,8 @@
                         android:layout_below="@id/readIndicator5"
                         android:layout_alignStart="@id/readIndicator5"
                         android:layout_marginTop="1dp"
-                        android:text="50s"
+                        android:text="45s"
+                        android:layout_marginStart="10dp"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
@@ -430,7 +432,7 @@
                         android:layout_below="@id/readIndicator6"
                         android:layout_alignStart="@id/readIndicator6"
                         android:layout_marginTop="1dp"
-                        android:text="1m 33s"
+                        android:text="1m 30s"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
@@ -495,7 +497,9 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/readIndicator7"
                         android:layout_marginTop="1dp"
-                        android:text="1m 2s"
+                        android:layout_alignStart="@id/readIndicator7"
+                        android:layout_marginStart="10dp"
+                        android:text="1m"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
@@ -560,7 +564,7 @@
                         android:layout_below="@id/readIndicator8"
                         android:layout_alignStart="@id/readIndicator8"
                         android:layout_marginTop="1dp"
-                        android:text="1m 16s"
+                        android:text="1m 15s"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
@@ -624,8 +628,9 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/readIndicator9"
                         android:layout_alignStart="@id/readIndicator9"
+                        android:layout_marginStart="10dp"
                         android:layout_marginTop="1dp"
-                        android:text="1m 4s"
+                        android:text="1m"
                         android:textColor="@color/white"
                         android:textSize="16sp" />
 
